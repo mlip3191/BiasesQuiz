@@ -103,3 +103,26 @@ div.option { cursor: default; }
 .review.bad .icon { color: var(--bad); }
 .review.ok { border-left: 4px solid var(--good); }
 .review.bad { border-left: 4px solid var(--bad); }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 720px;
+  margin: 0 auto 12px;
+}
+.tabs a {
+  padding: 8px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+.tabs a:hover { color: var(--text); }
+.tabs a.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}

@@ -1,0 +1,2537 @@
+{
+  "title": "Behavioral Finance Bias Quiz",
+  "tab": "Biases",
+  "order": 1,
+  "intro": "Each question describes a short investing scenario. Pick which of the five behavioral biases is at work.",
+  "prompt": "Which bias is at work here?",
+  "quiz_length": 10,
+  "categories": [
+    {
+      "name": "Cognitive Dissonance",
+      "family": "Cognitive: belief perseverance",
+      "definition": "The mental discomfort of a new fact conflicting with an existing belief or decision, resolved by distorting the information rather than updating the belief."
+    },
+    {
+      "name": "Conservatism",
+      "family": "Cognitive: belief perseverance",
+      "definition": "Clinging to a prior view or forecast and underreacting to new, contradictory information instead of updating appropriately."
+    },
+    {
+      "name": "Confirmation",
+      "family": "Cognitive: belief perseverance",
+      "definition": "Seeking out and overweighting information that supports an existing belief while ignoring or discounting information that contradicts it."
+    },
+    {
+      "name": "Representativeness",
+      "family": "Cognitive: belief perseverance",
+      "definition": "Judging probability by how well something matches a familiar category, while neglecting base rates and sample size."
+    },
+    {
+      "name": "Illusion of Control",
+      "family": "Cognitive: belief perseverance",
+      "definition": "Believing you can influence or control outcomes that are actually governed by chance."
+    },
+    {
+      "name": "Hindsight",
+      "family": "Cognitive: belief perseverance",
+      "definition": "The 'I knew it all along' effect: after an outcome is known, believing it was predictable and that you foresaw it."
+    },
+    {
+      "name": "Mental Accounting",
+      "family": "Cognitive: information processing",
+      "definition": "Treating money differently depending on the mental 'bucket' it is assigned to (source, purpose or account) instead of recognizing that money is fungible."
+    },
+    {
+      "name": "Anchoring and Adjustment",
+      "family": "Cognitive: information processing",
+      "definition": "Fixating on an initial reference point (a price, a past high, a prior estimate) and adjusting too little away from it when new information warrants a bigger change."
+    },
+    {
+      "name": "Framing",
+      "family": "Cognitive: information processing",
+      "definition": "Responding differently to the same facts depending on how they are presented (gains vs. losses, wide vs. narrow), including evaluating one piece of a decision in isolation."
+    },
+    {
+      "name": "Availability",
+      "family": "Cognitive: information processing",
+      "definition": "Judging how likely or important something is by how easily examples come to mind, rather than by its actual frequency."
+    },
+    {
+      "name": "Self-Attribution",
+      "family": "Cognitive: information processing",
+      "definition": "Crediting successes to your own skill while blaming failures on bad luck or outside factors."
+    },
+    {
+      "name": "Outcome",
+      "family": "Cognitive: information processing",
+      "definition": "Judging the quality of a decision by how it turned out rather than by the quality of the decision-making process at the time."
+    },
+    {
+      "name": "Recency",
+      "family": "Cognitive: information processing",
+      "definition": "Overweighting recent events and data relative to older ones, for example extrapolating a short recent run into the future."
+    },
+    {
+      "name": "Loss Aversion",
+      "family": "Emotional",
+      "definition": "Feeling the pain of a loss about twice as strongly as the pleasure of an equal gain, leading to holding losers too long and selling winners too early."
+    },
+    {
+      "name": "Overconfidence",
+      "family": "Emotional",
+      "definition": "Unwarranted faith in your own judgment, predictions or information, whether through forecast ranges that are too narrow or excessive certainty."
+    },
+    {
+      "name": "Self-Control",
+      "family": "Emotional",
+      "definition": "Failing to act on long-term goals because of insufficient discipline in the moment: present gratification beats future benefit."
+    },
+    {
+      "name": "Status Quo",
+      "family": "Emotional",
+      "definition": "A preference for whatever keeps the current state of affairs (the default), regardless of whether an alternative would objectively be better."
+    },
+    {
+      "name": "Endowment",
+      "family": "Emotional",
+      "definition": "Valuing something more highly simply because you own it, so you demand more to give it up than you would have paid to acquire it."
+    },
+    {
+      "name": "Regret Aversion",
+      "family": "Emotional",
+      "definition": "Avoiding decisive action because of fear that the choice will look wrong in hindsight, preferring the emotional comfort of inaction or of following the crowd."
+    },
+    {
+      "name": "Affinity",
+      "family": "Emotional",
+      "definition": "Choosing investments because they reflect your values, identity or loyalties (expressive value) rather than their practical financial merit."
+    }
+  ],
+  "questions": [
+    {
+      "id": "cd-01",
+      "scenario": "Dana bought a biotech stock at $48 after telling her family it was a sure winner. When the FDA rejects the company's lead drug and the shares fall to $31, she feels uneasy every time she opens her brokerage statement. To quiet that feeling, she buys more shares and tells herself the drop proves how mispriced the stock is, rather than revisiting why she bought it in the first place.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Confirmation",
+        "Loss Aversion",
+        "Overconfidence",
+        "Status Quo"
+      ],
+      "explanation": "The new fact (the FDA rejection) conflicts with Dana's earlier decision, and she relieves the resulting discomfort by buying more to validate that decision instead of reassessing it. That is cognitive dissonance. Confirmation bias is about seeking supportive information; here the driver is the uneasy feeling and the need to justify a past commitment."
+    },
+    {
+      "id": "cd-02",
+      "scenario": "A researcher surveys investors who put money into the same mid-cap fund three years ago. The investors who committed the largest amounts recall the fund's past returns as being well above what it actually delivered, while investors who put in only small amounts remember its returns much more accurately.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Hindsight",
+        "Self-Attribution",
+        "Overconfidence",
+        "Confirmation"
+      ],
+      "explanation": "The more an investor is committed to a decision, the more painful it is to admit the result was mediocre, so memory is bent to remove the conflict. This pattern is documented in research on mutual fund investors and is cognitive dissonance. Hindsight bias distorts memory of what you predicted, not memory of how an investment performed."
+    },
+    {
+      "id": "cd-03",
+      "scenario": "A retiree's utility stock is down 35% since he bought it and the company has cut its dividend. Privately he admits that its prospects have worsened, but he tells his advisor, 'I don't need the money right now, so it's fine to just hold.' Whenever the advisor raises the topic, he changes the subject.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Loss Aversion",
+        "Status Quo",
+        "Regret Aversion",
+        "Conservatism"
+      ],
+      "explanation": "He knows the evidence contradicts his original decision and relieves that discomfort by reframing the situation ('I don't need the money') instead of confronting it. Reframing is one of the classic ways people cope with cognitive dissonance. Loss aversion is the underlying pain of realizing a loss, but the cue here is the rationalization of conflicting information."
+    },
+    {
+      "id": "cd-04",
+      "scenario": "A portfolio manager spent months publicly championing a retailer's turnaround plan to clients. When quarterly results show the plan is failing, he does not sell. He decides 'the early numbers always look bad' and approves another large purchase, because selling would mean admitting his pitch to clients was wrong.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Overconfidence",
+        "Conservatism",
+        "Loss Aversion",
+        "Self-Attribution"
+      ],
+      "explanation": "Acting consistently with a prior public commitment, even at real cost, to avoid admitting error is the 'selective decision making' side of cognitive dissonance. The key cue is that selling would contradict his own earlier stance, which makes the facts psychologically uncomfortable to accept."
+    },
+    {
+      "id": "cd-05",
+      "scenario": "Against a friend's warning, an investor bought an expensive variable annuity from a salesperson. Later he learns that cheaper, nearly identical products exist. He feels uncomfortable, starts telling people his annuity has 'special features' that justify the price, and refuses to look at any comparison charts.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Confirmation",
+        "Endowment",
+        "Status Quo",
+        "Affinity"
+      ],
+      "explanation": "New information (cheaper alternatives) clashes with his earlier purchase, and he resolves the discomfort by distorting the facts and avoiding further evidence. That is cognitive dissonance. Endowment bias would be valuing the annuity more simply because he owns it, without the uneasy need to justify a past decision."
+    },
+    {
+      "id": "cd-06",
+      "scenario": "A young investor sold his index funds to put everything into one trending tech stock. When he learns that the company is under SEC investigation, he turns off its news alerts and tells his coworkers that 'regulators always go after winners.' At night he admits to his wife that the news has been keeping him awake.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Confirmation",
+        "Overconfidence",
+        "Loss Aversion",
+        "Illusion of Control"
+      ],
+      "explanation": "The investigation conflicts with his decision to go all in, and he relieves the resulting discomfort by dismissing and avoiding the evidence instead of reassessing. That is cognitive dissonance. Confirmation bias is about seeking out supportive information; the cue here is the uneasy feeling driving the avoidance."
+    },
+    {
+      "id": "cd-07",
+      "scenario": "A couple spent $60,000 on a vacation time-share they now use once every two years. Whenever a friend mentions that renting a similar villa would cost far less, they insist the time-share gives them 'priceless family memories' and 'hidden value' that renters never get.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Endowment",
+        "Mental Accounting",
+        "Status Quo",
+        "Regret Aversion"
+      ],
+      "explanation": "The facts say the purchase was a poor deal, which clashes with their belief that they made a good decision, so they invent extra benefits to remove the conflict. That is cognitive dissonance. Endowment bias would be valuing the time-share more simply because they own it, without the uneasy need to justify the decision."
+    },
+    {
+      "id": "cd-08",
+      "scenario": "A fund manager sold his board on a proprietary risk model. After it fails to flag a 15% drawdown, he says the model was 'right in spirit' and that the market was 'irrational.' He admits to a colleague that the failure has been eating at him, yet he refuses to review the model's assumptions.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Conservatism",
+        "Self-Attribution",
+        "Overconfidence",
+        "Outcome"
+      ],
+      "explanation": "The failure contradicts his earlier public commitment to the model, and he resolves the discomfort by explaining the facts away rather than testing his belief. That is cognitive dissonance. Self-attribution bias would be taking credit for gains and blaming luck for losses, without the stress about a contradicted decision."
+    },
+    {
+      "id": "cd-09",
+      "scenario": "In a classic experiment, volunteers who paid $50 to join a tedious, poorly run investment seminar rated it as more valuable and more interesting than volunteers who attended the same seminar for free.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Endowment",
+        "Anchoring and Adjustment",
+        "Mental Accounting",
+        "Confirmation"
+      ],
+      "explanation": "People who paid and effortfully sat through a dull seminar feel discomfort at having wasted money and time, so they raise their opinion of it to match the effort. This effort-justification result is a standard example of cognitive dissonance. It is not about owning an item, as endowment bias would be."
+    },
+    {
+      "id": "cd-10",
+      "scenario": "An investor who tells everyone he only buys 'ethical' companies learns that his largest holding was fined for dumping waste. He feels uneasy, then decides that the fine 'proves the company is transparent' and buys more.",
+      "answer": "Cognitive Dissonance",
+      "distractors": [
+        "Affinity",
+        "Confirmation",
+        "Overconfidence",
+        "Conservatism"
+      ],
+      "explanation": "The fine conflicts with his picture of himself and his holdings, and he resolves the discomfort by twisting the fact into a positive. That is cognitive dissonance. Affinity bias is about choosing investments to express values; the cue here is the reinterpretation of contradicting evidence to ease the conflict."
+    },
+    {
+      "id": "cons-01",
+      "scenario": "A fund manager believes the housing market is healthy. Three consecutive reports then show falling sales and rising mortgage delinquencies. After each report she trims her housing exposure by only about 1%, even though together the reports clearly point to a downturn, saying she would rather wait for the data to 'prove' the change before acting.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Confirmation",
+        "Cognitive Dissonance",
+        "Status Quo"
+      ],
+      "explanation": "She does take the new information into account, but she revises her prior view far too slowly relative to what the evidence warrants. Underreacting to new information is the core of conservatism bias. She is not hunting for supportive data (confirmation) and is not fixated on one specific number (anchoring)."
+    },
+    {
+      "id": "cons-02",
+      "scenario": "A trader starts out thinking there is a 50/50 chance that a company will win a major contract. After a series of strongly positive supply-chain checks that, statistically, make success about 95% likely, he raises his estimate to only about 65%.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Representativeness",
+        "Illusion of Control",
+        "Recency"
+      ],
+      "explanation": "Strong new sample evidence should move the estimate far above the prior, but he stays close to his original 50/50 view. Overweighting the prior (base rate) relative to new evidence is the textbook pattern of conservatism, as in Ward Edwards's urn experiment. Representativeness is the opposite error: neglecting the base rate."
+    },
+    {
+      "id": "cons-03",
+      "scenario": "An investor bought a pharmaceutical stock expecting an upcoming drug approval. When the company announces that the trial missed its main goal, he decides it is probably a minor setback and keeps his full position. With each later piece of bad news he trims his optimism only slightly, and he finally sells after the stock has dropped 45%.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Loss Aversion",
+        "Cognitive Dissonance",
+        "Anchoring and Adjustment",
+        "Overconfidence"
+      ],
+      "explanation": "He does not deny the news; he simply updates his expectations too little and too slowly, so he exits only after much larger losses than necessary. Slow updating of a prior forecast in response to new information is conservatism bias."
+    },
+    {
+      "id": "cons-04",
+      "scenario": "An investor is shown a 30-year study finding that dividend-growth strategies beat the market in 80% of rolling periods. He acknowledges the data, but keeps following his earlier belief that high-growth stocks are the only way to win, because rethinking his whole approach from a dense table of statistics feels like too much effort.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Confirmation",
+        "Status Quo",
+        "Representativeness",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "Abstract statistical evidence is discounted because updating a belief takes cognitive effort, so his prior view barely changes. This is conservatism. He is not seeking out only agreeing information (confirmation) or favoring a default for emotional reasons (status quo)."
+    },
+    {
+      "id": "cons-05",
+      "scenario": "For decades an investor has regarded electric utilities as the safest holding for steady income. Over several years, falling subsidies, rising rates and heavy debt visibly erode the sector's finances. Each year he adjusts his view only a little, still describing utilities as 'basically bulletproof' and holding the same allocation.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Status Quo",
+        "Recency",
+        "Confirmation"
+      ],
+      "explanation": "A long-held belief is revised only marginally despite steady, accumulating contrary evidence. Persistently underreacting to new information is conservatism. Status quo bias concerns a preference for defaults and inertia; here the issue is the belief itself failing to update."
+    },
+    {
+      "id": "cons-06",
+      "scenario": "After a company reports earnings 40% above forecasts, analysts raise their estimates for the next quarter by only 5%. The next two quarters also beat expectations by wide margins, yet analysts still revise upward only in small steps because they continue to regard the company as a mediocre performer.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Overconfidence",
+        "Confirmation",
+        "Recency"
+      ],
+      "explanation": "The analysts hold on to their prior view of the company and underreact to repeated, clearly contradictory evidence, which is conservatism. Anchoring is fixation on a specific number; here the problem is a slow update of the underlying belief."
+    },
+    {
+      "id": "cons-07",
+      "scenario": "A bond investor believes that inflation is only temporary. After four straight monthly reports with inflation well above 5%, he says, 'It will fade next month,' and keeps his long-duration bonds, nudging his inflation forecast up by only a few tenths of a point each time.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Confirmation",
+        "Overconfidence",
+        "Cognitive Dissonance",
+        "Status Quo"
+      ],
+      "explanation": "He sees each new report and accepts that it is accurate, but changes his forecast far less than the evidence requires. That under-reaction to new information is conservatism. Confirmation bias would involve ignoring or discounting the contradicting reports."
+    },
+    {
+      "id": "cons-08",
+      "scenario": "In a laboratory study, participants are told a bag holds either 70% red chips or 70% blue chips. After drawing a sample in which 8 of 12 chips are red, they say the odds that the bag is mostly red are around 65%, while the correct figure from Bayes' rule is about 97%.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Representativeness",
+        "Anchoring and Adjustment",
+        "Availability",
+        "Hindsight"
+      ],
+      "explanation": "The participants start from an even prior and update much too little after strong evidence, the classic demonstration of conservatism. Representativeness would be the opposite error, overreacting to a small sample."
+    },
+    {
+      "id": "cons-09",
+      "scenario": "An investor was convinced that a company was a fraud. Over three quarters, audited results show strong, real profits, and he agrees the numbers are accurate. Still, he says, 'I'm sure it's a mirage,' and adjusts his view only slightly.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Confirmation",
+        "Loss Aversion",
+        "Illusion of Control",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "He accepts the new facts but barely revises his belief. Holding on to a prior view and updating too slowly is the definition of conservatism. Confirmation bias would mean seeking or favoring only evidence that supports the fraud idea."
+    },
+    {
+      "id": "cons-10",
+      "scenario": "An advisor builds retirement plans on a 6% annual return assumption. Over the past decade, bond yields have halved and stock valuations have risen sharply, yet he lowers the assumption by only 0.2 points per year, so plans still look rosy.",
+      "answer": "Conservatism",
+      "distractors": [
+        "Status Quo",
+        "Anchoring and Adjustment",
+        "Overconfidence",
+        "Recency"
+      ],
+      "explanation": "Conditions have changed enough to justify a large revision, but he updates only a little at a time and remains close to his old forecast. That is conservatism. Status quo bias is a preference for defaults rather than a slow updating of beliefs."
+    },
+    {
+      "id": "conf-01",
+      "scenario": "An investor is convinced that the U.S. dollar is about to collapse. He follows only analysts and social-media accounts that make the same forecast, forwards their charts to his friends, and scrolls past any article predicting that the dollar will remain stable.",
+      "answer": "Confirmation",
+      "distractors": [
+        "Overconfidence",
+        "Recency",
+        "Conservatism",
+        "Availability"
+      ],
+      "explanation": "He selectively seeks and shares evidence that supports what he already believes while screening out evidence that contradicts it. That is the definition of confirmation bias. Overconfidence concerns how sure he is of his forecast; the cue here is how he gathers information."
+    },
+    {
+      "id": "conf-02",
+      "scenario": "Employees at a telecom firm kept buying company stock because they believed management's claim that its new fiber product would dominate the market. When coworkers posted data on the internal message board showing rivals gaining ground, employees dismissed it as 'sour grapes.' The stock lost about 80% over three years.",
+      "answer": "Confirmation",
+      "distractors": [
+        "Overconfidence",
+        "Affinity",
+        "Cognitive Dissonance",
+        "Availability"
+      ],
+      "explanation": "This mirrors the IBM/OS/2 case in the research: employees kept noticing and valuing evidence that supported their belief in the company and discounted evidence that contradicted it. Overweighting confirming information and ignoring disconfirming information is confirmation bias."
+    },
+    {
+      "id": "conf-03",
+      "scenario": "A retiree has followed one consumer-products company for years and has built 40% of his portfolio around it. When his advisor offers a report outlining the risks, he says, 'I don't want to hear the bear case.' He instead subscribes to a newsletter that publishes only positive coverage of the company.",
+      "answer": "Confirmation",
+      "distractors": [
+        "Affinity",
+        "Overconfidence",
+        "Status Quo",
+        "Availability"
+      ],
+      "explanation": "He actively avoids information that could contradict his view and chooses sources that agree with it, which leaves his portfolio lopsided. That is confirmation bias. Affinity bias would be investing because the company expresses his values or identity, not because he filters out opposing views."
+    },
+    {
+      "id": "conf-04",
+      "scenario": "An analyst hypothesizes that 'companies that raise their dividends outperform.' To test the idea, she pulls a list of dividend raisers that later outperformed and counts each as proof. She never checks dividend raisers that lagged the market or non-raisers that did well.",
+      "answer": "Confirmation",
+      "distractors": [
+        "Representativeness",
+        "Hindsight",
+        "Self-Attribution",
+        "Availability"
+      ],
+      "explanation": "She looks only for cases that confirm her rule and ignores the cases that could disprove it, a pattern shown by the classic four-card Wason task. Selectively citing the 'hits' while ignoring the roughly equal number of 'misses' produces a false sense of a reliable pattern. This is confirmation bias."
+    },
+    {
+      "id": "conf-05",
+      "scenario": "A trader builds a screen that flags stocks breaking out to 52-week highs. When reviewing results he highlights the breakouts that kept climbing and tells colleagues that the screen 'clearly works,' but he never counts the many breakouts that reversed and never questions the underlying idea.",
+      "answer": "Confirmation",
+      "distractors": [
+        "Representativeness",
+        "Illusion of Control",
+        "Overconfidence",
+        "Hindsight"
+      ],
+      "explanation": "He gives weight to the cases that fit his belief in the screen and discounts the ones that don't. Cherry-picking confirming evidence and not testing the investment idea against contrary results is confirmation bias."
+    },
+    {
+      "id": "conf-06",
+      "scenario": "A prospective homebuyer googles 'why real estate always goes up,' forwards three articles to his wife, and ignores a study on price declines in his own city, calling the authors 'pessimists.'",
+      "answer": "Confirmation",
+      "distractors": [
+        "Conservatism",
+        "Availability",
+        "Overconfidence",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "He frames his search to find only support for what he already believes and discounts contrary evidence. That is confirmation bias. Conservatism would mean accepting new evidence but updating too little."
+    },
+    {
+      "id": "conf-07",
+      "scenario": "An analyst initiates coverage with a Buy rating. When she reads the management call transcript, she highlights every optimistic sentence and dismisses the cautionary passages as 'boilerplate.'",
+      "answer": "Confirmation",
+      "distractors": [
+        "Conservatism",
+        "Self-Attribution",
+        "Cognitive Dissonance",
+        "Overconfidence"
+      ],
+      "explanation": "She weighs information according to whether it supports her existing view, which is confirmation bias. Cognitive dissonance would involve distress about the conflict and rationalization of a past commitment."
+    },
+    {
+      "id": "conf-08",
+      "scenario": "In a well-known study, supporters and opponents of a controversial policy each read the same set of mixed research results. After reading, both groups felt more strongly than before in their original positions.",
+      "answer": "Confirmation",
+      "distractors": [
+        "Cognitive Dissonance",
+        "Conservatism",
+        "Framing",
+        "Availability"
+      ],
+      "explanation": "Each side accepted the studies that agreed with its view and found flaws in the ones that did not, so the same mixed evidence strengthened both beliefs. That is confirmation bias. Conservatism would involve under-updating rather than selective reading."
+    },
+    {
+      "id": "conf-09",
+      "scenario": "Members of an online forum for holders of a small crypto token quickly mute anyone who posts criticism. They then point to how positive every post is as proof that the token is a safe bet.",
+      "answer": "Confirmation",
+      "distractors": [
+        "Affinity",
+        "Availability",
+        "Overconfidence",
+        "Illusion of Control"
+      ],
+      "explanation": "The group filters out contradicting information and then treats the filtered sample as evidence, which is confirmation bias. Affinity bias is about loyalty to a brand or identity; the cue here is the one-sided evidence."
+    },
+    {
+      "id": "conf-10",
+      "scenario": "A portfolio manager asks three analysts to review his thesis on a retailer. He picks the three who always agree with him, and he dismisses the one skeptical analyst as 'negative by nature.'",
+      "answer": "Confirmation",
+      "distractors": [
+        "Affinity",
+        "Overconfidence",
+        "Illusion of Control",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "He builds a review process that is designed to support his existing belief and ignores the disconfirming voice. That is confirmation bias. Overconfidence could be in the background, but the behavior shown is selective evidence-gathering."
+    },
+    {
+      "id": "rep-01",
+      "scenario": "A hot new pharmaceutical company with a charismatic CEO is about to go public. To an investor, it looks just like the great long-term holdings he has read about, so he buys on the first day. He never checks how IPOs in general have performed over their first few years.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Availability",
+        "Overconfidence",
+        "Affinity",
+        "Recency"
+      ],
+      "explanation": "He judges the stock by how well it resembles a 'successful long-term investment' and ignores the statistical base rate, which is that most IPOs underperform over time. Classifying by resemblance while neglecting base rates is representativeness bias (base-rate neglect)."
+    },
+    {
+      "id": "rep-02",
+      "scenario": "An advisor recommends a stock analyst to all of her clients after the analyst correctly called three stocks in a row. She concludes that the analyst must have exceptional skill and moves large sums based on his next pick.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Outcome",
+        "Recency",
+        "Overconfidence",
+        "Confirmation"
+      ],
+      "explanation": "Three correct calls is far too small a sample to separate skill from luck, but it looks like the pattern a skilled analyst would produce. Drawing confident conclusions from a tiny sample is sample-size neglect, a form of representativeness bias (the 'law of small numbers')."
+    },
+    {
+      "id": "rep-03",
+      "scenario": "After a stock index rises for seven straight days, an investor sells everything because the market is 'due for a drop.' The same week a colleague buys a stock that has fallen six days in a row, saying it 'has to bounce soon' because a long losing streak is unlikely to continue.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Recency",
+        "Illusion of Control",
+        "Anchoring and Adjustment",
+        "Availability"
+      ],
+      "explanation": "Both investors assume that a short random sequence must 'look like' a balanced, random pattern and so is bound to reverse. This is the Gambler's Fallacy, the gambling form of representativeness bias. Recency bias would instead have them extrapolate the streak."
+    },
+    {
+      "id": "rep-04",
+      "scenario": "Two Stanford graduates found a start-up in a trendy field. An investor puts a large amount in because the story resembles the early days of a famous tech giant and 'this one feels like the next big winner.' He never looks at how many start-ups with a similar profile actually survive.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Availability",
+        "Overconfidence",
+        "Affinity",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "He classifies the start-up as a likely winner because it matches a vivid mental category and disregards the real base rate, under which most such ventures fail. That is representativeness bias (base-rate neglect). Availability would be the vivid story coming to mind; the cue here is the mismatch between resemblance and statistics."
+    },
+    {
+      "id": "rep-05",
+      "scenario": "A day trader has made money on five consecutive trades with a chart pattern he discovered last month. He decides it is a reliable system and prepares to borrow money to trade the pattern at full size.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Overconfidence",
+        "Illusion of Control",
+        "Recency",
+        "Confirmation"
+      ],
+      "explanation": "Five trades are far too few to show an edge, because luck can easily produce such a run, yet a streak of wins looks like what a reliable system would produce. Reading a small sample as representative of the true underlying process is sample-size neglect, a form of representativeness bias."
+    },
+    {
+      "id": "rep-06",
+      "scenario": "A fund pitch notes that a manager beat his benchmark in each of the last three years. An investor concludes that the manager is skilled, without considering that among roughly 2,000 funds, about 250 would be expected to do that by chance.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Overconfidence",
+        "Recency",
+        "Illusion of Control",
+        "Hindsight"
+      ],
+      "explanation": "He treats a short, three-year record as representative of skill and ignores the base rate of chance winners. That is representativeness, which neglects sample size and base rates. Recency bias is about overweighting recent data, not about reading small samples as typical."
+    },
+    {
+      "id": "rep-07",
+      "scenario": "An investor buys shares of a company ranked first in customer service and 'best places to work.' He reasons that a great company must make a great investment, even though the stock trades at 60 times earnings.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Availability",
+        "Overconfidence",
+        "Affinity",
+        "Framing"
+      ],
+      "explanation": "He matches the stock to the category 'good company' and assumes that it must also be a good stock, confusing quality of the business with quality of the investment. That is representativeness. It ignores price and expected return."
+    },
+    {
+      "id": "rep-08",
+      "scenario": "A survey describes Maria as 31, single, outspoken and active in environmental causes, with a degree in economics. Respondents are asked which is more likely: (a) she is a bank teller, or (b) she is a bank teller active in the environmental movement. Most choose (b).",
+      "answer": "Representativeness",
+      "distractors": [
+        "Availability",
+        "Framing",
+        "Overconfidence",
+        "Conservatism"
+      ],
+      "explanation": "Option (b) matches the description better, so it feels more probable, even though a subset can never be more likely than the whole group. Judging likelihood by resemblance to a typical case is representativeness."
+    },
+    {
+      "id": "rep-09",
+      "scenario": "A venture investor commits $2 million to a start-up because its founder 'looks and talks exactly like' founders of earlier unicorns: hoodie, college dropout, charismatic pitch. He does not look at traction, and he ignores that nine of ten start-ups fail.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Affinity",
+        "Overconfidence",
+        "Confirmation",
+        "Availability"
+      ],
+      "explanation": "The founder fits a familiar success stereotype, and the investor ignores the base rate of failure. That is representativeness. Affinity bias would mean choosing the investment because of shared identity or values."
+    },
+    {
+      "id": "rep-10",
+      "scenario": "The press calls a firm a 'growth company,' and an investor assumes that its stock will keep growing quickly for the next five years. He does not consider that few high-growth firms sustain their growth rates for that long.",
+      "answer": "Representativeness",
+      "distractors": [
+        "Recency",
+        "Overconfidence",
+        "Anchoring and Adjustment",
+        "Availability"
+      ],
+      "explanation": "He labels the firm with a category and assumes that it will behave like the typical member of that category, ignoring that growth rates usually revert. That is representativeness. It differs from recency bias, which is about extrapolating the latest numbers."
+    },
+    {
+      "id": "ioc-01",
+      "scenario": "After switching to a self-directed online brokerage account, an investor checks his positions every hour and places dozens of trades a week. He says being 'hands-on' lets him steer his results, and he feels uneasy about index funds because 'there's nothing for me to do.'",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Self-Control",
+        "Availability",
+        "Confirmation"
+      ],
+      "explanation": "He believes his personal involvement and constant activity can influence how his investments turn out, even though market returns are mostly driven by chance. That belief is the illusion of control. Overconfidence concerns inflated faith in his own judgment; the cue here is the need to feel in control of the outcome."
+    },
+    {
+      "id": "ioc-02",
+      "scenario": "In a trading-game experiment, participants can bet on a coin toss. Those who get to toss the coin themselves wager noticeably more than those who watch someone else toss it, even though the odds are identical for everyone.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Representativeness",
+        "Self-Attribution",
+        "Framing"
+      ],
+      "explanation": "Personally performing a chance event makes people feel that they influence its result, so they bet more aggressively. This matches the research on gamblers who throw dice harder for high numbers and on people who pay more for lottery tickets they choose themselves, a classic demonstration of the illusion of control."
+    },
+    {
+      "id": "ioc-03",
+      "scenario": "The CEO of a mid-sized firm holds 85% of his net worth in his own company's stock. When his financial planner suggests diversifying, he replies that since he makes the strategic decisions, he can 'steer' the share price and so there is no need to spread his risk.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Affinity",
+        "Self-Attribution",
+        "Status Quo"
+      ],
+      "explanation": "He believes his involvement lets him control the investment's outcome and uses that belief to justify an underdiversified position. People tend to put more money into assets over which they feel they have influence. That is the illusion of control, rather than a simple loyalty to the company (affinity)."
+    },
+    {
+      "id": "ioc-04",
+      "scenario": "Several times, an investor bought a stock on a Monday while wearing his 'lucky' blue blazer, and each time the stock rose. He now insists on the routine for every purchase and tells friends that the ritual helps make his trades work out.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Representativeness",
+        "Confirmation",
+        "Overconfidence",
+        "Recency"
+      ],
+      "explanation": "He treats an arbitrary correlation (blazer and day of the week) as causal and believes his own rituals influence a stock's price. Seeing causation in coincidence and believing you can influence chance outcomes is the illusion of control."
+    },
+    {
+      "id": "ioc-05",
+      "scenario": "A company offers employees two retirement fund options with identical expected returns and risk. In one, employees are allowed to pick a handful of the underlying stocks themselves; in the other, a manager chooses everything. Most employees put significantly more money into the option where they pick some of the stocks.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Affinity",
+        "Availability",
+        "Endowment"
+      ],
+      "explanation": "Investors commit more money to assets where they feel they can exercise some control over the outcome, even when the risk and return are the same. This is the illusion of control. Endowment bias would be about valuing something more because you already own it."
+    },
+    {
+      "id": "ioc-06",
+      "scenario": "In a well-known experiment, office workers are given lottery tickets. Those who choose their own numbers rate their chances of winning higher than those assigned random numbers, and they demand much more money to part with their ticket.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Endowment",
+        "Overconfidence",
+        "Self-Attribution",
+        "Affinity"
+      ],
+      "explanation": "Picking numbers adds a feeling of control to a process governed entirely by chance, so participants think their odds are better. That is the illusion of control. Endowment bias would explain the selling price but not the higher perceived odds."
+    },
+    {
+      "id": "ioc-07",
+      "scenario": "A trader skips lunch to watch his positions during market hours. He is convinced that his attention keeps his stocks from falling, and he feels something bad will happen to his portfolio when he steps away from the screen.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Self-Control",
+        "Availability",
+        "Recency"
+      ],
+      "explanation": "He believes that watching influences price moves that are really set by the market. Thinking you can affect uncontrollable outcomes is the illusion of control. Overconfidence concerns faith in your forecasts, not in your influence over outcomes."
+    },
+    {
+      "id": "ioc-08",
+      "scenario": "A craps player throws the dice softly when he wants a low number and hard when he wants a high one. Observers note that the numbers that come up are unrelated to how he throws.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Representativeness",
+        "Self-Attribution",
+        "Affinity"
+      ],
+      "explanation": "He thinks his throwing style influences a random outcome. That is the illusion of control. It is not simply overconfidence, because he is not making a forecast; he thinks that he is exercising control."
+    },
+    {
+      "id": "ioc-09",
+      "scenario": "The CEO of a manufacturer personally approves each currency hedge, believing his involvement reduces the company's exchange-rate risk. In fact, the exchange rates are set in global markets that no single company can influence.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Self-Attribution",
+        "Hindsight",
+        "Affinity"
+      ],
+      "explanation": "He believes that his personal involvement changes a risk that is outside anyone's control. That is the illusion of control. Self-attribution bias would be crediting his own skill after a good result."
+    },
+    {
+      "id": "ioc-10",
+      "scenario": "In an experiment with randomly generated price charts, participants who are allowed to study the chart and enter their own predictions before each round bet much more heavily than those who see the same series without making a prediction. Both groups earn the same average payoff.",
+      "answer": "Illusion of Control",
+      "distractors": [
+        "Overconfidence",
+        "Representativeness",
+        "Confirmation",
+        "Availability"
+      ],
+      "explanation": "Studying the chart and making predictions gives participants a sense of involvement in a random process, and they behave as if they can influence the outcome. That is the illusion of control."
+    },
+    {
+      "id": "hind-01",
+      "scenario": "In 2010, an investor tells his friends he 'saw the housing crash coming' back in 2006 and that the bubble was obvious to anyone paying attention. His actual 2006 records, however, show he was buying real-estate funds. He now plans larger bets on his 'next big call.'",
+      "answer": "Hindsight",
+      "distractors": [
+        "Self-Attribution",
+        "Overconfidence",
+        "Outcome",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "Once an outcome is known, he reconstructs the past so that it seems predictable and believes he foresaw it, which then feeds false confidence in future predictions. This 'I knew it all along' effect is hindsight bias. Records of his real behavior contradict his memory."
+    },
+    {
+      "id": "hind-02",
+      "scenario": "In a seminar, participants write down an estimate of where a stock index will close at year-end. After learning the actual closing level, they are asked to recall their original estimates. On average, their recalled guesses are much closer to the true value than the estimates they wrote down.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Cognitive Dissonance",
+        "Anchoring and Adjustment",
+        "Confirmation",
+        "Self-Attribution"
+      ],
+      "explanation": "Knowing the answer changes people's memory of what they predicted, so they 'remember' being closer to correct than they actually were. This is the pattern in Baruch Fischhoff's classic experiment and the defining feature of hindsight bias."
+    },
+    {
+      "id": "hind-03",
+      "scenario": "A pension consultant evaluates a value-style manager's 1980s track record against a value index that was only created in the early 1990s. She concludes the manager was sloppy for not matching that index's style, even though no such benchmark was a recognized standard when the manager was making decisions.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Outcome",
+        "Anchoring and Adjustment",
+        "Framing",
+        "Representativeness"
+      ],
+      "explanation": "She is judging past decisions with knowledge and frameworks that were not available at the time, so the manager's choices seem more 'obviously wrong' than they were. Judging a manager against a framework that did not exist for them is a form of hindsight bias, like grading pre-1900 pitchers on a statistic that had not been invented."
+    },
+    {
+      "id": "hind-04",
+      "scenario": "Reviewing last year, a trader says each of his winning trades 'was clearly going to work' and each losing trade 'was something nobody could have seen coming.' His trading journal shows that, before placing every one of those trades, he wrote that he was unsure how it would turn out.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Self-Attribution",
+        "Overconfidence",
+        "Outcome",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "After the results were known, he rewrote his own history so that the gains look foreseeable and the losses look unavoidable. His own contemporaneous notes contradict that memory. Rewriting the past as predictable once outcomes are known is hindsight bias, and it blocks learning from mistakes."
+    },
+    {
+      "id": "hind-05",
+      "scenario": "After a regional bank fails, a financial journalist writes that regulators 'should have obviously seen the warning signs.' At the time, analyst reports had been nearly unanimous that the bank was sound. Many readers agree, and some say they would have spotted the trouble too, which makes them more eager to predict the next crisis.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Outcome",
+        "Overconfidence",
+        "Availability",
+        "Self-Attribution"
+      ],
+      "explanation": "Once the failure is known, it appears to have been predictable all along, which inflates confidence in one's ability to forecast future events. This is hindsight bias, as with accounts of the late-1990s tech bubble or the 2000s housing bubble that look 'obvious' in retrospect."
+    },
+    {
+      "id": "hind-06",
+      "scenario": "After a bond issuer defaults, the investment board says the warning signs were obvious and that the analyst 'should have known.' At the time of purchase, all three rating agencies rated the bonds investment grade and most peers held them too.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Outcome",
+        "Conservatism",
+        "Self-Attribution",
+        "Overconfidence"
+      ],
+      "explanation": "Once the default is known, it seems it was predictable, so the board overstates what could have been foreseen. That is hindsight bias. Outcome bias would be judging the analyst's decision by its result; hindsight is the belief that the result was foreseeable."
+    },
+    {
+      "id": "hind-07",
+      "scenario": "Ten years after he turned down a start-up that later became a unicorn, a venture investor says it was 'obvious from the first pitch.' His own memo at the time rated the company a 'pass' with only a modest chance of success.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Overconfidence",
+        "Self-Attribution",
+        "Cognitive Dissonance",
+        "Outcome"
+      ],
+      "explanation": "Knowing the outcome changes his memory of what he thought was likely, so he claims he saw it coming. That is hindsight bias. The contradiction with his old memo is the cue."
+    },
+    {
+      "id": "hind-08",
+      "scenario": "In a study, one group of students is told that a stock rose 30% last year and asked what probability they would have given to that outcome beforehand; they say about 70%. A control group that is not told the result estimates about 35%.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Availability",
+        "Recency",
+        "Framing"
+      ],
+      "explanation": "Knowing the result makes it seem more predictable, so the informed group says it would have forecast a higher probability. That is hindsight bias."
+    },
+    {
+      "id": "hind-09",
+      "scenario": "The day after an election surprise moves the markets, a strategist tells viewers that the result was 'completely predictable.' His published note the day before gave the opposite outcome a 70% chance.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Overconfidence",
+        "Self-Attribution",
+        "Cognitive Dissonance",
+        "Confirmation"
+      ],
+      "explanation": "Once the outcome is known, he sees it as having been predictable and ignores what he actually forecast. That is hindsight bias."
+    },
+    {
+      "id": "hind-10",
+      "scenario": "A retail investor rereads his notes a year after buying a stock that then doubled. He is surprised to find that he rated its odds of rising at only 55%, because he remembers having been sure that it would go up.",
+      "answer": "Hindsight",
+      "distractors": [
+        "Cognitive Dissonance",
+        "Overconfidence",
+        "Conservatism",
+        "Self-Attribution"
+      ],
+      "explanation": "His memory of his earlier certainty is distorted by knowing the result: he believes that he knew all along. That is hindsight bias. The written notes provide the evidence of what he actually thought."
+    },
+    {
+      "id": "ma-01",
+      "scenario": "A man wins $3,000 at a casino and immediately spends it on a luxury watch and puts the rest into a speculative penny stock. He would never spend or risk $3,000 of his salary that way, but says the winnings 'aren't really real money.'",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Overconfidence",
+        "Loss Aversion",
+        "Self-Control",
+        "Framing"
+      ],
+      "explanation": "He assigns the casino windfall to a separate 'found money' bucket and treats it differently from earned income, even though a dollar is a dollar regardless of its source. That is mental accounting, as in Thaler's experiment where people gambled a windfall far more readily."
+    },
+    {
+      "id": "ma-02",
+      "scenario": "A retiree insists on living only off the dividends his portfolio pays and never touching 'principal.' He keeps a high-yield stock that pays 9% but has been steadily losing value, rather than selling a bit of a growth fund that has appreciated, because he regards dividends as income and capital gains as untouchable.",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Loss Aversion",
+        "Self-Control",
+        "Status Quo",
+        "Regret Aversion"
+      ],
+      "explanation": "He keeps 'income' and 'principal' in separate mental buckets and prefers a dollar of dividends over an equal dollar of capital appreciation, even at the cost of principal. Treating equal dollars differently depending on their label is mental accounting."
+    },
+    {
+      "id": "ma-03",
+      "scenario": "A couple keeps three separate portfolios for retirement, college and a vacation home. In each portfolio they hold an aggressive technology fund, and they never look at the three together. In total, about 70% of their wealth is tied to technology, which they never realized.",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Framing",
+        "Overconfidence",
+        "Availability",
+        "Status Quo"
+      ],
+      "explanation": "They build each goal as an isolated bucket and ignore how the buckets correlate, which produces an inefficient total portfolio. It is the total portfolio return and risk that matter. Managing money in separate mental buckets without regard to the whole is mental accounting. (Narrow framing is related but the cue here is goal-based buckets.)"
+    },
+    {
+      "id": "ma-04",
+      "scenario": "At a charity auction for courtside basketball seats, bidders who pay by credit card bid nearly twice as much as bidders who pay in cash for the identical seats.",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Framing",
+        "Endowment",
+        "Self-Control",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "Credit-card money and cash sit in different mental accounts, so the same tickets feel cheaper when paid for with 'plastic.' This result from Prelec and Simester's auction is a demonstration of mental accounting: money is fungible, but people treat it as if it were not."
+    },
+    {
+      "id": "ma-05",
+      "scenario": "After a great year in the market, a young investor puts all of his year's gains into a speculative small-cap fund, saying, 'This is the market's money, not mine.' He has never put any of the money from his paycheck into anything speculative.",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Overconfidence",
+        "Recency",
+        "Self-Attribution",
+        "Loss Aversion"
+      ],
+      "explanation": "He treats recent gains as 'house money' in a separate account and takes more risk with it than he would with the same dollars from his salary. This house-money effect, in which people gamble more with recent winnings, is a form of mental accounting."
+    },
+    {
+      "id": "ma-06",
+      "scenario": "A family receives a $3,000 tax refund and spends it on a vacation, while carrying a credit card balance at 22% interest. The husband says they would never have spent $3,000 out of their savings on a trip.",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Self-Control",
+        "Framing",
+        "Loss Aversion",
+        "Regret Aversion"
+      ],
+      "explanation": "They treat the refund as 'bonus money' and spend it freely, while treating savings as untouchable, even though money is fungible. That is mental accounting. Self-control problems could play a part, but the key cue is the different treatment by source."
+    },
+    {
+      "id": "ma-07",
+      "scenario": "An investor keeps a $50,000 emergency fund in a savings account paying 0.5% while borrowing $15,000 at 9% for a car. He says the emergency money is 'untouchable.'",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Status Quo",
+        "Regret Aversion",
+        "Loss Aversion",
+        "Self-Control"
+      ],
+      "explanation": "He places the money in a separate mental bucket and will not use it, even though using it would save interest. Treating money differently by purpose is mental accounting."
+    },
+    {
+      "id": "ma-08",
+      "scenario": "A woman who lost a $50 theater ticket refuses to buy another, while a man who lost a $50 bill on the way to the theater does buy a ticket. Both are out the same $50.",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Framing",
+        "Loss Aversion",
+        "Regret Aversion",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "The ticket is charged to the 'theater' account, so buying another feels like paying twice, while the lost cash comes from a general account. This is the classic mental accounting example."
+    },
+    {
+      "id": "ma-09",
+      "scenario": "A woman is given a $200 gift card and buys a $200 coat. She says, 'I'd never spend $200 of my own money on a coat.'",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Endowment",
+        "Framing",
+        "Self-Control",
+        "Affinity"
+      ],
+      "explanation": "She treats gift-card money differently from cash even though both are equally spendable. Assigning money to a category based on its source is mental accounting."
+    },
+    {
+      "id": "ma-10",
+      "scenario": "An investor divides his money into a 'safe' layer of bonds and a 'get rich' layer of lottery-like stocks. He manages each layer by its own goal and never looks at how they combine, so his overall risk is much higher than he thinks.",
+      "answer": "Mental Accounting",
+      "distractors": [
+        "Framing",
+        "Self-Control",
+        "Overconfidence",
+        "Loss Aversion"
+      ],
+      "explanation": "He sorts money into buckets by purpose and treats them separately rather than managing a single portfolio. That is mental accounting. Narrow framing is related, but the cue here is separate accounts for separate goals."
+    },
+    {
+      "id": "anch-01",
+      "scenario": "Alice's stock peaked at $20 last year and now trades at $15. After her own research confirms that the company has serious accounting problems, she still refuses to sell until it gets back to $20.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Loss Aversion",
+        "Cognitive Dissonance",
+        "Conservatism",
+        "Endowment"
+      ],
+      "explanation": "Her thinking is fixed on a past reference price ($20) and she makes insufficient adjustment even though the new facts warrant a much lower valuation. Letting an irrelevant reference point override sound research is anchoring and adjustment."
+    },
+    {
+      "id": "anch-02",
+      "scenario": "Two groups of professional real-estate appraisers tour the same house and receive the same information packet. One group is given a higher listing price and the other a lower one. The group given the higher listing price appraises the property about 10% higher.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Framing",
+        "Availability",
+        "Representativeness",
+        "Confirmation"
+      ],
+      "explanation": "The listing price served as a starting reference point, and even experts adjusted too little away from it. This is the finding of Northcraft and Neale's real-estate study and is the textbook example of anchoring and adjustment."
+    },
+    {
+      "id": "anch-03",
+      "scenario": "An analyst's earnings forecast for a company was $2.00 per share last quarter. The company then announces a major acquisition and a large lawsuit settlement that should cut earnings to roughly $1.20. The analyst revises his estimate only to $1.85, saying he wants to 'stay near our prior number.'",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Conservatism",
+        "Recency",
+        "Outcome",
+        "Confirmation"
+      ],
+      "explanation": "He stays close to his previous estimate, which acts as a reference point, and adjusts far too little for the new information. Estimates sticking near earlier numbers is a hallmark of anchoring and adjustment (and is why analysts tend to underestimate earnings surprises)."
+    },
+    {
+      "id": "anch-04",
+      "scenario": "A portfolio manager still treats a once-dominant technology firm as a 'permanent blue chip' and values it using the premium multiple it earned a decade ago. In the meantime the firm's market share has collapsed and its growth has turned negative.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Conservatism",
+        "Affinity",
+        "Status Quo",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "He is fixed on the company's past reputation and past valuation multiple and does not adjust enough to the present facts. Anchoring to a past reputation (as investors did with IBM or with Japan in the 1980s) is a form of anchoring and adjustment."
+    },
+    {
+      "id": "anch-05",
+      "scenario": "The owner of a small business opens negotiations by naming an aggressively high price of $5 million before the buyers say anything. The buyers' counteroffers all cluster near that number, and they end up paying $4.1 million for a business that an independent valuation puts at about $3 million.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Framing",
+        "Overconfidence",
+        "Representativeness",
+        "Availability"
+      ],
+      "explanation": "The first number mentioned became the buyers' reference point, and they did not adjust enough away from it. Using an aggressive but plausible opening number to pull the other side's judgment toward it is deliberate anchoring."
+    },
+    {
+      "id": "anch-06",
+      "scenario": "An investor refuses to buy a stock at $55 because it came public at $30 and he feels the shares are 'expensive.' Since then, the company's earnings have tripled.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Conservatism",
+        "Recency",
+        "Representativeness",
+        "Framing"
+      ],
+      "explanation": "The IPO price remains his reference point, and he fails to adjust enough for the major change in fundamentals. That is anchoring and adjustment."
+    },
+    {
+      "id": "anch-07",
+      "scenario": "Two job candidates interview for the same role. One is told the previous holder earned $140,000 and asks for $145,000; the other is told $95,000 and asks for $100,000.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Framing",
+        "Availability",
+        "Representativeness",
+        "Overconfidence"
+      ],
+      "explanation": "Each candidate starts from the number he was given and adjusts only slightly from it, so the initial figure drives the final request. That is anchoring and adjustment."
+    },
+    {
+      "id": "anch-08",
+      "scenario": "In an experiment, participants watch a wheel of fortune stop on either 10 or 65 and are then asked to estimate the percentage of African countries in the United Nations. The median estimate is 25 in the first group and 45 in the second.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Availability",
+        "Representativeness",
+        "Framing",
+        "Illusion of Control"
+      ],
+      "explanation": "The random number shifts the estimates even though it has nothing to do with the question. People start from an initial value and adjust insufficiently, which is the anchoring-and-adjustment bias."
+    },
+    {
+      "id": "anch-09",
+      "scenario": "An analyst values a company by taking last year's earnings and multiplying them by a price-to-earnings ratio of 15, because that was the multiple it traded at in 2019. Interest rates and growth prospects have changed substantially since then.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Conservatism",
+        "Recency",
+        "Status Quo",
+        "Confirmation"
+      ],
+      "explanation": "A past multiple serves as the starting point, and he does not adjust enough for the changed conditions. That is anchoring and adjustment."
+    },
+    {
+      "id": "anch-10",
+      "scenario": "A shopper sees a coat marked 'was $400, now $199' and buys it, believing it is a bargain. The same coat normally sells elsewhere for around $180.",
+      "answer": "Anchoring and Adjustment",
+      "distractors": [
+        "Framing",
+        "Availability",
+        "Mental Accounting",
+        "Affinity"
+      ],
+      "explanation": "The $400 price sets the reference point against which $199 looks like a great deal. Relying on an initial number rather than on actual value is anchoring."
+    },
+    {
+      "id": "fr-01",
+      "scenario": "Two clients with $100,000 portfolios hear about the same two strategies. The first client is told that Strategy A 'will preserve $30,000 for sure,' while Strategy B has a one-in-three chance of preserving everything and a two-in-three chance of preserving nothing. She picks Strategy A. The second client is told that Strategy A means 'a certain loss of $70,000,' with the identical gamble as Strategy B. He picks Strategy B.",
+      "answer": "Framing",
+      "distractors": [
+        "Loss Aversion",
+        "Mental Accounting",
+        "Anchoring and Adjustment",
+        "Availability"
+      ],
+      "explanation": "The two descriptions are mathematically identical, yet the choices flip when the same facts are worded as gains versus losses. Responding differently to the same facts depending on presentation is framing bias, as in Kahneman and Tversky's 'Asian disease' experiment."
+    },
+    {
+      "id": "fr-02",
+      "scenario": "A fund company tests two brochures for the same fund. One says returns will 'typically fall between -12% and +12% in two years out of three.' The other says there is 'a 95% range of -24% to +24%.' Prospective clients who see the second brochure rate the fund as much riskier and are far less likely to buy it.",
+      "answer": "Framing",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Overconfidence",
+        "Loss Aversion",
+        "Availability"
+      ],
+      "explanation": "The underlying risk is the same, but presenting it as a wide, rare-event band versus a narrow, typical band changes how comfortable people feel. How a risk-tolerance question or return range is worded changing the answer is framing bias."
+    },
+    {
+      "id": "fr-03",
+      "scenario": "An investor with a diversified 30-year retirement plan panics when one holding falls 8% in a week and sells it, even though it is only 2% of his portfolio. He says he 'can't stand watching that one stock bleed' and does not look at what the total portfolio did.",
+      "answer": "Framing",
+      "distractors": [
+        "Loss Aversion",
+        "Recency",
+        "Availability",
+        "Mental Accounting"
+      ],
+      "explanation": "He evaluates one small piece of his portfolio in isolation instead of in the context of the whole portfolio and his long-term goal. That is narrow framing, a form of framing bias."
+    },
+    {
+      "id": "fr-04",
+      "scenario": "A bank advertises a savings product as having 'a 90% chance your principal is protected.' Sales jump by about 25% compared with the identical product described elsewhere as having 'a 10% chance you could lose money.'",
+      "answer": "Framing",
+      "distractors": [
+        "Loss Aversion",
+        "Anchoring and Adjustment",
+        "Availability",
+        "Representativeness"
+      ],
+      "explanation": "The two statements describe exactly the same odds, but positively and negatively worded descriptions lead to different decisions. That is framing bias."
+    },
+    {
+      "id": "fr-05",
+      "scenario": "A retirement plan sponsor tries two labels for the same feature. When the plan is described as carrying 'a 5% penalty if you withdraw early,' enrollment is lower than when the identical plan is described as offering 'a 5% bonus if you leave the money untouched.'",
+      "answer": "Framing",
+      "distractors": [
+        "Status Quo",
+        "Loss Aversion",
+        "Self-Control",
+        "Mental Accounting"
+      ],
+      "explanation": "The economics are the same, but wording the feature as a penalty (a loss) versus a bonus (a gain) changes behavior. Different reactions to the same facts depending on how they are presented is framing bias."
+    },
+    {
+      "id": "fr-06",
+      "scenario": "A treasurer is offered two choices. Option A: keep $200,000 of a $600,000 portfolio for sure, or option B: a one-third chance of keeping all of it. In another version: option C: lose $400,000 for sure, or option D: a two-thirds chance of losing everything. Most choose A in the first version and D in the second, although the choices are identical.",
+      "answer": "Framing",
+      "distractors": [
+        "Loss Aversion",
+        "Mental Accounting",
+        "Regret Aversion",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "The same outcomes are described as keeping versus losing, and the choice flips with the wording. That is framing. Loss aversion explains why the losses feel bad, but the cue is the reversal for identical options."
+    },
+    {
+      "id": "fr-07",
+      "scenario": "Two groups of employees receive the same retirement projection. One is told, 'Your account will support $2,000 a month,' and says it is on track. The other is told, 'Your account will run out at age 85,' and raises its contributions.",
+      "answer": "Framing",
+      "distractors": [
+        "Mental Accounting",
+        "Availability",
+        "Recency",
+        "Loss Aversion"
+      ],
+      "explanation": "The facts are the same, but the presentation changes the reaction. That is framing."
+    },
+    {
+      "id": "fr-08",
+      "scenario": "A manager rejects a favorable bet, with an even chance of losing $10,000 or winning $15,000, when he evaluates it alone. When he is shown the combined payoff of the ten such independent bets he faces in a year, he accepts all of them.",
+      "answer": "Framing",
+      "distractors": [
+        "Loss Aversion",
+        "Mental Accounting",
+        "Regret Aversion",
+        "Overconfidence"
+      ],
+      "explanation": "Looking at each bet in isolation makes it seem unattractive, while viewing the whole set changes the decision. Evaluating a piece of a decision in isolation is narrow framing."
+    },
+    {
+      "id": "fr-09",
+      "scenario": "A gas station charges $3.50 per gallon for credit and gives a $0.10 discount for cash. Customers react far less negatively than at a station that charges $3.40 per gallon for cash and adds a $0.10 surcharge for credit.",
+      "answer": "Framing",
+      "distractors": [
+        "Loss Aversion",
+        "Anchoring and Adjustment",
+        "Mental Accounting",
+        "Status Quo"
+      ],
+      "explanation": "The prices are identical but the surcharge is presented as a loss and the discount as a gain. The differing reactions to the same facts are the result of framing."
+    },
+    {
+      "id": "fr-10",
+      "scenario": "Retirees who are shown an annuity described as a guaranteed monthly income for life show far more interest than retirees who are shown the same annuity described as an investment that loses money if they die early.",
+      "answer": "Framing",
+      "distractors": [
+        "Mental Accounting",
+        "Loss Aversion",
+        "Availability",
+        "Conservatism"
+      ],
+      "explanation": "No new information is added; only the description changes, and with it the appeal. That is framing."
+    },
+    {
+      "id": "av-01",
+      "scenario": "An investor choosing a mutual fund family picks the one whose television commercials he has seen constantly for months. He ignores several lower-profile fund families that have better long-term records and lower fees.",
+      "answer": "Availability",
+      "distractors": [
+        "Affinity",
+        "Recency",
+        "Representativeness",
+        "Overconfidence"
+      ],
+      "explanation": "The heavily advertised fund family comes to mind more easily, so it feels more valid, even though ease of recall says nothing about quality. This is availability bias (the 'retrievability' type)."
+    },
+    {
+      "id": "av-02",
+      "scenario": "A U.S. investor keeps 90% of his equity in American companies. He explains that when he thinks of 'great companies,' the ones that come to mind are all American, though well over half of global equity market value is outside the U.S.",
+      "answer": "Availability",
+      "distractors": [
+        "Affinity",
+        "Status Quo",
+        "Overconfidence",
+        "Confirmation"
+      ],
+      "explanation": "His mental category of 'good investment' is filled with domestic names that are easiest to recall, so he overweights them. This is the 'categorization' form of availability bias. Affinity bias would involve patriotism or loyalty; here the stated reason is simply what comes to mind first."
+    },
+    {
+      "id": "av-03",
+      "scenario": "A software engineer in Silicon Valley tells his advisor that 'most industries make people rich from stock options,' because nearly everyone he knows has done well from tech equity. He assumes that other sectors offer similarly spectacular outcomes.",
+      "answer": "Availability",
+      "distractors": [
+        "Representativeness",
+        "Overconfidence",
+        "Affinity",
+        "Confirmation"
+      ],
+      "explanation": "He judges how common good outcomes are from examples drawn from his own narrow circle, which is not representative of the broader economy. Overestimating outcomes that are common in your own personal or professional circle is availability bias (the 'narrow range of experience' type)."
+    },
+    {
+      "id": "av-04",
+      "scenario": "Individual investors pile into stocks that had extreme one-day gains, unusually heavy trading volume or lots of financial-television coverage. On average, those attention-grabbing stocks go on to underperform the market over the following year or two.",
+      "answer": "Availability",
+      "distractors": [
+        "Recency",
+        "Overconfidence",
+        "Representativeness",
+        "Confirmation"
+      ],
+      "explanation": "Stocks that are in the news are easy to recall, so they seem like better opportunities than the thousands of quiet stocks. Odean and Barber's research on investors buying attention-grabbing stocks illustrates availability bias."
+    },
+    {
+      "id": "av-05",
+      "scenario": "After reading several vivid stories about people losing their savings to online scams, an investor pulls his money out of a federally insured online bank and keeps cash in a drawer at home. He does not look up how rare such losses are, or how common burglaries and fires are.",
+      "answer": "Availability",
+      "distractors": [
+        "Recency",
+        "Loss Aversion",
+        "Regret Aversion",
+        "Framing"
+      ],
+      "explanation": "Vivid, emotionally memorable stories make the scam risk feel far more likely than the statistics support. Judging likelihood by how easily examples come to mind, instead of by actual frequency, is availability bias."
+    },
+    {
+      "id": "av-06",
+      "scenario": "After a heavily covered plane crash, many travelers decide to drive instead of fly, although the risk of death per mile is much higher on the road.",
+      "answer": "Availability",
+      "distractors": [
+        "Loss Aversion",
+        "Representativeness",
+        "Recency",
+        "Framing"
+      ],
+      "explanation": "The vivid, widely reported crash comes to mind easily, so its likelihood is overestimated. Judging probability by how easily examples come to mind is the availability bias."
+    },
+    {
+      "id": "av-07",
+      "scenario": "In a classic study, people are asked whether more English words begin with the letter K or have K as the third letter. Most say that more start with K, although the reverse is true.",
+      "answer": "Availability",
+      "distractors": [
+        "Representativeness",
+        "Anchoring and Adjustment",
+        "Framing",
+        "Conservatism"
+      ],
+      "explanation": "Words that start with K are easier to recall, so people judge them to be more common. Frequency is estimated by ease of recall, which is the availability bias."
+    },
+    {
+      "id": "av-08",
+      "scenario": "After seeing two patients with a rare disease in a single week, a physician orders the expensive test for the next several patients who have only vague symptoms.",
+      "answer": "Availability",
+      "distractors": [
+        "Representativeness",
+        "Recency",
+        "Confirmation",
+        "Overconfidence"
+      ],
+      "explanation": "The recent, memorable cases make the disease seem more common than it is. That is availability."
+    },
+    {
+      "id": "av-09",
+      "scenario": "Participants at a seminar on the 1929 crash are asked to estimate the chance of a stock market crash in the next year. Their estimates are much higher after the seminar than before it.",
+      "answer": "Availability",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Recency",
+        "Framing",
+        "Representativeness"
+      ],
+      "explanation": "The vivid stories make crashes easier to imagine, so people judge them to be more likely. That is the availability bias."
+    },
+    {
+      "id": "av-10",
+      "scenario": "A homeowner overestimates the chance that his house will burn after watching a documentary about house fires, while ignoring the far likelier risk of water damage to his basement.",
+      "answer": "Availability",
+      "distractors": [
+        "Framing",
+        "Representativeness",
+        "Overconfidence",
+        "Loss Aversion"
+      ],
+      "explanation": "The vivid documentary makes fires easier to picture, so he judges them more likely than the statistics indicate. That is availability."
+    },
+    {
+      "id": "sa-01",
+      "scenario": "During a long bull market, a novice earns 25% and tells his friends it proves his stock-picking talent; he quits his job to trade full time. When the market corrects and he loses 18%, he blames 'hedge fund manipulation' and 'bad central bank policy.'",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Overconfidence",
+        "Hindsight",
+        "Outcome",
+        "Illusion of Control"
+      ],
+      "explanation": "He credits his gains to his own skill and his losses to outside factors. Taking credit for success while blaming failure on others or on luck is self-attribution bias (self-enhancing plus self-protecting). It is the Wall Street adage: don't confuse brains with a bull market."
+    },
+    {
+      "id": "sa-02",
+      "scenario": "A long-serving executive credits her own leadership for her company's stock tripling and keeps about 70% of her wealth in it. When the share price later drops by half, she blames the economy and 'short sellers.'",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Overconfidence",
+        "Illusion of Control",
+        "Affinity",
+        "Status Quo"
+      ],
+      "explanation": "She credits the stock's rise to her personal contribution and blames its fall on external forces, which leads to a concentrated, underdiversified position. Attributing good outcomes to oneself and bad outcomes to others is self-attribution bias."
+    },
+    {
+      "id": "sa-03",
+      "scenario": "A new trader's first two years are profitable in a rising market. He attributes all of it to his analysis, concludes he has a special talent, and starts trading three times as often. His returns decline, which he puts down to 'unusual market conditions.'",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Overconfidence",
+        "Recency",
+        "Illusion of Control",
+        "Representativeness"
+      ],
+      "explanation": "Early success is credited to his own skill, which then drives excessive trading, as in the Gervais and Odean model of self-attribution leading to overconfidence. The key mistake is the way he assigns credit for results (skill for wins, conditions for losses)."
+    },
+    {
+      "id": "sa-04",
+      "scenario": "In the annual letter to investors, a fund manager writes that his fund's outperformance this year came from his 'rigorous and differentiated process.' The following year, when the fund lags the index, his letter explains that 'the market was irrational and nobody could have done better.'",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Outcome",
+        "Hindsight",
+        "Cognitive Dissonance",
+        "Overconfidence"
+      ],
+      "explanation": "He explains good results as his own doing and poor results as the fault of the market. This asymmetric credit assignment is self-attribution bias, and it prevents him from learning from his mistakes."
+    },
+    {
+      "id": "sa-05",
+      "scenario": "At a client review, an advisor explains that three clients with big gains reflect his 'unique asset-allocation insight.' Three other clients lost money, and he attributes those losses to 'unlucky timing' and 'client interference,' declining to look at his own recommendations.",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Outcome",
+        "Overconfidence",
+        "Illusion of Control",
+        "Confirmation"
+      ],
+      "explanation": "He takes credit for the good results and blames outside factors for the bad ones. Crediting successes to skill and failures to external causes is self-attribution bias, and it blocks honest post-analysis."
+    },
+    {
+      "id": "sa-06",
+      "scenario": "A study of online investors finds that after a run of profitable trades, they trade more often and take more risk. Yet most of those gains came from a rising market rather than from the quality of their trades.",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Overconfidence",
+        "Recency",
+        "Illusion of Control",
+        "Hindsight"
+      ],
+      "explanation": "The investors credit their own skill for gains that largely reflect the market, and that belief makes them bolder. Attributing success to yourself rather than to circumstances is self-attribution. Overconfidence is the result, but the cue is how they explain the outcome."
+    },
+    {
+      "id": "sa-07",
+      "scenario": "A start-up founder tells reporters that his company's first funding round succeeded because of his vision and relentless execution. When the next round collapses, he blames 'a frozen venture-capital market' and says that no founder could have raised money that quarter.",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Outcome",
+        "Cognitive Dissonance",
+        "Hindsight",
+        "Conservatism"
+      ],
+      "explanation": "He claims the success as his own and assigns the failure to outside forces. That asymmetric attribution is the hallmark of self-attribution bias. Outcome bias would be judging the decision quality by the result, which is not the point here."
+    },
+    {
+      "id": "sa-08",
+      "scenario": "A day trader keeps a journal. He labels his winning trades 'skill: read the tape correctly,' and his losing trades 'market-maker manipulation' or 'bad luck.' After a year, his journal contains almost no losses that he attributes to his own mistakes.",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Cognitive Dissonance",
+        "Hindsight",
+        "Illusion of Control",
+        "Outcome"
+      ],
+      "explanation": "He assigns wins to ability and losses to external causes, so he never learns from his errors. That is self-attribution. Cognitive dissonance would involve distress over a contradicted decision and rationalization, not a routine split between skill and luck."
+    },
+    {
+      "id": "sa-09",
+      "scenario": "In an investment club of eight friends, each member proposes stocks. When a pick does well, its proposer says, 'My research paid off.' When a pick falls, the same person says, 'The group talked me into it.'",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Overconfidence",
+        "Affinity",
+        "Regret Aversion",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "Success is claimed as personal skill and failure is pinned on others. That is self-attribution. Regret aversion would be avoiding action to prevent future regret, not shifting blame after the fact."
+    },
+    {
+      "id": "sa-10",
+      "scenario": "A real-estate flipper sells six renovated houses at a profit in a hot market and credits his 'eye for design.' When the market cools and two houses lose money, he blames the rise in interest rates, and takes on even more borrowed money for his next project.",
+      "answer": "Self-Attribution",
+      "distractors": [
+        "Overconfidence",
+        "Recency",
+        "Illusion of Control",
+        "Outcome"
+      ],
+      "explanation": "He explains the gains as his own skill and the losses as bad luck, which lets him keep raising his risk. That pattern is self-attribution. Recency bias would be extrapolating the hot market forward, rather than explaining results in a self-serving way."
+    },
+    {
+      "id": "out-01",
+      "scenario": "An investment committee hires a manager because her fund returned 32% last year. No one asks how she got those returns, which came from a single concentrated bet on one sector that happened to pay off.",
+      "answer": "Outcome",
+      "distractors": [
+        "Recency",
+        "Representativeness",
+        "Overconfidence",
+        "Hindsight"
+      ],
+      "explanation": "The committee judges her decision-making by the result alone and never examines the process, such as concentration or risk taken. Evaluating a decision by its outcome rather than by the quality of the process at the time is outcome bias."
+    },
+    {
+      "id": "out-02",
+      "scenario": "A client fires a manager whose disciplined, diversified process has underperformed for two years because his investing style is temporarily out of favor. The client never examines the manager's process, positions or risk measures.",
+      "answer": "Outcome",
+      "distractors": [
+        "Recency",
+        "Loss Aversion",
+        "Hindsight",
+        "Representativeness"
+      ],
+      "explanation": "A sound process can have a rough one-to-three-year stretch purely from bad luck. Rejecting a manager based only on the poor result, without evaluating how decisions were made, is outcome bias."
+    },
+    {
+      "id": "out-03",
+      "scenario": "An investor puts a third of his savings into gold at an extreme valuation, and then gold rallies. He declares it a brilliant decision and now recommends it to everyone, though he never analyzed whether the price was justified when he bought.",
+      "answer": "Outcome",
+      "distractors": [
+        "Hindsight",
+        "Self-Attribution",
+        "Recency",
+        "Overconfidence"
+      ],
+      "explanation": "He judges the quality of the decision purely by the good result and ignores that the process (buying at an extreme valuation with no analysis) was poor. Chasing an asset because recent price action looks good and rating the decision by its outcome is outcome bias."
+    },
+    {
+      "id": "out-04",
+      "scenario": "Two advisors each skip the same compliance check before executing a trade. In one case the client loses $500,000, and in the other the loss is only $5,000. A review board judges the first advisor's decision far more harshly, even though the careless act was identical.",
+      "answer": "Outcome",
+      "distractors": [
+        "Hindsight",
+        "Framing",
+        "Loss Aversion",
+        "Availability"
+      ],
+      "explanation": "The board's judgment tracks how bad the result was rather than the quality of the decision, which was the same in both cases. As in Walster's finding that blame increases with the severity of harm, this is outcome bias."
+    },
+    {
+      "id": "out-05",
+      "scenario": "The press calls a hedge fund 'genius' after a risky leveraged bet pays off. The next year, the fund makes the same kind of bet using the same analysis, and it loses. The press now calls the fund 'reckless,' though nothing about the decision process had changed.",
+      "answer": "Outcome",
+      "distractors": [
+        "Hindsight",
+        "Recency",
+        "Self-Attribution",
+        "Framing"
+      ],
+      "explanation": "The same process is praised when it works and condemned when it fails, so the verdict follows the result rather than the quality of the decision. That is outcome bias."
+    },
+    {
+      "id": "out-06",
+      "scenario": "A man puts his rent money into penny stocks and wins 10 times his stake. His friends call him a 'great investor' and start copying his approach, although none of them has asked how he picked the stocks.",
+      "answer": "Outcome",
+      "distractors": [
+        "Hindsight",
+        "Self-Attribution",
+        "Recency",
+        "Representativeness"
+      ],
+      "explanation": "The friends judge the quality of his decision by how it turned out and ignore the reckless process behind it. That is outcome bias. Hindsight bias would be believing that the result had been predictable."
+    },
+    {
+      "id": "out-07",
+      "scenario": "A hospital board fires a surgeon after a rare complication in a routine procedure. The surgeon followed protocol, and the procedure has a 98% success rate, but the board says, 'The result speaks for itself.'",
+      "answer": "Outcome",
+      "distractors": [
+        "Hindsight",
+        "Loss Aversion",
+        "Representativeness",
+        "Recency"
+      ],
+      "explanation": "The board judges the decision by the bad result rather than by the quality of the decision-making at the time. That is outcome bias. Hindsight bias would be saying the complication should have been foreseen."
+    },
+    {
+      "id": "out-08",
+      "scenario": "A bank's risk committee promotes a trader who earned 40% in a year while breaching his risk limits 12 times. A colleague who stayed within limits and earned 8% is overlooked.",
+      "answer": "Outcome",
+      "distractors": [
+        "Self-Attribution",
+        "Recency",
+        "Cognitive Dissonance",
+        "Hindsight"
+      ],
+      "explanation": "The committee rewards the result and ignores the reckless process that produced it. That is outcome bias, the same trap that Montier and others describe in the evaluation of money managers. Recency bias would be about overweighting the latest data."
+    },
+    {
+      "id": "out-09",
+      "scenario": "A poker player gets all his chips in as an 85% favorite and loses the hand. He concludes that his play was a mistake and changes his strategy.",
+      "answer": "Outcome",
+      "distractors": [
+        "Loss Aversion",
+        "Hindsight",
+        "Regret Aversion",
+        "Conservatism"
+      ],
+      "explanation": "He judges a sound decision by a bad result that was simply part of the 15%. That is outcome bias. Regret aversion would be avoiding future decisions to prevent regret, not misjudging the quality of the past one."
+    },
+    {
+      "id": "out-10",
+      "scenario": "A traveler who skipped insurance on a 60-day trip and had no problems says he was wise to save the money. His friend, who bought insurance and also had no problems, says he wasted his money.",
+      "answer": "Outcome",
+      "distractors": [
+        "Regret Aversion",
+        "Hindsight",
+        "Loss Aversion",
+        "Mental Accounting"
+      ],
+      "explanation": "Both judge the decision by how it turned out, rather than by the information and the risk at the time. That is outcome bias. Regret aversion would be about anticipating future regret when choosing."
+    },
+    {
+      "id": "rec-01",
+      "scenario": "A stock fund has returned about 25% a year for the last three years. An investor projects 25% a year for the next ten, moves most of his savings into it, and never looks at how equity returns have behaved over longer periods.",
+      "answer": "Recency",
+      "distractors": [
+        "Representativeness",
+        "Anchoring and Adjustment",
+        "Overconfidence",
+        "Availability"
+      ],
+      "explanation": "He forecasts the future by extrapolating a short recent run instead of using long-run statistics, which tends to mean buying near a peak. Overweighting recent data relative to older data is recency bias."
+    },
+    {
+      "id": "rec-02",
+      "scenario": "In 1999, after technology funds have soared for four straight years, a client tells his advisor, 'It's different this time. Valuations don't matter anymore.' He sells his diversified holdings and buys only technology funds.",
+      "answer": "Recency",
+      "distractors": [
+        "Overconfidence",
+        "Availability",
+        "Representativeness",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "A few recent years of exceptional performance dominate his thinking and convince him that old valuation rules no longer apply. 'It's different this time' reasoning, driven by recent performance, is closely tied to recency bias, and it undermines diversification."
+    },
+    {
+      "id": "rec-03",
+      "scenario": "An investment committee reviewing its target allocation notes that emerging-market equities were last year's best-performing asset class. It votes to double that allocation by cutting bonds, even though its long-term plan and the clients' goals have not changed.",
+      "answer": "Recency",
+      "distractors": [
+        "Representativeness",
+        "Availability",
+        "Outcome",
+        "Framing"
+      ],
+      "explanation": "Whatever asset class has just done well feels disproportionately attractive, so the committee chases the most recent performance. Making the 'hot' asset class look better than it is, and neglecting diversification and rebalancing discipline, is recency bias. The 'periodic table of returns' is a classic cure."
+    },
+    {
+      "id": "rec-04",
+      "scenario": "A survey at the end of a ten-year bull market finds that investors expect 15% annual stock returns. After a bear market, the same investors expect only 2%. The long-run average real return is about 7%, and nothing about the long-term fundamentals changed.",
+      "answer": "Recency",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Overconfidence",
+        "Framing",
+        "Hindsight"
+      ],
+      "explanation": "Their expectations swing with the most recent decade of returns instead of staying near the long-run average. In Montier's model, a recency-driven emphasis on trailing returns (blended with a rational anchor) produces exuberance in booms and pessimism in busts. That is recency bias."
+    },
+    {
+      "id": "rec-05",
+      "scenario": "While reviewing a manager's five-year record, a committee member recalls mainly the last two quarters, which were poor. She recommends dismissal even though the manager had three strong years before that and outperformed over the full period.",
+      "answer": "Recency",
+      "distractors": [
+        "Outcome",
+        "Availability",
+        "Loss Aversion",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "The most recent information is still fresh in short-term memory and is overweighted relative to the older data. Giving too much weight to recent events when making judgments is recency bias."
+    },
+    {
+      "id": "rec-06",
+      "scenario": "A review of fund flows shows that investors pour money into the funds that ranked at the top last year and withdraw from those that ranked at the bottom, although last year's ranking has little relation to the next year's.",
+      "answer": "Recency",
+      "distractors": [
+        "Representativeness",
+        "Affinity",
+        "Availability",
+        "Self-Attribution"
+      ],
+      "explanation": "Investors give too much weight to the latest year's results. That is recency bias. Representativeness would be reading a short record as proof of skill; the cue here is the dominance of the latest period."
+    },
+    {
+      "id": "rec-07",
+      "scenario": "A bond trader sets his next-quarter volatility forecast equal to the last two weeks' realized volatility, even though the ten-year average is less than half as large.",
+      "answer": "Recency",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Conservatism",
+        "Availability",
+        "Representativeness"
+      ],
+      "explanation": "He overweights the most recent data and neglects the long record. That is recency bias. Anchoring would be fixation on a specific reference number and failing to adjust away from it."
+    },
+    {
+      "id": "rec-08",
+      "scenario": "After three months of falling oil prices, an airline's CFO cancels the company's fuel hedges, expecting the decline to continue for the rest of the year. Fuel prices had risen sharply in each of the previous four years.",
+      "answer": "Recency",
+      "distractors": [
+        "Representativeness",
+        "Illusion of Control",
+        "Framing",
+        "Conservatism"
+      ],
+      "explanation": "A short recent run is projected into the future while the longer record is ignored. That is recency bias."
+    },
+    {
+      "id": "rec-09",
+      "scenario": "After a sharp four-week selloff, an investor with a 20-year horizon who planned to keep 70% in stocks moves down to 20%, saying that 'the market is broken.'",
+      "answer": "Recency",
+      "distractors": [
+        "Loss Aversion",
+        "Availability",
+        "Regret Aversion",
+        "Framing"
+      ],
+      "explanation": "A few weeks of data outweigh years of history and his own plan. That is recency bias. Loss aversion plays a part, but the cue is the focus on the latest events."
+    },
+    {
+      "id": "rec-10",
+      "scenario": "Analysts at a research firm cut their five-year earnings growth forecast for a company after it posts two weak quarters, to a level below that of the weakest decade in its history.",
+      "answer": "Recency",
+      "distractors": [
+        "Representativeness",
+        "Availability",
+        "Loss Aversion",
+        "Conservatism"
+      ],
+      "explanation": "Their long-term forecast follows the latest two quarters instead of the long record. That is recency bias. Conservatism would be the opposite error, adjusting too slowly after new data."
+    },
+    {
+      "id": "la-01",
+      "scenario": "An investor sells a stock that is up 20% 'before it gives the gain back,' but holds another stock that is down 30% 'until it gets back to even,' even though the second company's fundamentals have clearly deteriorated.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Regret Aversion",
+        "Cognitive Dissonance",
+        "Anchoring and Adjustment",
+        "Mental Accounting"
+      ],
+      "explanation": "Because a loss hurts about twice as much as an equal gain feels good, he locks in gains too early and holds losers too long, the pattern called the disposition effect ('get-even-itis'). That is loss aversion."
+    },
+    {
+      "id": "la-02",
+      "scenario": "A saver is offered a coin flip: win $120 or lose $100. The bet has a clearly positive expected value, but she turns it down, explaining that losing $100 would hurt her much more than winning $120 would please her.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Regret Aversion",
+        "Framing",
+        "Mental Accounting",
+        "Self-Control"
+      ],
+      "explanation": "Her pain from a loss is weighted much more heavily than the pleasure from a similar-sized gain, so she rejects a favorable bet. This asymmetry is the core finding of prospect theory and the definition of loss aversion."
+    },
+    {
+      "id": "la-03",
+      "scenario": "A pension trustee checks the fund's value every day and feels distress each time it dips. With a horizon of more than 25 years, he nonetheless shifts a large part of the portfolio from stocks to bonds, though equities have historically outperformed over such periods.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Recency",
+        "Framing",
+        "Regret Aversion",
+        "Availability"
+      ],
+      "explanation": "Frequent checking makes short-term losses visible, and the pain of those losses pushes him into safer assets despite a long horizon. This 'myopic loss aversion' (Benartzi and Thaler) is a form of loss aversion."
+    },
+    {
+      "id": "la-04",
+      "scenario": "A stock in an investor's portfolio is down 50% and the outlook is poor. When his advisor suggests selling, he says, 'It's only a paper loss until I sell. Locking it in feels worse than the chance of losing even more.'",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Cognitive Dissonance",
+        "Endowment",
+        "Status Quo",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "The pain of realizing a loss is greater than the fear of a larger future loss, so he is willing to gamble rather than accept a certain loss. Treating an unrealized loss as 'only on paper' is a rationalization of loss aversion."
+    },
+    {
+      "id": "la-05",
+      "scenario": "A trader who is down $40,000 for the year starts doubling his position sizes on risky bets to 'get back to even.' Earlier in the year, when he was ahead, he avoided exactly that kind of risk.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Overconfidence",
+        "Illusion of Control",
+        "Framing",
+        "Self-Control"
+      ],
+      "explanation": "Facing a loss makes people risk-seeking, while facing a gain makes them risk-averse, according to the S-shaped value function of prospect theory. Gambling to avoid locking in a loss is a manifestation of loss aversion."
+    },
+    {
+      "id": "la-06",
+      "scenario": "A customer pays far higher premiums for an auto policy with a $100 deductible than the expected extra claim payments are worth, rather than taking a $1,000 deductible plan.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Regret Aversion",
+        "Framing",
+        "Availability",
+        "Status Quo"
+      ],
+      "explanation": "Losses loom larger than equal gains, so he pays a premium to avoid even a small out-of-pocket loss. That is loss aversion. Regret aversion is a similar impulse, but the cue here is the weight put on potential losses."
+    },
+    {
+      "id": "la-07",
+      "scenario": "A study of home sellers finds that owners who would sell below what they paid set asking prices about 35% higher than comparable owners with no loss. Their homes take longer to sell.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Endowment",
+        "Overconfidence",
+        "Status Quo"
+      ],
+      "explanation": "Selling for less than the purchase price feels like a loss, so sellers hold out. That is loss aversion. Endowment bias is about valuing what you own, not about avoiding a realized loss."
+    },
+    {
+      "id": "la-08",
+      "scenario": "Professional golfers make putts for par, which avoids losing a stroke, more often than equally long putts for a birdie, which would be a gain. The difference appears at every distance.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Overconfidence",
+        "Framing",
+        "Mental Accounting",
+        "Self-Control"
+      ],
+      "explanation": "Golfers try harder to avoid the loss than to achieve an equal gain. That is loss aversion. Framing would require a change in how the same facts are presented."
+    },
+    {
+      "id": "la-09",
+      "scenario": "A retirement plan asks employees to raise their contributions by 3% immediately, and few agree, because take-home pay would shrink. When the plan instead takes the increase out of future raises, 78% sign up.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Self-Control",
+        "Status Quo",
+        "Framing",
+        "Mental Accounting"
+      ],
+      "explanation": "Seeing pay fall feels like a loss, while giving up part of a future raise does not. The difference is loss aversion. Self-control problems matter in saving, but the cue is the sensitivity to a visible cut in pay."
+    },
+    {
+      "id": "la-10",
+      "scenario": "A manager is offered a new job paying 20% more, but he would lose a corner office, a reserved parking spot and the team he leads. He declines, because the sting of what he would give up exceeds the pleasure of the raise.",
+      "answer": "Loss Aversion",
+      "distractors": [
+        "Status Quo",
+        "Endowment",
+        "Regret Aversion",
+        "Affinity"
+      ],
+      "explanation": "He weighs the loss of what he has more heavily than an equal gain. That is loss aversion. Status quo bias would be simply preferring the current arrangement."
+    },
+    {
+      "id": "oc-01",
+      "scenario": "An investor is asked to give a range for the S&P 500 at year-end that he is 90% sure will contain the actual value. He answers with a band of just 1% either side of today's level, even though the index has typically moved by much more than that over a year.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Conservatism",
+        "Illusion of Control",
+        "Representativeness"
+      ],
+      "explanation": "His confidence interval is far too narrow for the real volatility of the market, which is prediction overconfidence (as in the Clarke and Statman survey). Anchoring would involve being pulled toward a specific number; the issue here is unwarranted certainty in the forecast range."
+    },
+    {
+      "id": "oc-02",
+      "scenario": "A study of brokerage households finds that the most active traders earn much lower returns than the least active ones, and that the stocks they sold went on to outperform the stocks they bought. Active traders say they trade often because they believe they have better information and insight than the market.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Illusion of Control",
+        "Self-Control",
+        "Loss Aversion",
+        "Regret Aversion"
+      ],
+      "explanation": "Believing you have an edge that others lack leads to excessive trading that destroys returns. Barber and Odean's study ('Trading is Hazardous to Your Wealth') shows it is driven by overconfidence. The cue is faith in one's own information and judgment, rather than a belief that one can control outcomes."
+    },
+    {
+      "id": "oc-03",
+      "scenario": "An investor tells his friends he is 'absolutely certain' that a pharmaceutical stock will rise. A tally of his past 'absolutely certain' calls shows that only three of the last five were right.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Self-Attribution",
+        "Confirmation",
+        "Hindsight",
+        "Illusion of Control"
+      ],
+      "explanation": "His level of certainty is higher than his actual accuracy. People who say they are '100% sure' are typically right only 70% to 80% of the time. This is certainty overconfidence."
+    },
+    {
+      "id": "oc-04",
+      "scenario": "A recently retired executive keeps most of his portfolio in his former employer's stock, saying he knows the business better than any analyst. He sees little downside, though the company's industry is under heavy pressure.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Affinity",
+        "Availability",
+        "Confirmation",
+        "Illusion of Control"
+      ],
+      "explanation": "He believes his insider-type knowledge is superior and underestimates the downside, which leaves his portfolio underdiversified. Excess faith in your own information and judgment is overconfidence bias, common among executives and long-tenured employees."
+    },
+    {
+      "id": "oc-05",
+      "scenario": "An investor is sure of his judgment and puts his entire house down-payment fund into a single stock. He puts his chance of being wrong at 'basically zero' and sees no need to hedge. His advisor shows him two years of his own trading history, in which his picks were right about half the time.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Illusion of Control",
+        "Confirmation",
+        "Recency",
+        "Regret Aversion"
+      ],
+      "explanation": "His certainty far exceeds his actual track record, and he underestimates downside risk, leaving him badly underdiversified. Reviewing actual records to compare confidence with accuracy is the standard remedy for overconfidence bias."
+    },
+    {
+      "id": "oc-06",
+      "scenario": "In a survey of fund managers, 74% rate their own job performance as above average.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Self-Attribution",
+        "Illusion of Control",
+        "Representativeness",
+        "Hindsight"
+      ],
+      "explanation": "By definition, only about half can be above average, so many managers are overrating themselves. That is overconfidence. Self-attribution is about how you explain outcomes after the fact, not about a general overestimate of your ability."
+    },
+    {
+      "id": "oc-07",
+      "scenario": "New restaurant owners are asked about the chances that their own restaurant will survive five years. They average 80%, but about 60% of new restaurants fail within that period.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Representativeness",
+        "Availability",
+        "Framing",
+        "Hindsight"
+      ],
+      "explanation": "They are far too sure of their own success compared with the base rate. That is overconfidence. Representativeness would be reasoning from a stereotype."
+    },
+    {
+      "id": "oc-08",
+      "scenario": "A physician owns only four stocks, all in health care. He says, 'I understand this industry better than any outsider,' and refuses to consider an index fund or any other sector.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Affinity",
+        "Availability",
+        "Illusion of Control",
+        "Confirmation"
+      ],
+      "explanation": "He overrates what he knows and takes concentrated risk because of it. That is overconfidence. Affinity bias would be choosing investments to express identity or loyalty, rather than from belief in an informational edge."
+    },
+    {
+      "id": "oc-09",
+      "scenario": "After completing an online course on options, a novice sells uncovered puts on margin. He says the course gave him 'an institutional-level edge' and that he understands the risk, though he cannot explain what would happen in a sharp selloff.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Illusion of Control",
+        "Representativeness",
+        "Self-Attribution",
+        "Hindsight"
+      ],
+      "explanation": "A little knowledge leaves him far more certain than is justified, and he takes dangerous risks as a result. That is overconfidence. Illusion of control would be believing he can influence the outcome itself."
+    },
+    {
+      "id": "oc-10",
+      "scenario": "A portfolio manager says that there is a 'near-zero' chance a favored stock will fall below $60. It falls to $41, and he calls himself 'just early.' His next forecast has an equally narrow range.",
+      "answer": "Overconfidence",
+      "distractors": [
+        "Conservatism",
+        "Cognitive Dissonance",
+        "Hindsight",
+        "Outcome"
+      ],
+      "explanation": "He gives ranges that are too narrow and does not widen them after being wrong. That is overconfidence. Conservatism would mean under-updating after new information."
+    },
+    {
+      "id": "sc-01",
+      "scenario": "A recent retiree withdraws 9% of his portfolio a year to pay for cruises and gifts to his grandchildren, even though he knows his plan sustainably supports about 4%. He says he 'deserves to enjoy it now' and will 'deal with it later.'",
+      "answer": "Self-Control",
+      "distractors": [
+        "Mental Accounting",
+        "Overconfidence",
+        "Status Quo",
+        "Regret Aversion"
+      ],
+      "explanation": "Present gratification wins over his long-term goal of lasting financial security, despite his knowing the plan's limits. Failing to act on long-term goals because of insufficient discipline in the moment is self-control bias."
+    },
+    {
+      "id": "sc-02",
+      "scenario": "Employees in a workplace survey say that they know they should save more for retirement but 'can't bring themselves to cut spending today.' Many say they would be willing to commit to higher contributions only out of future pay raises.",
+      "answer": "Self-Control",
+      "distractors": [
+        "Status Quo",
+        "Loss Aversion",
+        "Mental Accounting",
+        "Regret Aversion"
+      ],
+      "explanation": "They recognize the long-term benefit of saving but cannot give up current consumption. The conflict between present gratification and future benefit is self-control bias, which is why pre-commitment designs such as Thaler and Benartzi's 'Save More Tomorrow' work better than willpower."
+    },
+    {
+      "id": "sc-03",
+      "scenario": "A 40-year-old with a 25-year horizon holds 70% of his portfolio in high-yield, income-producing products, saying, 'I like having the cash flow to spend now.' His advisor points out that he needs more growth assets to outpace inflation before retirement.",
+      "answer": "Self-Control",
+      "distractors": [
+        "Mental Accounting",
+        "Regret Aversion",
+        "Status Quo",
+        "Loss Aversion"
+      ],
+      "explanation": "A 'spend-today' mentality skews his portfolio toward income at the expense of the long-term growth he needs. A portfolio heavily tilted to income because of a desire for current spending may reflect self-control bias rather than a real income need."
+    },
+    {
+      "id": "sc-04",
+      "scenario": "An investor keeps promising himself he will set up an automatic monthly investment, but every month the money goes on small purchases and dining out. After ten years of 'I'll start next month,' he has missed a decade of compounding.",
+      "answer": "Self-Control",
+      "distractors": [
+        "Status Quo",
+        "Regret Aversion",
+        "Overconfidence",
+        "Loss Aversion"
+      ],
+      "explanation": "He fails to act on his long-term goal because spending now is more gratifying, and so misses compounding and dollar-cost averaging. The remedy is 'paying yourself first' with automated, pre-committed savings, a classic response to self-control bias."
+    },
+    {
+      "id": "sc-05",
+      "scenario": "In a retirement survey, households that never sat down to plan for retirement had saved markedly less than those who did, held fewer stocks, and were far more likely to rate their expected retirement quality of life as poor.",
+      "answer": "Self-Control",
+      "distractors": [
+        "Status Quo",
+        "Overconfidence",
+        "Regret Aversion",
+        "Availability"
+      ],
+      "explanation": "Failing to plan and save for the future despite knowing it matters is the hallmark of self-control bias. Annamaria Lusardi's research found that non-planners save much less, own fewer stocks and rate their retirement outlook worse."
+    },
+    {
+      "id": "sc-06",
+      "scenario": "A man who tends to overspend on weekends has part of every paycheck moved into a locked retirement account, saying, 'I don't trust myself with cash.'",
+      "answer": "Self-Control",
+      "distractors": [
+        "Mental Accounting",
+        "Regret Aversion",
+        "Loss Aversion",
+        "Status Quo"
+      ],
+      "explanation": "He knows that his urge to spend now will beat his long-term goals, so he uses a commitment device. That is a self-control problem. Mental accounting would be about treating money differently by bucket, not about managing impulses."
+    },
+    {
+      "id": "sc-07",
+      "scenario": "A trader's plan is to invest for the long run, but he keeps day trading because of the thrill of quick wins. He admits to friends that it is costing him money.",
+      "answer": "Self-Control",
+      "distractors": [
+        "Illusion of Control",
+        "Recency",
+        "Regret Aversion",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "He knows what he should do, but present gratification wins over the long-term goal. That is a lack of self-control. Illusion of control would be thinking his trading skill beats chance, which he does not claim."
+    },
+    {
+      "id": "sc-08",
+      "scenario": "A healthy 62-year-old claims Social Security at the earliest age to fund travel now, although waiting would raise his benefit by about 8% a year and he has no pressing need for the money.",
+      "answer": "Self-Control",
+      "distractors": [
+        "Status Quo",
+        "Regret Aversion",
+        "Recency",
+        "Mental Accounting"
+      ],
+      "explanation": "He prefers immediate spending to a clearly larger later benefit. That is a self-control problem."
+    },
+    {
+      "id": "sc-09",
+      "scenario": "A lottery winner plans to save half of his $2 million prize, but each month he finds a reason to spend instead. Within three years the money is gone.",
+      "answer": "Self-Control",
+      "distractors": [
+        "Mental Accounting",
+        "Endowment",
+        "Illusion of Control",
+        "Outcome"
+      ],
+      "explanation": "He has a long-term plan, but present gratification keeps winning. That is a self-control problem. Mental accounting would apply if he treated the windfall differently from other money, but the cue is the failure to follow his own plan."
+    },
+    {
+      "id": "sc-10",
+      "scenario": "A graduate with $12,000 of credit card debt at 21% signs up for a store card to get 15% off a TV he cannot afford. He says he meant to cut his spending, but 'it's just so tempting.'",
+      "answer": "Self-Control",
+      "distractors": [
+        "Mental Accounting",
+        "Framing",
+        "Anchoring and Adjustment",
+        "Loss Aversion"
+      ],
+      "explanation": "He has the goal of cutting spending but cannot resist the immediate pleasure. That is a self-control problem. Framing would involve reacting to the presentation of the discount rather than to the temptation."
+    },
+    {
+      "id": "sq-01",
+      "scenario": "Two neighboring states reform their auto-insurance rules. In the state where drivers are defaulted into the more expensive plan with full litigation rights, about 70% keep it. In the other state, where drivers are defaulted into a cheaper plan with limited rights, about 80% keep that one.",
+      "answer": "Status Quo",
+      "distractors": [
+        "Framing",
+        "Endowment",
+        "Loss Aversion",
+        "Self-Control"
+      ],
+      "explanation": "What people ended up with tracked the default rather than any stable underlying preference, because people tend to prefer whatever maintains the current state of affairs. This New Jersey/Pennsylvania example is the classic illustration of status quo bias."
+    },
+    {
+      "id": "sq-02",
+      "scenario": "When an employee joined his company 12 years ago, his 401(k) was automatically invested in a money-market fund. His statements show he is earning less than inflation, and he admits a diversified target-date fund would be better. He has never changed the allocation, saying, 'It's fine as it is.'",
+      "answer": "Status Quo",
+      "distractors": [
+        "Self-Control",
+        "Conservatism",
+        "Loss Aversion",
+        "Endowment"
+      ],
+      "explanation": "He sticks with the default option regardless of whether an alternative would objectively be better. Preferring to leave things as they are is status quo bias, and it persists even though he knows the facts."
+    },
+    {
+      "id": "sq-03",
+      "scenario": "A client has paid the same advisory fee and held the same set of funds for fifteen years, though cheaper equivalent options now exist. When asked, he says he never compared them because switching is 'not worth thinking about' and his current arrangement is 'good enough.'",
+      "answer": "Status Quo",
+      "distractors": [
+        "Conservatism",
+        "Endowment",
+        "Self-Control",
+        "Regret Aversion"
+      ],
+      "explanation": "He keeps the current arrangement simply because it is the current arrangement, without any real evaluation of alternatives. A preference for maintaining the existing state of affairs, independent of whether a change would be better, is status quo bias."
+    },
+    {
+      "id": "sq-04",
+      "scenario": "A company changes its retirement plan from opt-in to automatic enrollment with an opt-out option. Participation jumps from about 40% to about 90%, although the plan's terms, contribution rates and investment choices are unchanged.",
+      "answer": "Status Quo",
+      "distractors": [
+        "Self-Control",
+        "Framing",
+        "Regret Aversion",
+        "Loss Aversion"
+      ],
+      "explanation": "Most people stay with whatever option is set as the default, so changing the default changes the outcome. That tendency to stick with the current state of affairs is status quo bias."
+    },
+    {
+      "id": "sq-05",
+      "scenario": "A widow has kept her late husband's portfolio exactly as he built it for fifteen years and has never rebalanced. The allocation is now too aggressive for her low risk tolerance and her need for income, but she says, 'I'd rather not touch it.' She has no strong attachment to any particular holding.",
+      "answer": "Status Quo",
+      "distractors": [
+        "Endowment",
+        "Regret Aversion",
+        "Affinity",
+        "Conservatism"
+      ],
+      "explanation": "She leaves the portfolio as it is even though it no longer fits her needs, and not because she values any particular holding. A preference for keeping things unchanged, regardless of whether a change would be better, is status quo bias."
+    },
+    {
+      "id": "sq-06",
+      "scenario": "Customers who have been with an auto insurer for six years pay about 20% more than new customers for the same coverage. Fewer than one in five of them ever shops around.",
+      "answer": "Status Quo",
+      "distractors": [
+        "Endowment",
+        "Affinity",
+        "Regret Aversion",
+        "Loss Aversion"
+      ],
+      "explanation": "They stay with the current policy by default even though switching would save money. That is status quo bias. Endowment bias would be valuing the policy more because they own it."
+    },
+    {
+      "id": "sq-07",
+      "scenario": "In an experiment, subjects choose among investment options. When one option is described as their current holding, a much larger share choose it than when the same option is presented as one of several new choices.",
+      "answer": "Status Quo",
+      "distractors": [
+        "Endowment",
+        "Anchoring and Adjustment",
+        "Regret Aversion",
+        "Affinity"
+      ],
+      "explanation": "The current holding is chosen mainly because it is the current state of affairs. That is status quo bias, as in Samuelson and Zeckhauser's studies. Endowment bias would be valuing it more because it is theirs."
+    },
+    {
+      "id": "sq-08",
+      "scenario": "In one country, citizens are organ donors unless they opt out, and about 90% are donors. In a neighboring country, citizens must opt in, and about 15% are donors.",
+      "answer": "Status Quo",
+      "distractors": [
+        "Framing",
+        "Regret Aversion",
+        "Self-Control",
+        "Affinity"
+      ],
+      "explanation": "People mostly stick with whichever default they are given. That is status quo bias. Framing would involve different descriptions of the same options rather than a different default."
+    },
+    {
+      "id": "sq-09",
+      "scenario": "A review of 1.2 million retirement-plan participants finds that about 80% made no change to their allocation over ten years, even though their ages and market conditions changed greatly.",
+      "answer": "Status Quo",
+      "distractors": [
+        "Self-Control",
+        "Regret Aversion",
+        "Conservatism",
+        "Recency"
+      ],
+      "explanation": "Participants leave their allocation as it is regardless of changing circumstances. That is status quo bias. Self-control problems could explain a failure to save, but here the pattern is inertia."
+    },
+    {
+      "id": "sq-10",
+      "scenario": "Each year a city council sets its budget at last year's level plus 2%, even for a program whose use has dropped by half over the last decade, because 'that's how the budget has always been done.'",
+      "answer": "Status Quo",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Conservatism",
+        "Regret Aversion",
+        "Endowment"
+      ],
+      "explanation": "The current arrangement continues simply because it is the current one. That is status quo bias. Anchoring would be fixation on a number given for a specific estimate."
+    },
+    {
+      "id": "end-01",
+      "scenario": "A client owns a stock that he would pay at most $38 for if he were buying it today, yet he refuses to sell it for less than $52. He cannot point to any news or fundamentals that would explain the gap.",
+      "answer": "Endowment",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Loss Aversion",
+        "Status Quo",
+        "Mental Accounting"
+      ],
+      "explanation": "The price he demands to give up the stock is far above the price he would pay to acquire it, simply because he owns it. That gap between willingness to accept and willingness to pay is the endowment effect."
+    },
+    {
+      "id": "end-02",
+      "scenario": "In an experiment, half the participants are given a coffee mug and half are given a candy bar. Before being given anything, the group split roughly 50/50 on which item they preferred. Afterward, about 90% of each group refuse to swap what they were given for the other item.",
+      "answer": "Endowment",
+      "distractors": [
+        "Status Quo",
+        "Loss Aversion",
+        "Anchoring and Adjustment",
+        "Framing"
+      ],
+      "explanation": "Merely being given an item makes people value it more than the alternative. This is Knetsch's mug-and-candy experiment, the standard demonstration of endowment bias."
+    },
+    {
+      "id": "end-03",
+      "scenario": "A man inherits his father's shares in a regional brewery. He would never have picked the stock himself and would not buy it today, but he refuses to sell and values the shares well above their market price, because they are now 'his' shares.",
+      "answer": "Endowment",
+      "distractors": [
+        "Affinity",
+        "Status Quo",
+        "Regret Aversion",
+        "Cognitive Dissonance"
+      ],
+      "explanation": "He values the shares more highly than he otherwise would simply because he owns them. Inherited securities are a common form of endowment bias, and a good test is to ask what he would do if he had received the same value in cash."
+    },
+    {
+      "id": "end-04",
+      "scenario": "At a sports-card show, novice collectors refuse to trade a card they own for another card of equal market value. Professional dealers at the same show trade freely, showing little reluctance to part with what they own.",
+      "answer": "Endowment",
+      "distractors": [
+        "Status Quo",
+        "Loss Aversion",
+        "Overconfidence",
+        "Affinity"
+      ],
+      "explanation": "Novices demand more to give up cards they own than the cards are worth to them as buyers, while experienced traders do not. John List's finding that the effect shrinks with trading experience is a hallmark of the endowment effect."
+    },
+    {
+      "id": "end-05",
+      "scenario": "A homeowner is convinced his house is worth $450,000 and rejects offers up to $420,000, even though comparable houses nearby sell for about $415,000. He says he would not pay more than $415,000 for an identical house if it belonged to someone else.",
+      "answer": "Endowment",
+      "distractors": [
+        "Anchoring and Adjustment",
+        "Overconfidence",
+        "Loss Aversion",
+        "Representativeness"
+      ],
+      "explanation": "He values what he owns more highly than he would value the same thing as a buyer. A gap between what you would pay and what you would demand to give up the same asset is the endowment effect."
+    },
+    {
+      "id": "end-06",
+      "scenario": "Office workers are randomly handed lottery tickets. Those given tickets demand much more to sell them than other workers are willing to pay for the same ticket.",
+      "answer": "Endowment",
+      "distractors": [
+        "Illusion of Control",
+        "Loss Aversion",
+        "Status Quo",
+        "Anchoring and Adjustment"
+      ],
+      "explanation": "Ownership, even if random, raises the value people place on a ticket. That is endowment bias. Illusion of control would apply only if workers chose their own numbers."
+    },
+    {
+      "id": "end-07",
+      "scenario": "A woman is given 100 shares of her employer's stock as a gift and refuses to diversify, saying, 'It's my company's stock and I know what I have.' She admits that she would not buy it with her own money at today's price.",
+      "answer": "Endowment",
+      "distractors": [
+        "Affinity",
+        "Overconfidence",
+        "Status Quo",
+        "Confirmation"
+      ],
+      "explanation": "She values the shares more because they are hers, which is endowment bias. Affinity bias would involve choosing a stock because of loyalty or identity, rather than being reluctant to part with one she owns."
+    },
+    {
+      "id": "end-08",
+      "scenario": "A comic-book collector inherits a set. He turns down an offer of $2,000 saying that it is 'worth much more,' even though he passed on an identical set priced at $1,200 at a shop last month.",
+      "answer": "Endowment",
+      "distractors": [
+        "Affinity",
+        "Anchoring and Adjustment",
+        "Status Quo",
+        "Overconfidence"
+      ],
+      "explanation": "He demands more to give up the set he owns than he would pay to get the same one. That is endowment bias."
+    },
+    {
+      "id": "end-09",
+      "scenario": "A software firm offers a 60-day free trial of its premium plan. Users must enter card details to continue in both cases, yet 70% of those who had the trial subscribe, against 20% of a control group offered the plan with no trial.",
+      "answer": "Endowment",
+      "distractors": [
+        "Status Quo",
+        "Mental Accounting",
+        "Self-Control",
+        "Framing"
+      ],
+      "explanation": "After using the product, people value it more because it feels like theirs. That is endowment bias. Status quo bias would require that subscribing be the default, which it is not."
+    },
+    {
+      "id": "end-10",
+      "scenario": "A survey finds that founders typically value their start-ups at two to three times what investors are willing to pay, even when the founders have seen comparable deals.",
+      "answer": "Endowment",
+      "distractors": [
+        "Overconfidence",
+        "Affinity",
+        "Anchoring and Adjustment",
+        "Illusion of Control"
+      ],
+      "explanation": "Owners value what they own more than outsiders do. That is endowment bias. Overconfidence could contribute, but the gap between the seller's and the buyer's valuation is the cue."
+    },
+    {
+      "id": "reg-01",
+      "scenario": "After losing money in the 2008 crash, an investor keeps all of his savings in cash for ten years and misses a long recovery. He says that if he bought stocks and watched them fall again, he would 'kick myself for making the decision,' so he prefers not to decide.",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Loss Aversion",
+        "Recency",
+        "Availability",
+        "Self-Control"
+      ],
+      "explanation": "His real fear is the emotional pain of having made a decision that turns out wrong, so he avoids acting and becomes too conservative after a past loss. Avoiding decisive action to avoid regret is regret aversion bias. The cue is the pain of the decision, not just the loss itself."
+    },
+    {
+      "id": "reg-02",
+      "scenario": "Jim must choose between a famous large company and an unknown mid-sized company with the same expected return and risk. He picks the famous one, explaining that if it falls he can say 'everybody lost money on it,' while a loss on the obscure one would make him look foolish.",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Affinity",
+        "Availability",
+        "Overconfidence",
+        "Confirmation"
+      ],
+      "explanation": "The two investments are financially equivalent, but a loss on a well-known name feels less personally foolish. Choosing the option that would cause less regret if it fails is regret aversion bias."
+    },
+    {
+      "id": "reg-03",
+      "scenario": "An investor buys a hot stock only because everyone around him is buying it. He says, 'If it fails, at least I won't be the only one who got burned.' He has not tied the purchase to any financial goal of his own.",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Confirmation",
+        "Overconfidence",
+        "Status Quo",
+        "Affinity"
+      ],
+      "explanation": "Following the crowd diffuses individual blame if the investment goes wrong. This kind of herding is a way of avoiding the pain of regret, so it is a manifestation of regret aversion."
+    },
+    {
+      "id": "reg-04",
+      "scenario": "A stock an investor owns has doubled and is now showing signs of weakness. He does not sell, because if he sold and the stock kept rising, he would feel awful for having let it go.",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Loss Aversion",
+        "Overconfidence",
+        "Status Quo",
+        "Endowment"
+      ],
+      "explanation": "He holds the winner too long out of fear of regretting a sale that is followed by more gains. Loss aversion would predict selling a winner early. The cue is the anticipated regret of an action (selling), which is regret aversion."
+    },
+    {
+      "id": "reg-05",
+      "scenario": "A retiree insists on spending only his stocks' dividends rather than selling shares to raise the same amount of cash. He says selling feels like a decision he might regret if the price later rose, while dividends 'just arrive.'",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Mental Accounting",
+        "Self-Control",
+        "Status Quo",
+        "Loss Aversion"
+      ],
+      "explanation": "Selling shares is an active decision (an error of commission if it goes wrong), while spending dividends feels like inaction, even though the two are financially equivalent. Shefrin and Statman tie this preference for dividends to regret aversion."
+    },
+    {
+      "id": "reg-06",
+      "scenario": "A pension fund keeps its portfolio close to that of its peers, and the chief investment officer says, 'No one gets fired for following the pack.'",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Status Quo",
+        "Conservatism",
+        "Affinity",
+        "Loss Aversion"
+      ],
+      "explanation": "The fund avoids being singled out for a bad decision, even if it gives up a better opportunity. That is regret aversion. Status quo bias would be inertia, not the fear of looking wrong."
+    },
+    {
+      "id": "reg-07",
+      "scenario": "An investor sold a stock that then doubled. He vows never to sell anything again and holds on to every position, even when it falls sharply.",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Loss Aversion",
+        "Hindsight",
+        "Endowment",
+        "Recency"
+      ],
+      "explanation": "He avoids decisive action to prevent the pain of regret. That is regret aversion. Loss aversion would be about the pain of losses, not the fear of regretting a decision."
+    },
+    {
+      "id": "reg-08",
+      "scenario": "An investor with $200,000 in cash from a home sale keeps putting off investing, for fear that the market will drop right after he buys. If it falls, he feels vindicated; if it rises, he feels sick.",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Self-Control",
+        "Loss Aversion",
+        "Status Quo",
+        "Recency"
+      ],
+      "explanation": "He is trying to avoid the regret of buying at the wrong time. That is regret aversion. Self-control problems would be about giving in to temptation, not about worrying over future regret."
+    },
+    {
+      "id": "reg-09",
+      "scenario": "In a classic experiment, George considered switching from stock A to stock B but did not, and lost $1,200. Paul switched from stock B to A and lost $1,200. Most people say that Paul feels worse.",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Loss Aversion",
+        "Status Quo",
+        "Endowment",
+        "Framing"
+      ],
+      "explanation": "Regret is stronger for a loss that follows action than for an equal loss that follows inaction, so people are drawn to avoid action. That is regret aversion."
+    },
+    {
+      "id": "reg-10",
+      "scenario": "A saver rejects an annuity from a small insurer with a higher payout and picks a pricier big-name insurer, so that if the insurer fails, nobody can say, 'You should have known.'",
+      "answer": "Regret Aversion",
+      "distractors": [
+        "Affinity",
+        "Conservatism",
+        "Availability",
+        "Loss Aversion"
+      ],
+      "explanation": "She chooses the option that is easiest to defend afterward. That is regret aversion. Affinity bias would be choosing based on identity or values."
+    },
+    {
+      "id": "aff-01",
+      "scenario": "A woman loves a trendy fashion brand's clothes and puts a large share of her savings into the company's stock. She has not looked at the company's debt, margins or earnings, saying, 'I just love what they stand for.'",
+      "answer": "Affinity",
+      "distractors": [
+        "Availability",
+        "Overconfidence",
+        "Confirmation",
+        "Endowment"
+      ],
+      "explanation": "She invests because the company's products reflect her tastes and self-image (expressive value), rather than because she has checked its financial soundness. That is affinity bias."
+    },
+    {
+      "id": "aff-02",
+      "scenario": "An investor buys a fund solely because its name and mission match his values. He does not review its fees, holdings or past performance, saying 'it just feels right.'",
+      "answer": "Affinity",
+      "distractors": [
+        "Confirmation",
+        "Overconfidence",
+        "Availability",
+        "Representativeness"
+      ],
+      "explanation": "Choosing an investment based on how well it reflects personal values, without equally rigorous financial due diligence, is affinity bias. The caution is about skipping the diligence, not about values-based investing itself."
+    },
+    {
+      "id": "aff-03",
+      "scenario": "A wealthy client demands access to an exclusive hedge fund because his friends at the golf club invest in it. He cannot explain its strategy or its risks, but says being in the fund 'says something about who I am.'",
+      "answer": "Affinity",
+      "distractors": [
+        "Overconfidence",
+        "Regret Aversion",
+        "Availability",
+        "Illusion of Control"
+      ],
+      "explanation": "He values the fund for its status and image and for belonging to a peer group, rather than for its risk and return characteristics. Chasing 'status' investments to signal sophistication is affinity bias."
+    },
+    {
+      "id": "aff-04",
+      "scenario": "During a period of political tension with another country, American investors sell shares of that country's companies traded in the U.S. Demand drops measurably, even though nothing about the companies' fundamentals has changed.",
+      "answer": "Affinity",
+      "distractors": [
+        "Availability",
+        "Recency",
+        "Framing",
+        "Confirmation"
+      ],
+      "explanation": "Investors let loyalty and sentiment, rather than financial merit, drive their holdings. Morse and Shive's research on patriotism in portfolios, which found that U.S. demand for French ADRs dropped during anti-French sentiment, illustrates affinity bias."
+    },
+    {
+      "id": "aff-05",
+      "scenario": "An American investor keeps 92% of his equity in U.S. companies because he wants to 'invest in America' and does not 'trust foreign markets.' A globally diversified mix would hold only about a third in U.S. stocks.",
+      "answer": "Affinity",
+      "distractors": [
+        "Availability",
+        "Status Quo",
+        "Overconfidence",
+        "Confirmation"
+      ],
+      "explanation": "He overweights domestic securities out of loyalty and a sense of national identity rather than optimal diversification. This patriotism or home-country bias is a well-studied form of affinity bias."
+    },
+    {
+      "id": "aff-06",
+      "scenario": "Members of a church congregation invest heavily in a high-yield scheme run by one of the church elders, without any due diligence, because 'he is one of us.'",
+      "answer": "Affinity",
+      "distractors": [
+        "Representativeness",
+        "Confirmation",
+        "Availability",
+        "Status Quo"
+      ],
+      "explanation": "They pick the investment because of shared identity and loyalty instead of financial merit. That is affinity bias. Representativeness would be judging by resemblance to a success story."
+    },
+    {
+      "id": "aff-07",
+      "scenario": "An investor whose family has worked in the auto industry for three generations owns only car-company stock. He admits that the numbers are poor but says, 'We are a car family.'",
+      "answer": "Affinity",
+      "distractors": [
+        "Overconfidence",
+        "Status Quo",
+        "Availability",
+        "Endowment"
+      ],
+      "explanation": "He invests to express his identity and loyalty and not for financial merit. That is affinity bias. Endowment bias would be valuing something more simply because it is owned."
+    },
+    {
+      "id": "aff-08",
+      "scenario": "A venture angel invests only in start-ups run by alumni of his university and spends little time on the financial statements. His portfolio lags the market for early-stage investments.",
+      "answer": "Affinity",
+      "distractors": [
+        "Representativeness",
+        "Confirmation",
+        "Overconfidence",
+        "Availability"
+      ],
+      "explanation": "He chooses by shared background instead of merit. That is affinity bias."
+    },
+    {
+      "id": "aff-09",
+      "scenario": "A baseball fan buys shares of the company that owns his favorite team, saying he wants to 'feel part of it,' though the stock has trailed the market for ten years.",
+      "answer": "Affinity",
+      "distractors": [
+        "Overconfidence",
+        "Availability",
+        "Endowment",
+        "Regret Aversion"
+      ],
+      "explanation": "He buys to express loyalty rather than for financial reasons. That is affinity bias."
+    },
+    {
+      "id": "aff-10",
+      "scenario": "A client picks a financial advisor only because the advisor attends the same church and supports the same political party. The client does not check the advisor's track record or fees.",
+      "answer": "Affinity",
+      "distractors": [
+        "Representativeness",
+        "Confirmation",
+        "Overconfidence",
+        "Availability"
+      ],
+      "explanation": "Shared identity, rather than competence, drives the choice. That is affinity bias. Confirmation bias would require that he collect evidence to support a prior belief."
+    }
+  ],
+  "validation": {
+    "per_category": 10,
+    "giveaway": {
+      "Cognitive Dissonance": "cognitive dissonance",
+      "Conservatism": "conservatism",
+      "Confirmation": "confirmation bias",
+      "Representativeness": "representativeness",
+      "Illusion of Control": "illusion of control",
+      "Hindsight": "hindsight",
+      "Mental Accounting": "mental account",
+      "Anchoring and Adjustment": "anchor",
+      "Framing": "framing|framed",
+      "Availability": "availability",
+      "Self-Attribution": "self-attribution",
+      "Outcome": "outcome bias",
+      "Recency": "recency",
+      "Loss Aversion": "loss aversion",
+      "Overconfidence": "overconfiden",
+      "Self-Control": "self-control",
+      "Status Quo": "status quo",
+      "Endowment": "endowment",
+      "Regret Aversion": "regret aversion",
+      "Affinity": "affinity"
+    }
+  }
+}

@@ -1,8 +1,12 @@
-# Behavioral Finance Bias Quiz
+# Finance Quizzes
 
-A local quiz on the 20 investor biases from `behavioral_finance_biases_summary.pdf`.
-Each quiz is 10 random scenario questions drawn from a bank of 200 (10 per bias).
-Pick which of 5 biases is at work, submit, and see whether you were right plus an explanation.
+A local quiz app. Each quiz is its own file in the `quizzes/` folder and shows up as a tab at the top of the page, so you can switch between quizzes.
+
+The first quiz (**Biases**) covers the 20 investor biases from `behavioral_finance_biases_summary.pdf`: 10 random scenario questions drawn from a bank of 200 (10 per bias). Pick which of 5 biases is at work, submit, and see whether you were right plus an explanation.
+
+The second quiz (**Ratios**) covers the 53 metrics and ratios from `metrics_and_ratios_summary.pdf` (personal finance, tax, retirement, returns, risk, risk-adjusted performance and valuation): 2 scenario questions per metric, 106 in all. After each answer the result page shows the metric's purpose and formula.
+
+Only one quiz is in progress at a time. Starting a quiz on another tab replaces the one you were in.
 
 The quiz runs on your own computer and opens in your web browser. It does not need the internet once it is downloaded, and it is not reachable from other computers.
 
@@ -121,13 +125,13 @@ Pick another number, such as 8001, and then open http://localhost:8001 instead.
 
 ## Check the questions (optional)
 
-After you edit `questions.json`, check that it is still well formed:
+After you edit anything in `quizzes/`, check that the files are still well formed:
 
 ```
 python3 validate_questions.py
 ```
 
-On Windows use `python validate_questions.py`. A good result prints `OK: 20 biases, 200 questions`. Otherwise it lists every problem it found.
+On Windows use `python validate_questions.py`. A good result prints one line per quiz, such as `OK: biases: 20 categories, 200 questions`. Otherwise it lists every problem it found. To check one file, add its path: `python3 validate_questions.py quizzes/biases.json`.
 
 ## Troubleshooting
 
@@ -188,27 +192,38 @@ Explain what it means in plain English and tell me the exact steps to fix it.
 **Add questions**
 
 ```
-This project has questions in questions.json. Each question has "id", "bias",
-"scenario", "distractors" (4 other bias names) and "explanation". Look at the
-existing questions for [bias name] and add 5 more in the same style and format, with
-ids numbered after the last one. Do not name the bias in the scenario. Then remind
-me to update PER_BIAS in validate_questions.py and run it.
+This project has quizzes in quizzes/biases.json. Each question has "id", "scenario",
+"answer" (the correct bias name), "distractors" (4 other bias names) and
+"explanation". Look at the existing questions for [bias name] and add 5 more in the
+same style and format, with ids numbered after the last one. Do not name the bias in
+the scenario. Then remind me to update "per_category" in the "validation" section of
+that file and run validate_questions.py.
 ```
 
-If you use ChatGPT, also paste in the contents of `questions.json` (or the part for that bias) before sending this.
+If you use ChatGPT, also paste in the contents of `quizzes/biases.json` (or the part for that bias) before sending this.
+
+**Add a new quiz**
+
+```
+This project shows each file in quizzes/ as a tab. Using quizzes/biases.json as the
+format example, create quizzes/[name].json with a "title", "tab", "order", "intro",
+"prompt" and [20] questions about [topic]. Each question needs "id", "scenario",
+"answer", "distractors" (3 wrong answers) and "explanation". Then tell me how to
+run validate_questions.py and restart the app.
+```
 
 **Change the quiz length**
 
 ```
-In app.py, the quiz is 10 questions long (QUIZ_LENGTH = 10). Change it to [20]
-questions and tell me exactly what to save and how to restart the quiz.
+In quizzes/biases.json, the quiz is 10 questions long ("quiz_length": 10). Change it
+to [20] questions and tell me exactly what to save and how to restart the quiz.
 ```
 
 **Understand the project**
 
 ```
-Explain in simple terms what each file in this project does: app.py, questions.json,
-validate_questions.py, static/style.css and the README.
+Explain in simple terms what each file in this project does: app.py, the files in
+quizzes/, validate_questions.py, static/style.css and the README.
 ```
 
 ### Tips for good results
@@ -221,18 +236,26 @@ validate_questions.py, static/style.css and the README.
 ## Files
 
 - `app.py`: the web server and all pages
-- `questions.json`: the 20 biases and the 200 questions (edit or add here)
+- `quizzes/`: one JSON file per quiz, each one a tab. `biases.json` has the 20 biases and the 200 questions (edit or add here)
 - `static/style.css`: styling
-- `validate_questions.py`: run after editing `questions.json` to check it is well formed
+- `validate_questions.py`: run after editing anything in `quizzes/` to check it is well formed
 
 ## Adding a question
 
-Add an entry to `questions.json`:
+Add an entry to the `questions` list in the quiz's file, for example `quizzes/biases.json`:
 
 ```json
-{"id": "anch-11", "bias": "Anchoring and Adjustment",
- "scenario": "...", "distractors": ["Framing", "Recency", "Availability", "Conservatism"],
+{"id": "anch-11", "scenario": "...", "answer": "Anchoring and Adjustment",
+ "distractors": ["Framing", "Recency", "Availability", "Conservatism"],
  "explanation": "..."}
 ```
 
-Then run `python3 validate_questions.py`. The checker expects exactly 10 questions per bias, so if you add or remove questions, change `PER_BIAS` near the top of `validate_questions.py` to the new number.
+Then run `python3 validate_questions.py`. The Biases quiz expects exactly 10 questions per bias, so if you add or remove questions, change `per_category` in the `validation` section at the bottom of `quizzes/biases.json` to the new number.
+
+## Adding a new quiz
+
+1. Copy `quizzes/biases.json` to a new file such as `quizzes/ratios.json`. The file name becomes the quiz's internal name.
+2. Edit the top-level fields: `title` (page heading), `tab` (short tab label), `order` (tab position, lowest first), `intro`, `prompt` (the question heading) and `quiz_length` (questions per attempt).
+3. Replace the `questions`. Each has `id` (unique within the quiz), `scenario`, `answer`, `distractors` (2 to 4 wrong answers, any text) and `explanation`.
+4. Optional: add a `categories` list (`name`, `definition`, optional `family`) if every answer is one of a fixed set of topics. The result page then shows the definition of the correct answer. If you use categories, every answer and distractor must be a category name and each question needs exactly 4 distractors. Delete `categories` and `validation` for a plain multiple-choice quiz.
+5. Run `python3 validate_questions.py`, then restart the app. The new tab appears at the top.

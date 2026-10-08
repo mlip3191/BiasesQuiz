@@ -1,0 +1,2860 @@
+{
+  "title": "Metrics and Ratios Quiz",
+  "tab": "Ratios",
+  "order": 2,
+  "intro": "Each question describes a short situation with a calculation or a question to answer. Pick which of the five metrics or ratios fits.",
+  "prompt": "Which metric or ratio applies here?",
+  "quiz_length": 10,
+  "categories": [
+    {
+      "name": "Net worth",
+      "family": "Personal finance",
+      "definition": "Used for: measuring financial position at one date. Formula: Total assets − Total liabilities"
+    },
+    {
+      "name": "Net cash flow",
+      "family": "Personal finance",
+      "definition": "Used for: seeing whether income covers spending over a period. Formula: Income − Expenses"
+    },
+    {
+      "name": "Savings ratio",
+      "family": "Personal finance",
+      "definition": "Used for: checking how much of gross income is saved (benchmark 10% in Lecture 2S; 20% or more in the videos and Lectures 3 and 7). Formula: Total savings ÷ Gross income"
+    },
+    {
+      "name": "Debt servicing ratio",
+      "family": "Personal finance",
+      "definition": "Used for: checking whether debt payments are manageable (benchmark under 36%). Formula: Total debt payments ÷ Gross income"
+    },
+    {
+      "name": "Debt ratio",
+      "family": "Personal finance",
+      "definition": "Used for: checking how leveraged the household is (benchmark under 40%). Formula: Total liabilities ÷ Total assets"
+    },
+    {
+      "name": "Current ratio",
+      "family": "Personal finance",
+      "definition": "Used for: checking short-term liquidity. Formula: Cash ÷ Short-term liabilities"
+    },
+    {
+      "name": "Housing ratio",
+      "family": "Personal finance",
+      "definition": "Used for: checking whether housing costs are affordable (benchmark 28% or less). Formula: Housing costs ÷ Gross pay"
+    },
+    {
+      "name": "Emergency fund",
+      "family": "Personal finance",
+      "definition": "Used for: sizing the cash cushion for job loss or surprise costs. Formula: 3 to 6 × Monthly necessary expenses"
+    },
+    {
+      "name": "50-30-20 budget",
+      "family": "Personal finance",
+      "definition": "Used for: splitting after-tax income into needs, wants and savings or debt repayment. Formula: Needs 50% + Wants 30% + Savings and debt repayment 20% of monthly after-tax income"
+    },
+    {
+      "name": "Down payment and mortgage",
+      "family": "Personal finance",
+      "definition": "Used for: sizing a home purchase with a 20% down payment. Formula: Down payment = Price × 20%; Mortgage = Price − Down payment"
+    },
+    {
+      "name": "Annual interest on savings",
+      "family": "Personal finance",
+      "definition": "Used for: estimating yearly interest, and the gain from moving to a better account. Formula: Balance × Rate; Gain from switching = Balance × (New rate − Old rate)"
+    },
+    {
+      "name": "Gross income (tax return)",
+      "family": "Tax measures",
+      "definition": "Used for: the starting point of the tax return. Formula: Income − Exclusions"
+    },
+    {
+      "name": "Adjusted gross income",
+      "family": "Tax measures",
+      "definition": "Used for: the base for many limits and phase-outs (AGI). Formula: Gross income − Deductions for AGI (adjustments)"
+    },
+    {
+      "name": "Taxable income",
+      "family": "Tax measures",
+      "definition": "Used for: the amount the tax brackets apply to. Formula: AGI − max(Standard deduction, Itemized deductions) − QBI deduction"
+    },
+    {
+      "name": "Tax due or refund",
+      "family": "Tax measures",
+      "definition": "Used for: the final amount owed or returned. Formula: Tax on taxable income − Credits; Refund = Federal tax withheld − (Income tax − Credits)"
+    },
+    {
+      "name": "Effective tax rate",
+      "family": "Tax measures",
+      "definition": "Used for: the average rate actually paid. Formula: Total income tax ÷ Taxable income"
+    },
+    {
+      "name": "Marginal tax rate",
+      "family": "Tax measures",
+      "definition": "Used for: the rate on the next dollar earned or deducted. Formula: The bracket rate that applies to the last dollar of taxable income"
+    },
+    {
+      "name": "Deduction vs credit savings",
+      "family": "Tax measures",
+      "definition": "Used for: comparing a deduction (worth less than face value) to a credit (dollar for dollar). Formula: Deduction savings = Deduction × Marginal rate; Credit savings = Credit amount"
+    },
+    {
+      "name": "Taxes on earnings",
+      "family": "Tax measures",
+      "definition": "Used for: combined state and federal tax on pretax earnings. Formula: Pretax earnings × (State rate + Federal rate)"
+    },
+    {
+      "name": "Capital gain or loss",
+      "family": "Tax measures",
+      "definition": "Used for: the taxable result of selling an investment (long term if held more than one year). Formula: Proceeds − Cost basis"
+    },
+    {
+      "name": "Total tax rate",
+      "family": "Tax measures",
+      "definition": "Used for: the combined rate applied to investment income. Formula: Federal marginal rate + State rate"
+    },
+    {
+      "name": "After-tax yield",
+      "family": "Tax measures",
+      "definition": "Used for: comparing taxable and tax-free bonds on equal footing. Formula: Pre-tax yield × (1 − Total tax rate)"
+    },
+    {
+      "name": "Tax-equivalent yield",
+      "family": "Tax measures",
+      "definition": "Used for: expressing a tax-free muni yield as a taxable yield. Formula: Tax-free yield ÷ (1 − Tax rate)"
+    },
+    {
+      "name": "4% rule portfolio",
+      "family": "Retirement and growth",
+      "definition": "Used for: sizing the portfolio needed to fund retirement spending. Formula: Annual retirement spending ÷ 4%"
+    },
+    {
+      "name": "Inflated spending",
+      "family": "Retirement and growth",
+      "definition": "Used for: converting today's spending into dollars at retirement. Formula: Spending × (1 + inflation)^n"
+    },
+    {
+      "name": "Portfolio needed at retirement",
+      "family": "Retirement and growth",
+      "definition": "Used for: applying the 4% rule to inflated spending. Formula: Spending × (1 + inflation)^n ÷ 4%"
+    },
+    {
+      "name": "Future value",
+      "family": "Retirement and growth",
+      "definition": "Used for: growing a lump sum at a fixed return. Formula: PV × (1 + r)^n"
+    },
+    {
+      "name": "Required return",
+      "family": "Retirement and growth",
+      "definition": "Used for: finding the annual return needed to reach a goal. Formula: (FV ÷ PV)^(1/n) − 1"
+    },
+    {
+      "name": "Arithmetic average return",
+      "family": "Return measures",
+      "definition": "Used for: a simple average of periodic returns; ignores compounding. Formula: Σ rₜ ÷ n"
+    },
+    {
+      "name": "Geometric average return",
+      "family": "Return measures",
+      "definition": "Used for: the compound rate actually earned (for example +25% then −20% is 0%, not 2.5%). Formula: [Π (1 + rₜ)]^(1/n) − 1"
+    },
+    {
+      "name": "Real return",
+      "family": "Return measures",
+      "definition": "Used for: return after removing inflation. Formula: (1 + Nominal return) ÷ (1 + Inflation) − 1"
+    },
+    {
+      "name": "Portfolio expected return",
+      "family": "Return measures",
+      "definition": "Used for: the weighted average return of the holdings. Formula: E(Rₚ) = Σ wᵢ × Rᵢ"
+    },
+    {
+      "name": "Realized stock return",
+      "family": "Return measures",
+      "definition": "Used for: explaining where a stock's return came from. Formula: Dividend yield + Dividend growth + Change in the multiple"
+    },
+    {
+      "name": "Standard deviation",
+      "family": "Risk measures",
+      "definition": "Used for: total volatility of returns. Formula: σ = √[ Σ (xᵢ − x̄ )² ÷ (n − 1) ]"
+    },
+    {
+      "name": "Coefficient of variation",
+      "family": "Risk measures",
+      "definition": "Used for: risk per unit of return, to compare investments with different averages. Formula: CV = σ ÷ Mean"
+    },
+    {
+      "name": "Correlation",
+      "family": "Risk measures",
+      "definition": "Used for: how two returns move together, from −1 to +1; drives diversification. Formula: ρ = Cov(x, y) ÷ (σₓ × σᵧ)"
+    },
+    {
+      "name": "Beta",
+      "family": "Risk measures",
+      "definition": "Used for: sensitivity to the market (1.5 moves 1.5 times the market). Formula: β = Cov(Rₚ, Rₘ) ÷ σₘ²"
+    },
+    {
+      "name": "Portfolio beta",
+      "family": "Risk measures",
+      "definition": "Used for: market sensitivity of a whole portfolio. Formula: βₚ = Σ wᵢ × βᵢ"
+    },
+    {
+      "name": "Tracking error",
+      "family": "Risk measures",
+      "definition": "Used for: how far a portfolio's returns stray from its benchmark. Formula: σ(Rₚ − R_b)"
+    },
+    {
+      "name": "CAPM expected return",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: the return required for the market risk taken. Formula: E(Rᵢ) = R_f + βᵢ × (Rₘ − R_f)"
+    },
+    {
+      "name": "Alpha",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: return beyond what beta predicts (positive means outperformance). Formula: α = R_actual − E(R) = Rₚ − [R_f + βₚ × (Rₘ − R_f)]"
+    },
+    {
+      "name": "Sharpe ratio",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: excess return per unit of total risk (below 1 weak, above 1 good, above 2 very good, 3 or more excellent). Formula: (Rₚ − R_f) ÷ σₚ"
+    },
+    {
+      "name": "Treynor ratio",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: excess return per unit of market risk. Formula: (Rₚ − R_f) ÷ βₚ"
+    },
+    {
+      "name": "Information ratio",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: active return earned per unit of tracking error. Formula: (Rₚ − R_b) ÷ Tracking error"
+    },
+    {
+      "name": "Allocation effect",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: attribution of return to over- or underweighting sectors. Formula: (wₚ − w_b) × (R_b,sector − R_b,total)"
+    },
+    {
+      "name": "Selection effect",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: attribution of return to picking better securities within a sector. Formula: w_b × (Rₚ − R_b)"
+    },
+    {
+      "name": "Interaction effect",
+      "family": "Risk-adjusted performance",
+      "definition": "Used for: attribution of return to the combination of allocation and selection. Formula: (wₚ − w_b) × (Rₚ − R_b)"
+    },
+    {
+      "name": "Price-to-earnings (P/E)",
+      "family": "Valuation",
+      "definition": "Used for: the price paid per dollar of earnings (trailing or forward). Formula: Price ÷ Earnings per share"
+    },
+    {
+      "name": "CAPE",
+      "family": "Valuation",
+      "definition": "Used for: valuing the market against 10 years of inflation-adjusted earnings, smoothing the business cycle (cyclically adjusted P/E). Formula: Price ÷ Average inflation-adjusted earnings over the past 10 years"
+    },
+    {
+      "name": "Dividend yield",
+      "family": "Valuation",
+      "definition": "Used for: the cash return from dividends. Formula: Next-12-month dividend ÷ Price"
+    },
+    {
+      "name": "Earnings yield",
+      "family": "Valuation",
+      "definition": "Used for: the inverse of P/E, for comparing stocks with bond yields. Formula: EPS ÷ Price = 1 ÷ (P/E)"
+    },
+    {
+      "name": "Earnings yield spread",
+      "family": "Valuation",
+      "definition": "Used for: stocks versus corporate bonds (negative suggests expensive equities). Formula: Earnings yield − Baa yield"
+    },
+    {
+      "name": "Gordon equation",
+      "family": "Valuation",
+      "definition": "Used for: a rough expected stock return from dividend yield plus growth. Formula: E(R) ≈ D ÷ P + g"
+    }
+  ],
+  "questions": [
+    {
+      "id": "nw-01",
+      "scenario": "On December 31, Priya adds up her home, car, retirement accounts and cash, which total $410,000. She then subtracts her mortgage, car loan and credit card balances, which total $265,000, to see where she stands on that date.",
+      "answer": "Net worth",
+      "distractors": [
+        "Net cash flow",
+        "Debt ratio",
+        "Current ratio",
+        "Savings ratio"
+      ],
+      "explanation": "Assets minus liabilities at a single date: $410,000 − $265,000 = $145,000. Net cash flow covers a period, not a date."
+    },
+    {
+      "id": "nw-02",
+      "scenario": "A couple owns $520,000 of assets and owes $180,000 of debts. They want to know how many dollars would be left if they sold everything and paid off every debt today.",
+      "answer": "Net worth",
+      "distractors": [
+        "Debt ratio",
+        "Net cash flow",
+        "Emergency fund",
+        "Current ratio"
+      ],
+      "explanation": "Total assets − total liabilities = $520,000 − $180,000 = $340,000. The debt ratio would give a percentage (about 35%), not a dollar amount."
+    },
+    {
+      "id": "ncf-01",
+      "scenario": "Over the past year Marcus took in $78,000 and spent $81,500. He wants to know whether his income covered his spending.",
+      "answer": "Net cash flow",
+      "distractors": [
+        "Savings ratio",
+        "Net worth",
+        "Debt servicing ratio",
+        "Housing ratio"
+      ],
+      "explanation": "Income − expenses = $78,000 − $81,500 = −$3,500. His spending exceeded his income over the year."
+    },
+    {
+      "id": "ncf-02",
+      "scenario": "In March, Lena's paychecks and side income totaled $5,400, and her bills, groceries and entertainment totaled $4,950. How much money did she have left over for the month?",
+      "answer": "Net cash flow",
+      "distractors": [
+        "Savings ratio",
+        "Net worth",
+        "Emergency fund",
+        "50-30-20 budget"
+      ],
+      "explanation": "Income − expenses over the period: $5,400 − $4,950 = $450 positive."
+    },
+    {
+      "id": "sr-01",
+      "scenario": "Jordan earns $90,000 before taxes and put $13,500 into savings last year. He wants to compare this with the guideline of saving 10% to 20% of what he earns.",
+      "answer": "Savings ratio",
+      "distractors": [
+        "Net cash flow",
+        "Debt servicing ratio",
+        "Housing ratio",
+        "50-30-20 budget"
+      ],
+      "explanation": "Total savings ÷ gross income = $13,500 ÷ $90,000 = 15%."
+    },
+    {
+      "id": "sr-02",
+      "scenario": "A family with $120,000 of gross income saved $26,400 during the year. They want to know what share of that gross income they set aside.",
+      "answer": "Savings ratio",
+      "distractors": [
+        "Net cash flow",
+        "Debt ratio",
+        "Current ratio",
+        "Emergency fund"
+      ],
+      "explanation": "$26,400 ÷ $120,000 = 22%, above the 20% benchmark used in the videos and Lectures 3 and 7."
+    },
+    {
+      "id": "dsr-01",
+      "scenario": "Every month Ana pays $1,450 toward her mortgage, car loan and student loans combined. Her gross monthly income is $5,000, and her lender wants this burden to be under 36%.",
+      "answer": "Debt servicing ratio",
+      "distractors": [
+        "Debt ratio",
+        "Housing ratio",
+        "Savings ratio",
+        "Current ratio"
+      ],
+      "explanation": "Total debt payments ÷ gross income = $1,450 ÷ $5,000 = 29%, under the 36% benchmark. The debt ratio compares what she owes to what she owns, not payments to income."
+    },
+    {
+      "id": "dsr-02",
+      "scenario": "A borrower makes $21,600 a year of payments across all of her loans and credit cards, and earns $72,000 before tax. She wants to judge whether making those payments is manageable.",
+      "answer": "Debt servicing ratio",
+      "distractors": [
+        "Debt ratio",
+        "Net cash flow",
+        "Housing ratio",
+        "Savings ratio"
+      ],
+      "explanation": "$21,600 ÷ $72,000 = 30% of gross income goes to debt payments, under the 36% benchmark."
+    },
+    {
+      "id": "dr-01",
+      "scenario": "A household owns $400,000 of assets and owes $150,000 in total. A banker wants to see how leveraged they are, against a guideline of under 40%.",
+      "answer": "Debt ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "Net worth",
+        "Current ratio",
+        "Housing ratio"
+      ],
+      "explanation": "Total liabilities ÷ total assets = $150,000 ÷ $400,000 = 37.5%, just under the 40% benchmark."
+    },
+    {
+      "id": "dr-02",
+      "scenario": "Tomas adds up everything he owes ($96,000) and divides it by everything he owns ($320,000) to see how much of his property is financed by debt.",
+      "answer": "Debt ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "Net worth",
+        "Savings ratio",
+        "Current ratio"
+      ],
+      "explanation": "$96,000 ÷ $320,000 = 30%."
+    },
+    {
+      "id": "cr-01",
+      "scenario": "Keisha has $9,000 in checking and savings, and $12,000 of bills, card balances and loan payments due within the next year. She wants to check her short-term liquidity.",
+      "answer": "Current ratio",
+      "distractors": [
+        "Debt ratio",
+        "Emergency fund",
+        "Net cash flow",
+        "Debt servicing ratio"
+      ],
+      "explanation": "Cash ÷ short-term liabilities = $9,000 ÷ $12,000 = 0.75. Below 1 means her cash would not cover what is coming due."
+    },
+    {
+      "id": "cr-02",
+      "scenario": "A household holds $15,000 in cash and owes $10,000 that comes due soon. They want one number showing whether cash alone covers the near-term obligations.",
+      "answer": "Current ratio",
+      "distractors": [
+        "Debt ratio",
+        "Net worth",
+        "Emergency fund",
+        "Savings ratio"
+      ],
+      "explanation": "$15,000 ÷ $10,000 = 1.5, so cash covers the short-term liabilities one and a half times."
+    },
+    {
+      "id": "hr-01",
+      "scenario": "Sam's monthly mortgage payment, property tax and insurance come to $1,820, and his gross pay is $6,500 a month. A common affordability guide says this should be 28% or less.",
+      "answer": "Housing ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "Debt ratio",
+        "Savings ratio",
+        "50-30-20 budget"
+      ],
+      "explanation": "Housing costs ÷ gross pay = $1,820 ÷ $6,500 = 28%, right at the limit."
+    },
+    {
+      "id": "hr-02",
+      "scenario": "Before signing a lease, Dee compares her total monthly housing costs of $1,500 with her $5,000 gross monthly pay to decide whether the place is affordable.",
+      "answer": "Housing ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "Current ratio",
+        "Net cash flow",
+        "Savings ratio"
+      ],
+      "explanation": "$1,500 ÷ $5,000 = 30%, above the 28% guide, so the place is a stretch."
+    },
+    {
+      "id": "ef-01",
+      "scenario": "Chris has necessary expenses of $3,200 a month and worries about a layoff. He wants a cash cushion of three to six months of those expenses.",
+      "answer": "Emergency fund",
+      "distractors": [
+        "Savings ratio",
+        "Current ratio",
+        "Net cash flow",
+        "50-30-20 budget"
+      ],
+      "explanation": "3 to 6 × $3,200 = $9,600 to $19,200."
+    },
+    {
+      "id": "ef-02",
+      "scenario": "A single parent spends $2,500 a month on rent, food, utilities and insurance. How much cash should be set aside to cover a job loss or a surprise repair bill?",
+      "answer": "Emergency fund",
+      "distractors": [
+        "Net worth",
+        "Current ratio",
+        "Annual interest on savings",
+        "Savings ratio"
+      ],
+      "explanation": "3 to 6 × $2,500 of necessary monthly expenses = $7,500 to $15,000."
+    },
+    {
+      "id": "bud-01",
+      "scenario": "After taxes Lila brings home $4,000 a month. She plans $2,000 for housing and food, $1,200 for entertainment and travel, and $800 for savings and extra debt payments.",
+      "answer": "50-30-20 budget",
+      "distractors": [
+        "Savings ratio",
+        "Net cash flow",
+        "Housing ratio",
+        "Emergency fund"
+      ],
+      "explanation": "Needs 50% ($2,000), wants 30% ($1,200), savings and debt repayment 20% ($800) of after-tax income."
+    },
+    {
+      "id": "bud-02",
+      "scenario": "A new graduate takes home $3,600 a month and wants a simple rule that divides it into half, three-tenths and one-fifth. That means $1,800, $1,080 and $720.",
+      "answer": "50-30-20 budget",
+      "distractors": [
+        "Savings ratio",
+        "Net cash flow",
+        "Debt servicing ratio",
+        "Emergency fund"
+      ],
+      "explanation": "50% needs, 30% wants, 20% savings and debt repayment of monthly after-tax income. Note it is based on after-tax pay, unlike the savings ratio."
+    },
+    {
+      "id": "dm-01",
+      "scenario": "Nia plans to buy a $350,000 home with 20% down. She needs to know the cash required at closing and the amount she must borrow.",
+      "answer": "Down payment and mortgage",
+      "distractors": [
+        "Housing ratio",
+        "Debt ratio",
+        "Net worth",
+        "Emergency fund"
+      ],
+      "explanation": "Down payment = $350,000 × 20% = $70,000; mortgage = $350,000 − $70,000 = $280,000."
+    },
+    {
+      "id": "dm-02",
+      "scenario": "A couple is eyeing a $425,000 house and will put 20% down. How much cash do they need up front and how large will the loan be?",
+      "answer": "Down payment and mortgage",
+      "distractors": [
+        "Housing ratio",
+        "Debt servicing ratio",
+        "Future value",
+        "Annual interest on savings"
+      ],
+      "explanation": "Down payment = $85,000; mortgage = $425,000 − $85,000 = $340,000."
+    },
+    {
+      "id": "ai-01",
+      "scenario": "Eli has $18,000 in an account that pays 1.5% per year. How many dollars of interest will it pay over one year?",
+      "answer": "Annual interest on savings",
+      "distractors": [
+        "Real return",
+        "Savings ratio",
+        "Net cash flow",
+        "Dividend yield"
+      ],
+      "explanation": "Balance × rate = $18,000 × 1.5% = $270."
+    },
+    {
+      "id": "ai-02",
+      "scenario": "Ray has $25,000 in a savings account paying 0.5% and finds another paying 4.5%. How much more would he earn each year by moving the money?",
+      "answer": "Annual interest on savings",
+      "distractors": [
+        "Future value",
+        "Required return",
+        "Real return",
+        "Savings ratio"
+      ],
+      "explanation": "Gain from switching = balance × (new rate − old rate) = $25,000 × 4.0% = $1,000 a year."
+    },
+    {
+      "id": "gi-01",
+      "scenario": "Beth's total income for the year was $64,000, including $4,000 of tax-exempt municipal bond interest that the law lets her exclude. What number starts her tax return?",
+      "answer": "Gross income (tax return)",
+      "distractors": [
+        "Adjusted gross income",
+        "Taxable income",
+        "Effective tax rate",
+        "Capital gain or loss"
+      ],
+      "explanation": "Income − exclusions = $64,000 − $4,000 = $60,000."
+    },
+    {
+      "id": "gi-02",
+      "scenario": "Of the $95,000 Omar received during the year, $5,000 was a gift that tax law excludes. What figure is the first line of the calculation on his return?",
+      "answer": "Gross income (tax return)",
+      "distractors": [
+        "Adjusted gross income",
+        "Taxable income",
+        "Tax due or refund",
+        "Taxes on earnings"
+      ],
+      "explanation": "Income − exclusions = $95,000 − $5,000 = $90,000."
+    },
+    {
+      "id": "agi-01",
+      "scenario": "Starting from $90,000 of gross income, Rosa subtracts $4,000 of student loan interest and $3,000 of IRA contributions, the adjustments allowed before deductions. The result is the base for many limits and phase-outs.",
+      "answer": "Adjusted gross income",
+      "distractors": [
+        "Gross income (tax return)",
+        "Taxable income",
+        "Tax due or refund",
+        "Effective tax rate"
+      ],
+      "explanation": "Gross income − deductions for AGI = $90,000 − $7,000 = $83,000."
+    },
+    {
+      "id": "agi-02",
+      "scenario": "Mark's gross income is $120,000 and he has $6,500 of above-the-line adjustments. Which figure, $113,500, decides whether he qualifies for credits that phase out at higher incomes?",
+      "answer": "Adjusted gross income",
+      "distractors": [
+        "Taxable income",
+        "Gross income (tax return)",
+        "Marginal tax rate",
+        "Deduction vs credit savings"
+      ],
+      "explanation": "Gross income less adjustments is AGI, the base for many limits and phase-outs: $120,000 − $6,500 = $113,500."
+    },
+    {
+      "id": "ti-01",
+      "scenario": "Dev's AGI is $100,000. He takes a $14,000 standard deduction, which is larger than his itemized deductions, and a $2,000 qualified business income deduction. What is the amount the tax brackets will be applied to?",
+      "answer": "Taxable income",
+      "distractors": [
+        "Adjusted gross income",
+        "Gross income (tax return)",
+        "Tax due or refund",
+        "Effective tax rate"
+      ],
+      "explanation": "AGI − max(standard, itemized) − QBI deduction = $100,000 − $14,000 − $2,000 = $84,000."
+    },
+    {
+      "id": "ti-02",
+      "scenario": "Joan's AGI is $75,000. Her itemized deductions are $18,000 and her standard deduction would be $13,000, so she uses the larger one. She has no QBI deduction. What amount is her tax computed on?",
+      "answer": "Taxable income",
+      "distractors": [
+        "Adjusted gross income",
+        "Marginal tax rate",
+        "Tax due or refund",
+        "Capital gain or loss"
+      ],
+      "explanation": "$75,000 − max($13,000, $18,000) = $57,000."
+    },
+    {
+      "id": "td-01",
+      "scenario": "Hal's tax on his taxable income is $9,000 and he qualifies for $1,200 of credits. His employer withheld $7,000 during the year. Does he owe more or get money back, and how much?",
+      "answer": "Tax due or refund",
+      "distractors": [
+        "Effective tax rate",
+        "Taxable income",
+        "Deduction vs credit savings",
+        "Capital gain or loss"
+      ],
+      "explanation": "Income tax after credits is $9,000 − $1,200 = $7,800. Withholding was $7,000, so he owes $800 more."
+    },
+    {
+      "id": "td-02",
+      "scenario": "Tess's income tax after credits comes to $5,500, but her employer withheld $6,300 of federal tax during the year. What is the final amount on her return?",
+      "answer": "Tax due or refund",
+      "distractors": [
+        "Taxable income",
+        "Effective tax rate",
+        "Taxes on earnings",
+        "Adjusted gross income"
+      ],
+      "explanation": "Refund = withheld − (income tax − credits) = $6,300 − $5,500 = $800 back to her."
+    },
+    {
+      "id": "et-01",
+      "scenario": "Ivy's income tax bill is $12,000 on taxable income of $80,000. What average rate does she actually pay on that income?",
+      "answer": "Effective tax rate",
+      "distractors": [
+        "Marginal tax rate",
+        "Total tax rate",
+        "Taxes on earnings",
+        "Tax due or refund"
+      ],
+      "explanation": "Total income tax ÷ taxable income = $12,000 ÷ $80,000 = 15%."
+    },
+    {
+      "id": "et-02",
+      "scenario": "Ben's top bracket is 24%, yet he paid $14,400 of income tax on $90,000 of taxable income. What overall percentage of that income did he actually pay?",
+      "answer": "Effective tax rate",
+      "distractors": [
+        "Marginal tax rate",
+        "Total tax rate",
+        "After-tax yield",
+        "Taxable income"
+      ],
+      "explanation": "$14,400 ÷ $90,000 = 16%, well below his top bracket because lower brackets apply to earlier dollars."
+    },
+    {
+      "id": "mt-01",
+      "scenario": "Ana's taxable income puts her last dollar of income in the 22% bracket. If she earns an extra $1,000 consulting, what share of it will go to federal income tax?",
+      "answer": "Marginal tax rate",
+      "distractors": [
+        "Effective tax rate",
+        "Total tax rate",
+        "Taxes on earnings",
+        "Deduction vs credit savings"
+      ],
+      "explanation": "The bracket rate on the last dollar of taxable income is the rate on the next dollar earned: 22%, so about $220 of the $1,000."
+    },
+    {
+      "id": "mt-02",
+      "scenario": "Kai is single with taxable income of $60,000, which falls in the 22% bracket. He is deciding whether overtime is worth it, so he asks what rate applies to the next dollar he earns.",
+      "answer": "Marginal tax rate",
+      "distractors": [
+        "Effective tax rate",
+        "Tax due or refund",
+        "Total tax rate",
+        "After-tax yield"
+      ],
+      "explanation": "The rate on the next dollar earned or deducted is set by the bracket of the last dollar of taxable income, here 22%, not his average rate."
+    },
+    {
+      "id": "dc-01",
+      "scenario": "Mia is in the 24% bracket. She is comparing a $2,000 deduction with a $2,000 credit. How much tax does each save?",
+      "answer": "Deduction vs credit savings",
+      "distractors": [
+        "Marginal tax rate",
+        "Effective tax rate",
+        "Tax due or refund",
+        "Taxable income"
+      ],
+      "explanation": "Deduction savings = $2,000 × 24% = $480. Credit savings = $2,000, dollar for dollar."
+    },
+    {
+      "id": "dc-02",
+      "scenario": "A filer in the 12% bracket is offered a $1,500 charitable deduction or a $1,500 education credit. Compare what each would save her.",
+      "answer": "Deduction vs credit savings",
+      "distractors": [
+        "Marginal tax rate",
+        "After-tax yield",
+        "Tax due or refund",
+        "Adjusted gross income"
+      ],
+      "explanation": "Deduction: $1,500 × 12% = $180. Credit: the full $1,500."
+    },
+    {
+      "id": "toe-01",
+      "scenario": "A taxpayer lives in a state with a 5% income tax and faces a 22% federal rate. On $10,000 of pretax earnings, how many dollars go to the two governments in total?",
+      "answer": "Taxes on earnings",
+      "distractors": [
+        "Total tax rate",
+        "Effective tax rate",
+        "Marginal tax rate",
+        "Tax due or refund"
+      ],
+      "explanation": "Pretax earnings × (state + federal) = $10,000 × 27% = $2,700."
+    },
+    {
+      "id": "toe-02",
+      "scenario": "Cora earns $8,000 of extra pretax pay. Her state rate is 4% and her federal rate is 24%. How many dollars of that pay go to tax in all?",
+      "answer": "Taxes on earnings",
+      "distractors": [
+        "Total tax rate",
+        "Deduction vs credit savings",
+        "Capital gain or loss",
+        "Tax due or refund"
+      ],
+      "explanation": "$8,000 × (4% + 24%) = $2,240."
+    },
+    {
+      "id": "cg-01",
+      "scenario": "Quinn sold shares for $14,500 that he bought for $11,200 and held for 18 months. What is the taxable result of the sale, and is it long term?",
+      "answer": "Capital gain or loss",
+      "distractors": [
+        "Realized stock return",
+        "Real return",
+        "Gross income (tax return)",
+        "Taxable income"
+      ],
+      "explanation": "Proceeds − cost basis = $14,500 − $11,200 = $3,300 gain, long term because it was held more than one year."
+    },
+    {
+      "id": "cg-02",
+      "scenario": "Paula sold stock for $6,300 that had cost $8,100, after holding it for 7 months. What is the result of the sale for tax purposes?",
+      "answer": "Capital gain or loss",
+      "distractors": [
+        "Realized stock return",
+        "Geometric average return",
+        "Net cash flow",
+        "Tax due or refund"
+      ],
+      "explanation": "$6,300 − $8,100 = −$1,800, a short-term loss because it was held under a year."
+    },
+    {
+      "id": "tt-01",
+      "scenario": "An investor in the 24% federal bracket lives in a state with a 6% tax. What single rate applies to the interest from a taxable bond?",
+      "answer": "Total tax rate",
+      "distractors": [
+        "Taxes on earnings",
+        "Effective tax rate",
+        "Marginal tax rate",
+        "Tax-equivalent yield"
+      ],
+      "explanation": "Federal marginal rate + state rate = 24% + 6% = 30%."
+    },
+    {
+      "id": "tt-02",
+      "scenario": "Nadia's federal marginal rate is 32% and her state rate is 5%. She needs one combined percentage to apply to her investment income before comparing bonds.",
+      "answer": "Total tax rate",
+      "distractors": [
+        "Effective tax rate",
+        "Taxes on earnings",
+        "After-tax yield",
+        "Deduction vs credit savings"
+      ],
+      "explanation": "32% + 5% = 37%."
+    },
+    {
+      "id": "aty-01",
+      "scenario": "A taxable corporate bond pays 5.0% and the investor's combined federal and state rate is 30%. What yield does she actually keep?",
+      "answer": "After-tax yield",
+      "distractors": [
+        "Tax-equivalent yield",
+        "Real return",
+        "Dividend yield",
+        "Earnings yield"
+      ],
+      "explanation": "Pre-tax yield × (1 − total tax rate) = 5.0% × 0.70 = 3.5%."
+    },
+    {
+      "id": "aty-02",
+      "scenario": "To compare a 4% taxable bond with a tax-free bond on equal footing, Ned removes the taxes from the taxable bond's yield. His combined rate is 25%.",
+      "answer": "After-tax yield",
+      "distractors": [
+        "Tax-equivalent yield",
+        "Total tax rate",
+        "Real return",
+        "Capital gain or loss"
+      ],
+      "explanation": "4% × (1 − 0.25) = 3.0%, which can be compared directly with the muni's yield."
+    },
+    {
+      "id": "tey-01",
+      "scenario": "A municipal bond pays 3.0% free of tax. For an investor with a 25% combined tax rate, what yield would a taxable bond need to pay to match it?",
+      "answer": "Tax-equivalent yield",
+      "distractors": [
+        "After-tax yield",
+        "Total tax rate",
+        "Dividend yield",
+        "Real return"
+      ],
+      "explanation": "Tax-free yield ÷ (1 − tax rate) = 3.0% ÷ 0.75 = 4.0%."
+    },
+    {
+      "id": "tey-02",
+      "scenario": "A tax-free bond yields 2.8% and the investor's tax rate is 30%. Express the muni's yield as the taxable yield that would leave her equally well off.",
+      "answer": "Tax-equivalent yield",
+      "distractors": [
+        "After-tax yield",
+        "Earnings yield",
+        "Effective tax rate",
+        "Real return"
+      ],
+      "explanation": "2.8% ÷ (1 − 0.30) = 4.0%."
+    },
+    {
+      "id": "r4-01",
+      "scenario": "A retiree wants $60,000 a year to spend and plans to withdraw 4% of the portfolio annually. Ignoring inflation, how large a portfolio does she need?",
+      "answer": "4% rule portfolio",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "Inflated spending",
+        "Future value",
+        "Required return"
+      ],
+      "explanation": "Annual spending ÷ 4% = $60,000 ÷ 0.04 = $1,500,000."
+    },
+    {
+      "id": "r4-02",
+      "scenario": "A couple plans to live on $48,000 a year from their investments, withdrawing 4% annually. What portfolio size supports that spending?",
+      "answer": "4% rule portfolio",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "Dividend yield",
+        "Required return",
+        "Gordon equation"
+      ],
+      "explanation": "$48,000 ÷ 0.04 = $1,200,000."
+    },
+    {
+      "id": "is-01",
+      "scenario": "Today a couple spends $50,000 a year. With inflation at 3% for 20 years, what will the same lifestyle cost per year in the dollars of that future date?",
+      "answer": "Inflated spending",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "4% rule portfolio",
+        "Future value",
+        "Real return"
+      ],
+      "explanation": "$50,000 × 1.03^20 = $50,000 × 1.806 ≈ $90,306 a year."
+    },
+    {
+      "id": "is-02",
+      "scenario": "A worker spends $40,000 a year today. Inflation runs at 2.5% and she retires in 10 years. What will her yearly spending be in future dollars?",
+      "answer": "Inflated spending",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "4% rule portfolio",
+        "Required return",
+        "Real return"
+      ],
+      "explanation": "$40,000 × 1.025^10 = $40,000 × 1.2801 ≈ $51,203."
+    },
+    {
+      "id": "pn-01",
+      "scenario": "Spending is $50,000 a year today. Inflation is 3%, retirement is 20 years away, and 4% of the portfolio will be withdrawn each year. How large must the portfolio be on the day she retires?",
+      "answer": "Portfolio needed at retirement",
+      "distractors": [
+        "4% rule portfolio",
+        "Inflated spending",
+        "Future value",
+        "Required return"
+      ],
+      "explanation": "Inflated spending ÷ 4% = $50,000 × 1.03^20 ÷ 0.04 ≈ $90,306 ÷ 0.04 ≈ $2,257,600."
+    },
+    {
+      "id": "pn-02",
+      "scenario": "A saver spends $40,000 a year in today's dollars, expects 2.5% inflation, and retires in 10 years with 4% withdrawals. What portfolio does she need at retirement?",
+      "answer": "Portfolio needed at retirement",
+      "distractors": [
+        "4% rule portfolio",
+        "Inflated spending",
+        "Future value",
+        "Portfolio expected return"
+      ],
+      "explanation": "$40,000 × 1.025^10 ÷ 0.04 ≈ $51,203 ÷ 0.04 ≈ $1,280,100."
+    },
+    {
+      "id": "fv-01",
+      "scenario": "Maya invests $10,000 today at a fixed 7% annual return and leaves it untouched for 10 years. How much will she have?",
+      "answer": "Future value",
+      "distractors": [
+        "Required return",
+        "Annual interest on savings",
+        "Geometric average return",
+        "Inflated spending"
+      ],
+      "explanation": "PV × (1 + r)^n = $10,000 × 1.07^10 ≈ $19,672."
+    },
+    {
+      "id": "fv-02",
+      "scenario": "A $25,000 inheritance is invested at 6% a year, compounding, for 15 years. What will it be worth?",
+      "answer": "Future value",
+      "distractors": [
+        "Required return",
+        "Real return",
+        "Annual interest on savings",
+        "Portfolio needed at retirement"
+      ],
+      "explanation": "$25,000 × 1.06^15 ≈ $25,000 × 2.3966 ≈ $59,914."
+    },
+    {
+      "id": "rr-01",
+      "scenario": "Sam has $20,000 and wants $50,000 in 12 years. What constant annual return does that goal demand?",
+      "answer": "Required return",
+      "distractors": [
+        "Future value",
+        "Geometric average return",
+        "Arithmetic average return",
+        "Real return"
+      ],
+      "explanation": "(FV ÷ PV)^(1/n) − 1 = 2.5^(1/12) − 1 ≈ 7.9% a year."
+    },
+    {
+      "id": "rr-02",
+      "scenario": "To turn $30,000 into $60,000 in 10 years, what annual return must the investment earn?",
+      "answer": "Required return",
+      "distractors": [
+        "Future value",
+        "Geometric average return",
+        "Inflated spending",
+        "Annual interest on savings"
+      ],
+      "explanation": "2^(1/10) − 1 ≈ 7.2% a year."
+    },
+    {
+      "id": "aa-01",
+      "scenario": "A fund returned +10%, −5%, +15% and +4% in four successive years. What is the simple average of those four yearly returns, ignoring compounding?",
+      "answer": "Arithmetic average return",
+      "distractors": [
+        "Geometric average return",
+        "Portfolio expected return",
+        "Real return",
+        "Realized stock return"
+      ],
+      "explanation": "Σ r ÷ n = (10 − 5 + 15 + 4) ÷ 4 = 6%."
+    },
+    {
+      "id": "aa-02",
+      "scenario": "Yearly returns of 12%, −8% and 20% are added up and divided by 3. What measure does this give?",
+      "answer": "Arithmetic average return",
+      "distractors": [
+        "Geometric average return",
+        "Portfolio expected return",
+        "Required return",
+        "Standard deviation"
+      ],
+      "explanation": "(12 − 8 + 20) ÷ 3 = 8%. It ignores compounding, so it overstates the growth rate actually earned."
+    },
+    {
+      "id": "ga-01",
+      "scenario": "A stock gains 25% in year one and loses 20% in year two. What constant annual rate reflects the compounded result over the two years?",
+      "answer": "Geometric average return",
+      "distractors": [
+        "Arithmetic average return",
+        "Required return",
+        "Real return",
+        "Realized stock return"
+      ],
+      "explanation": "(1.25 × 0.80)^(1/2) − 1 = 0%. The simple average would wrongly say 2.5%."
+    },
+    {
+      "id": "ga-02",
+      "scenario": "An investor earned +10%, +20% and −10% over three years. What is the compound annual rate she actually earned?",
+      "answer": "Geometric average return",
+      "distractors": [
+        "Arithmetic average return",
+        "Future value",
+        "Required return",
+        "Portfolio expected return"
+      ],
+      "explanation": "(1.10 × 1.20 × 0.90)^(1/3) − 1 = 1.188^(1/3) − 1 ≈ 5.9%, a little below the 6.7% simple average."
+    },
+    {
+      "id": "rl-01",
+      "scenario": "A portfolio earned 8% before inflation in a year when prices rose 3%. By what percent did its purchasing power actually grow?",
+      "answer": "Real return",
+      "distractors": [
+        "Arithmetic average return",
+        "After-tax yield",
+        "Alpha",
+        "Geometric average return"
+      ],
+      "explanation": "(1 + 0.08) ÷ (1 + 0.03) − 1 ≈ 4.85%, slightly less than 8% − 3%."
+    },
+    {
+      "id": "rl-02",
+      "scenario": "A bond pays 5% while inflation is 2%. What is the return after removing the effect of rising prices?",
+      "answer": "Real return",
+      "distractors": [
+        "After-tax yield",
+        "Earnings yield spread",
+        "Inflated spending",
+        "Dividend yield"
+      ],
+      "explanation": "1.05 ÷ 1.02 − 1 ≈ 2.94%."
+    },
+    {
+      "id": "pe-01",
+      "scenario": "A portfolio is 60% in a stock fund expected to earn 9% and 40% in a bond fund expected to earn 4%. What is the expected return of the whole portfolio?",
+      "answer": "Portfolio expected return",
+      "distractors": [
+        "Arithmetic average return",
+        "Portfolio beta",
+        "CAPM expected return",
+        "Geometric average return"
+      ],
+      "explanation": "Σ w × R = 0.60 × 9% + 0.40 × 4% = 5.4% + 1.6% = 7.0%."
+    },
+    {
+      "id": "pe-02",
+      "scenario": "A portfolio holds 50% in asset A (expected 12%), 30% in B (expected 8%) and 20% in C (expected 5%). What return should it be expected to earn?",
+      "answer": "Portfolio expected return",
+      "distractors": [
+        "Arithmetic average return",
+        "Portfolio beta",
+        "Alpha",
+        "Realized stock return"
+      ],
+      "explanation": "0.50 × 12% + 0.30 × 8% + 0.20 × 5% = 6.0% + 2.4% + 1.0% = 9.4%."
+    },
+    {
+      "id": "rs-01",
+      "scenario": "Looking back at the past year, an analyst explains a stock's return in three pieces: a 2% dividend yield, 6% growth in the dividend, and a 3% rise in the valuation multiple.",
+      "answer": "Realized stock return",
+      "distractors": [
+        "Gordon equation",
+        "Arithmetic average return",
+        "Capital gain or loss",
+        "Portfolio expected return"
+      ],
+      "explanation": "Dividend yield + dividend growth + change in the multiple = 2% + 6% + 3% = 11%."
+    },
+    {
+      "id": "rs-02",
+      "scenario": "Over the last year a stock's dividend yield was 3%, its dividend grew 4%, and its valuation multiple fell 2%. Where did its return come from, and what was it?",
+      "answer": "Realized stock return",
+      "distractors": [
+        "Gordon equation",
+        "Dividend yield",
+        "Alpha",
+        "Capital gain or loss"
+      ],
+      "explanation": "3% + 4% − 2% = 5%. This decomposes a return that has already happened."
+    },
+    {
+      "id": "sd-01",
+      "scenario": "A fund returned 4%, 8%, 12% and 16% over four years. The investor finds the mean (10%), squares each deviation from it, divides by n − 1, and takes the square root to measure total volatility.",
+      "answer": "Standard deviation",
+      "distractors": [
+        "Coefficient of variation",
+        "Beta",
+        "Tracking error",
+        "Correlation"
+      ],
+      "explanation": "Squared deviations: 36 + 4 + 4 + 36 = 80; ÷ 3 = 26.7; square root ≈ 5.16%."
+    },
+    {
+      "id": "sd-02",
+      "scenario": "A fund returned 2%, 6% and 10% in three years. Using the sample formula, how large is the total volatility of its returns?",
+      "answer": "Standard deviation",
+      "distractors": [
+        "Coefficient of variation",
+        "Beta",
+        "Tracking error",
+        "Arithmetic average return"
+      ],
+      "explanation": "Mean 6%; squared deviations 16 + 0 + 16 = 32; ÷ 2 = 16; √16 = 4%."
+    },
+    {
+      "id": "cv-01",
+      "scenario": "Fund A has a mean return of 8% and volatility of 12%. Fund B has a mean of 15% and volatility of 18%. To compare risk per unit of return, the analyst divides each volatility by its mean (1.5 and 1.2).",
+      "answer": "Coefficient of variation",
+      "distractors": [
+        "Standard deviation",
+        "Sharpe ratio",
+        "Beta",
+        "Treynor ratio"
+      ],
+      "explanation": "σ ÷ mean: A = 1.5, B = 1.2. Fund B has less risk per unit of return despite its higher volatility."
+    },
+    {
+      "id": "cv-02",
+      "scenario": "Stock X averages a 10% return with a 15% volatility; stock Y averages 5% with a 10% volatility. Which is riskier per unit of return when the averages differ?",
+      "answer": "Coefficient of variation",
+      "distractors": [
+        "Standard deviation",
+        "Sharpe ratio",
+        "Correlation",
+        "Tracking error"
+      ],
+      "explanation": "σ ÷ mean: X = 1.5, Y = 2.0, so Y carries more risk per unit of return."
+    },
+    {
+      "id": "co-01",
+      "scenario": "Two funds' returns have a covariance of 0.0024. Their volatilities are 8% and 6%. A planner divides the covariance by the product of the volatilities to see how the funds move together.",
+      "answer": "Correlation",
+      "distractors": [
+        "Beta",
+        "Standard deviation",
+        "Coefficient of variation",
+        "Tracking error"
+      ],
+      "explanation": "ρ = 0.0024 ÷ (0.08 × 0.06) = 0.5, a moderate positive relationship."
+    },
+    {
+      "id": "co-02",
+      "scenario": "A planner wants a number from −1 to +1 showing how two assets move together, to decide whether adding one would improve diversification. When one tends to rise, the other tends to fall.",
+      "answer": "Correlation",
+      "distractors": [
+        "Beta",
+        "Standard deviation",
+        "Alpha",
+        "Information ratio"
+      ],
+      "explanation": "A negative value near −1 means the assets offset each other, which helps diversification the most."
+    },
+    {
+      "id": "be-01",
+      "scenario": "A stock's returns have a covariance of 0.0045 with the market's returns, and the market's variance is 0.0030. How sensitive is the stock to market moves?",
+      "answer": "Beta",
+      "distractors": [
+        "Correlation",
+        "Portfolio beta",
+        "Standard deviation",
+        "Alpha"
+      ],
+      "explanation": "Cov(R, Rₘ) ÷ σₘ² = 0.0045 ÷ 0.0030 = 1.5, so it moves about 1.5 times the market."
+    },
+    {
+      "id": "be-02",
+      "scenario": "When the market rises 10%, this stock tends to rise about 15%, and when the market falls 10% it tends to fall about 15%. Which statistic captures that sensitivity?",
+      "answer": "Beta",
+      "distractors": [
+        "Correlation",
+        "Standard deviation",
+        "Alpha",
+        "Tracking error"
+      ],
+      "explanation": "A sensitivity of 1.5 times the market is a beta of 1.5."
+    },
+    {
+      "id": "pb-01",
+      "scenario": "A portfolio holds 50% in stock A (beta 1.2), 30% in stock B (beta 0.8) and 20% in stock C (beta 1.5). How sensitive is the whole portfolio to the market?",
+      "answer": "Portfolio beta",
+      "distractors": [
+        "Beta",
+        "Portfolio expected return",
+        "CAPM expected return",
+        "Correlation"
+      ],
+      "explanation": "Σ w × β = 0.50 × 1.2 + 0.30 × 0.8 + 0.20 × 1.5 = 0.60 + 0.24 + 0.30 = 1.14."
+    },
+    {
+      "id": "pb-02",
+      "scenario": "A portfolio is 70% in a fund with a beta of 1.0 and 30% in cash, which has a beta of 0. What is the market sensitivity of the whole portfolio?",
+      "answer": "Portfolio beta",
+      "distractors": [
+        "Beta",
+        "Portfolio expected return",
+        "Standard deviation",
+        "Alpha"
+      ],
+      "explanation": "0.70 × 1.0 + 0.30 × 0 = 0.70."
+    },
+    {
+      "id": "tke-01",
+      "scenario": "Each month an index fund's return is compared with its benchmark's return, and the differences have a standard deviation of 0.4%. This tells how far the fund's returns stray from the benchmark.",
+      "answer": "Tracking error",
+      "distractors": [
+        "Standard deviation",
+        "Information ratio",
+        "Alpha",
+        "Beta"
+      ],
+      "explanation": "The standard deviation of (fund return − benchmark return) is the tracking error: 0.4%."
+    },
+    {
+      "id": "tke-02",
+      "scenario": "A manager's yearly returns minus the benchmark's were +1%, −2%, +3%, 0% and −2%. What measure of how far the portfolio strays from the benchmark do these differences give?",
+      "answer": "Tracking error",
+      "distractors": [
+        "Standard deviation",
+        "Alpha",
+        "Information ratio",
+        "Correlation"
+      ],
+      "explanation": "The differences average 0%; squared deviations 1 + 4 + 9 + 0 + 4 = 18; ÷ 4 = 4.5; square root ≈ 2.12%."
+    },
+    {
+      "id": "cp-01",
+      "scenario": "The risk-free rate is 3%, the market is expected to return 9%, and a stock has a beta of 1.2. What return should investors require for the market risk of this stock?",
+      "answer": "CAPM expected return",
+      "distractors": [
+        "Alpha",
+        "Portfolio expected return",
+        "Gordon equation",
+        "Beta"
+      ],
+      "explanation": "R_f + β × (Rₘ − R_f) = 3% + 1.2 × 6% = 10.2%."
+    },
+    {
+      "id": "cp-02",
+      "scenario": "With the risk-free rate at 2%, the market expected to earn 8% and a stock's beta at 0.5, what return is required for the market risk taken?",
+      "answer": "CAPM expected return",
+      "distractors": [
+        "Alpha",
+        "Gordon equation",
+        "Treynor ratio",
+        "Portfolio beta"
+      ],
+      "explanation": "2% + 0.5 × (8% − 2%) = 5.0%."
+    },
+    {
+      "id": "al-01",
+      "scenario": "A fund returned 11%. With a risk-free rate of 3%, a market return of 9% and a fund beta of 1.1, the return its beta predicts is 9.6%. How much return came beyond what beta predicts?",
+      "answer": "Alpha",
+      "distractors": [
+        "CAPM expected return",
+        "Information ratio",
+        "Selection effect",
+        "Sharpe ratio"
+      ],
+      "explanation": "Actual − expected = 11% − 9.6% = +1.4%, which means outperformance."
+    },
+    {
+      "id": "al-02",
+      "scenario": "A portfolio with a beta of 0.8 earned 6% while the risk-free rate was 2% and the market earned 8%. Its beta predicts 6.8%. Did it beat expectations, and by how much?",
+      "answer": "Alpha",
+      "distractors": [
+        "CAPM expected return",
+        "Tracking error",
+        "Treynor ratio",
+        "Interaction effect"
+      ],
+      "explanation": "6% − 6.8% = −0.8%, underperformance relative to its beta-implied return."
+    },
+    {
+      "id": "sh-01",
+      "scenario": "A fund returned 12% while the risk-free rate was 3%, and its volatility was 15%. What is its excess return per unit of total risk?",
+      "answer": "Sharpe ratio",
+      "distractors": [
+        "Treynor ratio",
+        "Information ratio",
+        "Coefficient of variation",
+        "Alpha"
+      ],
+      "explanation": "(Rₚ − R_f) ÷ σₚ = (12% − 3%) ÷ 15% = 0.6, weak by the usual rule of thumb (below 1)."
+    },
+    {
+      "id": "sh-02",
+      "scenario": "A portfolio earned 10% while Treasury bills paid 2%, and its returns had a volatility of 8%. How much extra return did it earn for each unit of total risk?",
+      "answer": "Sharpe ratio",
+      "distractors": [
+        "Treynor ratio",
+        "Information ratio",
+        "Alpha",
+        "Coefficient of variation"
+      ],
+      "explanation": "(10% − 2%) ÷ 8% = 1.0, the border between weak and good."
+    },
+    {
+      "id": "tr-01",
+      "scenario": "A portfolio returned 11% with a beta of 1.2, while the risk-free rate was 3%. What is the excess return per unit of market risk?",
+      "answer": "Treynor ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Information ratio",
+        "Alpha",
+        "Beta"
+      ],
+      "explanation": "(Rₚ − R_f) ÷ βₚ = 8% ÷ 1.2 ≈ 6.67%."
+    },
+    {
+      "id": "tr-02",
+      "scenario": "A fund returned 9% against a 3% risk-free rate and has a beta of 0.75. Divide its excess return by its market sensitivity to rate it.",
+      "answer": "Treynor ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Information ratio",
+        "CAPM expected return",
+        "Coefficient of variation"
+      ],
+      "explanation": "6% ÷ 0.75 = 8%."
+    },
+    {
+      "id": "ir-01",
+      "scenario": "A manager returned 9% while the benchmark returned 7%, with a tracking error of 4%. How much active return did she earn per unit of tracking error?",
+      "answer": "Information ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Treynor ratio",
+        "Alpha",
+        "Tracking error"
+      ],
+      "explanation": "(Rₚ − R_b) ÷ tracking error = 2% ÷ 4% = 0.5."
+    },
+    {
+      "id": "ir-02",
+      "scenario": "A portfolio returned 6.5% against a benchmark's 5.0%, and the differences between them had a volatility of 1.5%. Rate the manager's active return per unit of benchmark-relative risk.",
+      "answer": "Information ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Treynor ratio",
+        "Alpha",
+        "Selection effect"
+      ],
+      "explanation": "1.5% ÷ 1.5% = 1.0."
+    },
+    {
+      "id": "ae-01",
+      "scenario": "In a performance review, a portfolio holds 30% in technology while the benchmark holds 20%. The benchmark's technology stocks returned 12% and the whole benchmark returned 8%. How much did the sector weighting add?",
+      "answer": "Allocation effect",
+      "distractors": [
+        "Selection effect",
+        "Interaction effect",
+        "Alpha",
+        "Tracking error"
+      ],
+      "explanation": "(wₚ − w_b) × (R_b,sector − R_b,total) = (0.30 − 0.20) × (12% − 8%) = 0.4%."
+    },
+    {
+      "id": "ae-02",
+      "scenario": "A portfolio holds 10% in utilities while the benchmark holds 15%. The benchmark's utilities returned 4% and the whole benchmark returned 9%. What did the underweighting contribute?",
+      "answer": "Allocation effect",
+      "distractors": [
+        "Selection effect",
+        "Interaction effect",
+        "Information ratio",
+        "Alpha"
+      ],
+      "explanation": "(0.10 − 0.15) × (4% − 9%) = +0.25%. Underweighting a lagging sector helped."
+    },
+    {
+      "id": "se-01",
+      "scenario": "The benchmark has a 10% weight in energy. The manager's energy stocks returned 14% while the benchmark's energy sector returned 11%. How much did picking better securities within the sector add?",
+      "answer": "Selection effect",
+      "distractors": [
+        "Allocation effect",
+        "Interaction effect",
+        "Alpha",
+        "Information ratio"
+      ],
+      "explanation": "w_b × (Rₚ − R_b) = 0.10 × (14% − 11%) = 0.3%."
+    },
+    {
+      "id": "se-02",
+      "scenario": "The benchmark weight in health care is 20%. The manager's picks returned 6% while the benchmark's health care sector returned 8%. What did stock picking contribute within the sector?",
+      "answer": "Selection effect",
+      "distractors": [
+        "Allocation effect",
+        "Interaction effect",
+        "Tracking error",
+        "Alpha"
+      ],
+      "explanation": "0.20 × (6% − 8%) = −0.4%."
+    },
+    {
+      "id": "ie-01",
+      "scenario": "A portfolio holds 25% in a sector where the benchmark holds 20%, and its securities there returned 10% against the sector benchmark's 8%. What is the contribution from overweighting and picking better together?",
+      "answer": "Interaction effect",
+      "distractors": [
+        "Allocation effect",
+        "Selection effect",
+        "Alpha",
+        "Information ratio"
+      ],
+      "explanation": "(wₚ − w_b) × (Rₚ − R_b) = 0.05 × 2% = 0.1%."
+    },
+    {
+      "id": "ie-02",
+      "scenario": "A manager overweights a sector by 10 percentage points (40% versus 30%) and her picks beat the sector benchmark by 3 points (11% versus 8%). What effect comes from the combination of the two decisions?",
+      "answer": "Interaction effect",
+      "distractors": [
+        "Allocation effect",
+        "Selection effect",
+        "Tracking error",
+        "Treynor ratio"
+      ],
+      "explanation": "0.10 × 3% = 0.3%."
+    },
+    {
+      "id": "pr-01",
+      "scenario": "A stock is priced at $60 a share and earned $4 per share over the past year. How much is being paid per dollar of earnings?",
+      "answer": "Price-to-earnings (P/E)",
+      "distractors": [
+        "Earnings yield",
+        "Dividend yield",
+        "CAPE",
+        "Earnings yield spread"
+      ],
+      "explanation": "Price ÷ EPS = $60 ÷ $4 = 15."
+    },
+    {
+      "id": "pr-02",
+      "scenario": "A company trades at $45 a share and is expected to earn $2.50 per share next year. What is the price paid per dollar of those forward earnings?",
+      "answer": "Price-to-earnings (P/E)",
+      "distractors": [
+        "Earnings yield",
+        "CAPE",
+        "Dividend yield",
+        "Gordon equation"
+      ],
+      "explanation": "$45 ÷ $2.50 = 18."
+    },
+    {
+      "id": "ca-01",
+      "scenario": "A strategist values the stock market at 4,500 by dividing it by 150, the average of the last ten years of inflation-adjusted earnings, to smooth the business cycle.",
+      "answer": "CAPE",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Earnings yield",
+        "Earnings yield spread",
+        "Dividend yield"
+      ],
+      "explanation": "Price ÷ average 10-year inflation-adjusted earnings = 4,500 ÷ 150 = 30."
+    },
+    {
+      "id": "ca-02",
+      "scenario": "After a recession year with depressed earnings, an analyst avoids using one year of earnings. Instead she divides a price of 3,000 by 120, the decade-long average of inflation-adjusted earnings.",
+      "answer": "CAPE",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Earnings yield",
+        "Gordon equation",
+        "Realized stock return"
+      ],
+      "explanation": "3,000 ÷ 120 = 25. Averaging ten years of real earnings avoids the distortion from one bad year."
+    },
+    {
+      "id": "dy-01",
+      "scenario": "A stock priced at $60 is expected to pay $2.40 per share in dividends over the next 12 months. What cash return does that represent?",
+      "answer": "Dividend yield",
+      "distractors": [
+        "Earnings yield",
+        "Price-to-earnings (P/E)",
+        "Gordon equation",
+        "After-tax yield"
+      ],
+      "explanation": "$2.40 ÷ $60 = 4%."
+    },
+    {
+      "id": "dy-02",
+      "scenario": "A stock at $80 pays $0.50 each quarter and is expected to keep doing so. What cash return from payouts does it offer at today's price?",
+      "answer": "Dividend yield",
+      "distractors": [
+        "Earnings yield",
+        "Gordon equation",
+        "Realized stock return",
+        "Tax-equivalent yield"
+      ],
+      "explanation": "$2.00 for the next 12 months ÷ $80 = 2.5%."
+    },
+    {
+      "id": "ey-01",
+      "scenario": "To compare a stock with a bond, an analyst expresses its earnings as a return on price. EPS is $5 and the price is $100.",
+      "answer": "Earnings yield",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Dividend yield",
+        "Earnings yield spread",
+        "CAPE"
+      ],
+      "explanation": "EPS ÷ price = $5 ÷ $100 = 5%, the inverse of a P/E of 20."
+    },
+    {
+      "id": "ey-02",
+      "scenario": "A stock trades at 25 times earnings. Turning that around, what return on price do its earnings represent?",
+      "answer": "Earnings yield",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Dividend yield",
+        "Gordon equation",
+        "CAPE"
+      ],
+      "explanation": "1 ÷ 25 = 4%."
+    },
+    {
+      "id": "es-01",
+      "scenario": "The earnings yield on the stock market is 5.5% while Baa corporate bonds yield 6.5%. What does the gap say about stocks relative to corporate bonds?",
+      "answer": "Earnings yield spread",
+      "distractors": [
+        "Earnings yield",
+        "Dividend yield",
+        "After-tax yield",
+        "Gordon equation"
+      ],
+      "explanation": "5.5% − 6.5% = −1.0%. A negative spread suggests expensive equities."
+    },
+    {
+      "id": "es-02",
+      "scenario": "The market's earnings yield is 7.0% while Baa bonds yield 5.5%. How do stocks compare with corporate bonds?",
+      "answer": "Earnings yield spread",
+      "distractors": [
+        "Earnings yield",
+        "Tax-equivalent yield",
+        "Dividend yield",
+        "CAPE"
+      ],
+      "explanation": "7.0% − 5.5% = +1.5%, which suggests equities are relatively cheap."
+    },
+    {
+      "id": "go-01",
+      "scenario": "A stock's dividend yield is 2.5% and its dividends are expected to grow 5% a year over the long run. What rough return can investors expect from it?",
+      "answer": "Gordon equation",
+      "distractors": [
+        "CAPM expected return",
+        "Dividend yield",
+        "Realized stock return",
+        "Earnings yield"
+      ],
+      "explanation": "D ÷ P + g = 2.5% + 5% = 7.5%."
+    },
+    {
+      "id": "go-02",
+      "scenario": "A stock trades at $50, its next dividend is $1.50, and dividends are expected to grow about 4% a year indefinitely. Estimate the return investors can expect.",
+      "answer": "Gordon equation",
+      "distractors": [
+        "CAPM expected return",
+        "Required return",
+        "Dividend yield",
+        "Realized stock return"
+      ],
+      "explanation": "$1.50 ÷ $50 + 4% = 3% + 4% = 7%."
+    },
+    {
+      "id": "nw-03",
+      "scenario": "A retiree lists what she owns: a house worth $350,000, investments of $210,000 and a car worth $15,000. Her only debt is a $90,000 mortgage balance. What does she have after subtracting what she owes, as of this month?",
+      "answer": "Net worth",
+      "distractors": [
+        "Debt ratio",
+        "Net cash flow",
+        "Emergency fund",
+        "Housing ratio"
+      ],
+      "explanation": "Assets − liabilities = $575,000 − $90,000 = $485,000."
+    },
+    {
+      "id": "nw-04",
+      "scenario": "A year ago a graduate's assets were $20,000 and his liabilities $45,000. Today the assets are $38,000 and the liabilities $41,000. His position at each date went from −$25,000 to −$3,000, so which measure is this?",
+      "answer": "Net worth",
+      "distractors": [
+        "Net cash flow",
+        "Savings ratio",
+        "Debt ratio",
+        "Current ratio"
+      ],
+      "explanation": "Assets − liabilities at a single date: $20,000 − $45,000 = −$25,000 a year ago and $38,000 − $41,000 = −$3,000 today."
+    },
+    {
+      "id": "ncf-03",
+      "scenario": "A freelancer collected $7,200 of invoices in June and paid $7,950 of bills and expenses that month. Did her income cover her spending?",
+      "answer": "Net cash flow",
+      "distractors": [
+        "Savings ratio",
+        "Net worth",
+        "Current ratio",
+        "Debt servicing ratio"
+      ],
+      "explanation": "Income − expenses = $7,200 − $7,950 = −$750 for the month."
+    },
+    {
+      "id": "ncf-04",
+      "scenario": "A household brought in $96,000 during the year and spent $88,400 across all categories. How large was the surplus for the period?",
+      "answer": "Net cash flow",
+      "distractors": [
+        "Net worth",
+        "Savings ratio",
+        "50-30-20 budget",
+        "Emergency fund"
+      ],
+      "explanation": "Income − expenses = $96,000 − $88,400 = $7,600."
+    },
+    {
+      "id": "sr-03",
+      "scenario": "Priya put $6,000 into her retirement plan and $4,500 into a brokerage account this year. Her gross pay was $70,000. What share of gross pay did she save?",
+      "answer": "Savings ratio",
+      "distractors": [
+        "Net cash flow",
+        "Debt servicing ratio",
+        "Current ratio",
+        "Emergency fund"
+      ],
+      "explanation": "Total savings ÷ gross income = $10,500 ÷ $70,000 = 15%."
+    },
+    {
+      "id": "sr-04",
+      "scenario": "A class guideline says to save 20% or more of gross income. Luis saved $9,000 out of $75,000 of gross income. Is he on track?",
+      "answer": "Savings ratio",
+      "distractors": [
+        "Net cash flow",
+        "50-30-20 budget",
+        "Debt servicing ratio",
+        "Housing ratio"
+      ],
+      "explanation": "$9,000 ÷ $75,000 = 12%, short of the 20% guideline."
+    },
+    {
+      "id": "dsr-03",
+      "scenario": "A couple pays $1,900 on their mortgage, $450 on car loans and $150 in card minimums each month. Their gross income is $8,000 a month. What share of gross income goes to all of these payments?",
+      "answer": "Debt servicing ratio",
+      "distractors": [
+        "Housing ratio",
+        "Debt ratio",
+        "Savings ratio",
+        "Net cash flow"
+      ],
+      "explanation": "Total debt payments ÷ gross income = $2,500 ÷ $8,000 = 31.25%, under the 36% benchmark."
+    },
+    {
+      "id": "dsr-04",
+      "scenario": "A lender caps total debt payments at 36% of gross income. Zoe has gross income of $4,500 a month and makes $1,800 of monthly payments on her loans. Does she pass?",
+      "answer": "Debt servicing ratio",
+      "distractors": [
+        "Debt ratio",
+        "Housing ratio",
+        "Current ratio",
+        "Savings ratio"
+      ],
+      "explanation": "$1,800 ÷ $4,500 = 40%, which is over the 36% limit, so she fails."
+    },
+    {
+      "id": "dr-03",
+      "scenario": "A balance sheet shows total assets of $250,000 and total liabilities of $110,000. What share of the assets is financed by debt?",
+      "answer": "Debt ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "Net worth",
+        "Housing ratio",
+        "Current ratio"
+      ],
+      "explanation": "Total liabilities ÷ total assets = $110,000 ÷ $250,000 = 44%, over the 40% benchmark."
+    },
+    {
+      "id": "dr-04",
+      "scenario": "A young family owes $210,000 in total and owns $500,000 of assets. Is their leverage under the 40% benchmark?",
+      "answer": "Debt ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "Net worth",
+        "Current ratio",
+        "Savings ratio"
+      ],
+      "explanation": "$210,000 ÷ $500,000 = 42%, so it is slightly over the benchmark."
+    },
+    {
+      "id": "cr-03",
+      "scenario": "Marta has $4,000 in cash. Within the next few months she owes $2,500 on a credit card and $1,500 for an insurance premium. How well does her cash cover what is coming due?",
+      "answer": "Current ratio",
+      "distractors": [
+        "Debt ratio",
+        "Emergency fund",
+        "Net worth",
+        "Net cash flow"
+      ],
+      "explanation": "Cash ÷ short-term liabilities = $4,000 ÷ $4,000 = 1.0, just enough."
+    },
+    {
+      "id": "cr-04",
+      "scenario": "A student has $1,200 in cash and $3,000 of short-term obligations (a tuition installment and bills). Can cash alone cover them?",
+      "answer": "Current ratio",
+      "distractors": [
+        "Debt ratio",
+        "Emergency fund",
+        "Savings ratio",
+        "Debt servicing ratio"
+      ],
+      "explanation": "$1,200 ÷ $3,000 = 0.4, so cash covers only 40% of what is due."
+    },
+    {
+      "id": "hr-03",
+      "scenario": "A couple's mortgage, property taxes, insurance and HOA dues total $2,100 a month. Their gross pay is $7,000 a month. How does this compare with the 28% guide?",
+      "answer": "Housing ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "Debt ratio",
+        "Savings ratio",
+        "Net cash flow"
+      ],
+      "explanation": "Housing costs ÷ gross pay = $2,100 ÷ $7,000 = 30%, above the guide."
+    },
+    {
+      "id": "hr-04",
+      "scenario": "A household spends $18,000 a year on housing and earns $80,000 gross. Is housing affordable by the 28% guide?",
+      "answer": "Housing ratio",
+      "distractors": [
+        "Debt servicing ratio",
+        "50-30-20 budget",
+        "Current ratio",
+        "Debt ratio"
+      ],
+      "explanation": "$18,000 ÷ $80,000 = 22.5%, comfortably under 28%."
+    },
+    {
+      "id": "ef-03",
+      "scenario": "Rafael is self-employed with irregular income. His necessary spending is rent $1,400, food $500, utilities $200, insurance $300 and transport $200 a month. He wants a cushion at the top of the usual range, six months' worth.",
+      "answer": "Emergency fund",
+      "distractors": [
+        "Savings ratio",
+        "Current ratio",
+        "Net worth",
+        "50-30-20 budget"
+      ],
+      "explanation": "Necessary expenses are $2,600 a month; 6 × $2,600 = $15,600."
+    },
+    {
+      "id": "ef-04",
+      "scenario": "A couple with two stable jobs spends $4,000 a month on necessities. They want the minimum cushion, three months of that spending, in case of a layoff.",
+      "answer": "Emergency fund",
+      "distractors": [
+        "Current ratio",
+        "Net cash flow",
+        "Savings ratio",
+        "Annual interest on savings"
+      ],
+      "explanation": "3 × $4,000 = $12,000."
+    },
+    {
+      "id": "bud-03",
+      "scenario": "A coach tells a client who takes home $5,000 after tax to put $2,500 toward needs, $1,500 toward wants and $1,000 toward savings and extra debt payments. Which budgeting rule is this?",
+      "answer": "50-30-20 budget",
+      "distractors": [
+        "Savings ratio",
+        "Net cash flow",
+        "Housing ratio",
+        "Debt servicing ratio"
+      ],
+      "explanation": "50% + 30% + 20% of $5,000 after-tax pay = $2,500 + $1,500 + $1,000."
+    },
+    {
+      "id": "bud-04",
+      "scenario": "Mina's after-tax pay is $2,800 a month. She splits it half to needs, three-tenths to wants and one-fifth to savings and debt repayment. How much goes to each?",
+      "answer": "50-30-20 budget",
+      "distractors": [
+        "Savings ratio",
+        "Emergency fund",
+        "Net cash flow",
+        "Down payment and mortgage"
+      ],
+      "explanation": "50% → $1,400, 30% → $840, 20% → $560."
+    },
+    {
+      "id": "dm-03",
+      "scenario": "A buyer is looking at a $300,000 home and will put 20% down. How much cash is needed and how much must she borrow?",
+      "answer": "Down payment and mortgage",
+      "distractors": [
+        "Housing ratio",
+        "Debt ratio",
+        "Net worth",
+        "Annual interest on savings"
+      ],
+      "explanation": "Down payment = $60,000; mortgage = $300,000 − $60,000 = $240,000."
+    },
+    {
+      "id": "dm-04",
+      "scenario": "A buyer has saved $90,000, exactly the 20% down payment on the house she wants. What is the price of the house and how large is the mortgage?",
+      "answer": "Down payment and mortgage",
+      "distractors": [
+        "Housing ratio",
+        "Emergency fund",
+        "Future value",
+        "Debt servicing ratio"
+      ],
+      "explanation": "Price = $90,000 ÷ 20% = $450,000; mortgage = $450,000 − $90,000 = $360,000."
+    },
+    {
+      "id": "ai-03",
+      "scenario": "Dana keeps $40,000 in a savings account paying 3.5% a year. How much interest will she receive over a year?",
+      "answer": "Annual interest on savings",
+      "distractors": [
+        "Future value",
+        "Dividend yield",
+        "Savings ratio",
+        "Real return"
+      ],
+      "explanation": "Balance × rate = $40,000 × 3.5% = $1,400."
+    },
+    {
+      "id": "ai-04",
+      "scenario": "Hana moves $30,000 from an account paying 1.0% to one paying 3.8%. How much extra will she earn each year?",
+      "answer": "Annual interest on savings",
+      "distractors": [
+        "Future value",
+        "Required return",
+        "Dividend yield",
+        "Tax-equivalent yield"
+      ],
+      "explanation": "Balance × (new rate − old rate) = $30,000 × 2.8% = $840."
+    },
+    {
+      "id": "gi-03",
+      "scenario": "Lee received $52,000 of wages, $1,800 of interest and $3,200 of life insurance proceeds that the law does not tax. After leaving out what is excluded, what is the figure that begins his return?",
+      "answer": "Gross income (tax return)",
+      "distractors": [
+        "Adjusted gross income",
+        "Taxable income",
+        "Capital gain or loss",
+        "Tax due or refund"
+      ],
+      "explanation": "Income − exclusions = $57,000 − $3,200 = $53,800."
+    },
+    {
+      "id": "gi-04",
+      "scenario": "A filer's total receipts were $140,000, of which $10,000 is excluded by law. What is the starting point of the return, before any adjustments or deductions?",
+      "answer": "Gross income (tax return)",
+      "distractors": [
+        "Adjusted gross income",
+        "Taxable income",
+        "Taxes on earnings",
+        "Effective tax rate"
+      ],
+      "explanation": "$140,000 − $10,000 = $130,000."
+    },
+    {
+      "id": "agi-03",
+      "scenario": "Gross income is $68,000. The taxpayer takes a $5,000 IRA deduction and a $2,500 deduction for half of her self-employment tax. Which figure is the base for phase-outs?",
+      "answer": "Adjusted gross income",
+      "distractors": [
+        "Gross income (tax return)",
+        "Taxable income",
+        "Tax due or refund",
+        "Marginal tax rate"
+      ],
+      "explanation": "Gross income − deductions for AGI = $68,000 − $7,500 = $60,500."
+    },
+    {
+      "id": "agi-04",
+      "scenario": "A taxpayer has $200,000 of gross income and $10,000 of adjustments. A credit phases out when this measure is above $180,000. Does she qualify?",
+      "answer": "Adjusted gross income",
+      "distractors": [
+        "Taxable income",
+        "Gross income (tax return)",
+        "Deduction vs credit savings",
+        "Effective tax rate"
+      ],
+      "explanation": "$200,000 − $10,000 = $190,000, which is over $180,000, so the credit is phased out."
+    },
+    {
+      "id": "ti-03",
+      "scenario": "A filer has AGI of $60,000, a $14,000 standard deduction, $9,000 of itemized deductions and a $3,000 QBI deduction. What amount are the brackets applied to?",
+      "answer": "Taxable income",
+      "distractors": [
+        "Adjusted gross income",
+        "Tax due or refund",
+        "Marginal tax rate",
+        "Gross income (tax return)"
+      ],
+      "explanation": "$60,000 − max($14,000, $9,000) − $3,000 = $43,000."
+    },
+    {
+      "id": "ti-04",
+      "scenario": "Wen has AGI of $140,000 and itemized deductions of $32,000, which beat the $27,000 standard deduction. He also has a $6,000 QBI deduction. What is the amount subject to the brackets?",
+      "answer": "Taxable income",
+      "distractors": [
+        "Adjusted gross income",
+        "Tax due or refund",
+        "Effective tax rate",
+        "Gross income (tax return)"
+      ],
+      "explanation": "$140,000 − $32,000 − $6,000 = $102,000."
+    },
+    {
+      "id": "td-03",
+      "scenario": "Al's tax computed on his taxable income is $15,000. He has $2,500 of credits and his employer withheld $11,000. What does he owe at filing?",
+      "answer": "Tax due or refund",
+      "distractors": [
+        "Effective tax rate",
+        "Taxes on earnings",
+        "Taxable income",
+        "Deduction vs credit savings"
+      ],
+      "explanation": "$15,000 − $2,500 = $12,500 of tax; $12,500 − $11,000 withheld = $1,500 owed."
+    },
+    {
+      "id": "td-04",
+      "scenario": "Pia's income tax after credits is $3,200 and her employer withheld $4,100. What single amount does the government send back to her?",
+      "answer": "Tax due or refund",
+      "distractors": [
+        "Taxable income",
+        "Capital gain or loss",
+        "Effective tax rate",
+        "Deduction vs credit savings"
+      ],
+      "explanation": "$4,100 − $3,200 = $900 refund."
+    },
+    {
+      "id": "et-03",
+      "scenario": "A couple's income tax is $27,000 on taxable income of $150,000. What is the average rate they paid?",
+      "answer": "Effective tax rate",
+      "distractors": [
+        "Marginal tax rate",
+        "Total tax rate",
+        "Taxes on earnings",
+        "Tax due or refund"
+      ],
+      "explanation": "$27,000 ÷ $150,000 = 18%."
+    },
+    {
+      "id": "et-04",
+      "scenario": "Her last dollar is taxed at 32%, but a taxpayer's total tax is $31,500 on $210,000 of taxable income. What average rate does she actually pay?",
+      "answer": "Effective tax rate",
+      "distractors": [
+        "Marginal tax rate",
+        "Total tax rate",
+        "Deduction vs credit savings",
+        "After-tax yield"
+      ],
+      "explanation": "$31,500 ÷ $210,000 = 15%."
+    },
+    {
+      "id": "mt-03",
+      "scenario": "Jo is in the 24% federal bracket and receives a $5,000 raise that stays entirely within that bracket. How much federal income tax is added by the raise?",
+      "answer": "Marginal tax rate",
+      "distractors": [
+        "Effective tax rate",
+        "Taxes on earnings",
+        "Total tax rate",
+        "Tax due or refund"
+      ],
+      "explanation": "The rate on the next dollar earned is the bracket rate, 24%: $5,000 × 24% = $1,200."
+    },
+    {
+      "id": "mt-04",
+      "scenario": "Ravi has $95,000 of taxable income, in the 22% bracket. Before making a pretax retirement contribution he wants to know what rate applies to the last dollar he would remove from taxable income.",
+      "answer": "Marginal tax rate",
+      "distractors": [
+        "Effective tax rate",
+        "Deduction vs credit savings",
+        "Taxable income",
+        "Total tax rate"
+      ],
+      "explanation": "The bracket rate on the last dollar of taxable income, 22%, is the rate on the next dollar deducted."
+    },
+    {
+      "id": "dc-03",
+      "scenario": "A taxpayer in the 32% bracket must choose between a $1,000 credit and a $2,500 deduction. Which one saves more tax, and how much does each save?",
+      "answer": "Deduction vs credit savings",
+      "distractors": [
+        "Marginal tax rate",
+        "Effective tax rate",
+        "Tax due or refund",
+        "Capital gain or loss"
+      ],
+      "explanation": "Deduction: $2,500 × 32% = $800. Credit: $1,000. The credit saves more."
+    },
+    {
+      "id": "dc-04",
+      "scenario": "A filer in the 10% bracket compares a $3,000 deduction with a $3,000 credit. How much more tax does the credit save?",
+      "answer": "Deduction vs credit savings",
+      "distractors": [
+        "Marginal tax rate",
+        "Taxable income",
+        "After-tax yield",
+        "Total tax rate"
+      ],
+      "explanation": "Deduction: $3,000 × 10% = $300. Credit: $3,000. The credit saves $2,700 more."
+    },
+    {
+      "id": "toe-03",
+      "scenario": "Dan lives where the state tax is 3% and faces a 12% federal rate. A side job pays him $6,000 before tax. How many dollars go to the two governments in total?",
+      "answer": "Taxes on earnings",
+      "distractors": [
+        "Total tax rate",
+        "Effective tax rate",
+        "Tax due or refund",
+        "Capital gain or loss"
+      ],
+      "explanation": "$6,000 × (3% + 12%) = $900."
+    },
+    {
+      "id": "toe-04",
+      "scenario": "A $20,000 pretax bonus faces a 6% state rate and a 32% federal rate. How many dollars will be taxed away?",
+      "answer": "Taxes on earnings",
+      "distractors": [
+        "Total tax rate",
+        "Marginal tax rate",
+        "Deduction vs credit savings",
+        "Tax due or refund"
+      ],
+      "explanation": "$20,000 × (6% + 32%) = $7,600, leaving $12,400."
+    },
+    {
+      "id": "cg-03",
+      "scenario": "A trader bought 100 shares at $42 and sold them at $55 after holding them for five years. What is the taxable result of the sale?",
+      "answer": "Capital gain or loss",
+      "distractors": [
+        "Realized stock return",
+        "Gross income (tax return)",
+        "Dividend yield",
+        "Arithmetic average return"
+      ],
+      "explanation": "Proceeds − cost basis = $5,500 − $4,200 = $1,300, a long-term gain."
+    },
+    {
+      "id": "cg-04",
+      "scenario": "Eva sold a fund for $9,800. Her cost basis was $9,000 and she held it for 8 months. What is the taxable result and its term?",
+      "answer": "Capital gain or loss",
+      "distractors": [
+        "Realized stock return",
+        "Taxable income",
+        "Tax due or refund",
+        "Real return"
+      ],
+      "explanation": "$9,800 − $9,000 = $800, a short-term gain because it was held under a year."
+    },
+    {
+      "id": "tt-03",
+      "scenario": "An investor's federal marginal rate is 35% and her state rate is 7%. What single combined rate applies to her bond interest?",
+      "answer": "Total tax rate",
+      "distractors": [
+        "Taxes on earnings",
+        "Effective tax rate",
+        "Marginal tax rate",
+        "After-tax yield"
+      ],
+      "explanation": "Federal marginal rate + state rate = 35% + 7% = 42%."
+    },
+    {
+      "id": "tt-04",
+      "scenario": "A saver is in the 12% federal bracket and lives in a state that taxes investment income at 4%. What combined rate applies to that income?",
+      "answer": "Total tax rate",
+      "distractors": [
+        "Taxes on earnings",
+        "Effective tax rate",
+        "Tax-equivalent yield",
+        "Deduction vs credit savings"
+      ],
+      "explanation": "12% + 4% = 16%."
+    },
+    {
+      "id": "aty-03",
+      "scenario": "A taxable bond yields 6% before tax. The owner's combined rate is 35%. What does she keep after taxes?",
+      "answer": "After-tax yield",
+      "distractors": [
+        "Tax-equivalent yield",
+        "Earnings yield",
+        "Dividend yield",
+        "Real return"
+      ],
+      "explanation": "6% × (1 − 0.35) = 3.9%."
+    },
+    {
+      "id": "aty-04",
+      "scenario": "A taxable bond pays 4.5%, and a muni pays 3.4% tax-free. For a person at a 28% combined rate, what is the first bond's yield once taxes are removed so the two can be compared?",
+      "answer": "After-tax yield",
+      "distractors": [
+        "Tax-equivalent yield",
+        "Total tax rate",
+        "Earnings yield spread",
+        "Dividend yield"
+      ],
+      "explanation": "4.5% × (1 − 0.28) = 3.24%, which is lower than the muni's 3.4%."
+    },
+    {
+      "id": "tey-03",
+      "scenario": "A municipal bond yields 3.6%, free of tax. For an investor whose combined rate is 40%, what taxable yield would give the same result?",
+      "answer": "Tax-equivalent yield",
+      "distractors": [
+        "After-tax yield",
+        "Total tax rate",
+        "Earnings yield",
+        "Dividend yield"
+      ],
+      "explanation": "3.6% ÷ (1 − 0.40) = 6.0%."
+    },
+    {
+      "id": "tey-04",
+      "scenario": "A tax-free bond pays 4.2%. For someone taxed at 35%, what yield must a taxable bond offer to leave her equally well off?",
+      "answer": "Tax-equivalent yield",
+      "distractors": [
+        "After-tax yield",
+        "Real return",
+        "Earnings yield spread",
+        "Total tax rate"
+      ],
+      "explanation": "4.2% ÷ 0.65 ≈ 6.46%."
+    },
+    {
+      "id": "r4-03",
+      "scenario": "A pair of retirees wants $90,000 a year to spend and will withdraw 4% of their portfolio each year. Ignoring inflation, what size portfolio supports that?",
+      "answer": "4% rule portfolio",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "Inflated spending",
+        "Future value",
+        "Gordon equation"
+      ],
+      "explanation": "$90,000 ÷ 0.04 = $2,250,000."
+    },
+    {
+      "id": "r4-04",
+      "scenario": "How large a portfolio is needed to fund $36,000 of yearly spending with 4% annual withdrawals?",
+      "answer": "4% rule portfolio",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "Required return",
+        "Dividend yield",
+        "Future value"
+      ],
+      "explanation": "$36,000 ÷ 0.04 = $900,000."
+    },
+    {
+      "id": "is-03",
+      "scenario": "A household's rent and bills total $30,000 a year now. With 2% inflation, what will the same bundle cost per year in 25 years?",
+      "answer": "Inflated spending",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "Future value",
+        "4% rule portfolio",
+        "Real return"
+      ],
+      "explanation": "$30,000 × 1.02^25 ≈ $30,000 × 1.6406 ≈ $49,218."
+    },
+    {
+      "id": "is-04",
+      "scenario": "Spending is $60,000 a year today. If prices rise 3.5% a year for 15 years, what will the same lifestyle cost in that year's dollars?",
+      "answer": "Inflated spending",
+      "distractors": [
+        "Portfolio needed at retirement",
+        "4% rule portfolio",
+        "Required return",
+        "Annual interest on savings"
+      ],
+      "explanation": "$60,000 × 1.035^15 ≈ $60,000 × 1.6753 ≈ $100,521."
+    },
+    {
+      "id": "pn-03",
+      "scenario": "A couple spends $70,000 a year in today's dollars. Inflation is 2% a year, they retire in 25 years, and they will withdraw 4% annually. What portfolio must they have at retirement?",
+      "answer": "Portfolio needed at retirement",
+      "distractors": [
+        "4% rule portfolio",
+        "Inflated spending",
+        "Future value",
+        "Required return"
+      ],
+      "explanation": "$70,000 × 1.02^25 ÷ 0.04 ≈ $114,842 ÷ 0.04 ≈ $2.87 million."
+    },
+    {
+      "id": "pn-04",
+      "scenario": "Spending is $45,000 a year now. With 3% inflation, 30 years to go and a 4% withdrawal plan, how large a portfolio is needed on retirement day?",
+      "answer": "Portfolio needed at retirement",
+      "distractors": [
+        "4% rule portfolio",
+        "Inflated spending",
+        "Portfolio expected return",
+        "Future value"
+      ],
+      "explanation": "$45,000 × 1.03^30 ÷ 0.04 ≈ $109,227 ÷ 0.04 ≈ $2.73 million."
+    },
+    {
+      "id": "fv-03",
+      "scenario": "A new employee invests $5,000 at 8% a year, compounding, and leaves it for 30 years. What will it be worth?",
+      "answer": "Future value",
+      "distractors": [
+        "Required return",
+        "Inflated spending",
+        "Geometric average return",
+        "Annual interest on savings"
+      ],
+      "explanation": "$5,000 × 1.08^30 ≈ $5,000 × 10.063 ≈ $50,313."
+    },
+    {
+      "id": "fv-04",
+      "scenario": "A lump sum of $80,000 earns 5% a year for 8 years with no withdrawals. What is the balance at the end?",
+      "answer": "Future value",
+      "distractors": [
+        "Required return",
+        "Annual interest on savings",
+        "Portfolio needed at retirement",
+        "Real return"
+      ],
+      "explanation": "$80,000 × 1.05^8 ≈ $80,000 × 1.4775 ≈ $118,196."
+    },
+    {
+      "id": "rr-03",
+      "scenario": "A saver has $15,000 and wants it to reach $45,000 in 20 years. What steady annual return does she need?",
+      "answer": "Required return",
+      "distractors": [
+        "Future value",
+        "Geometric average return",
+        "Real return",
+        "Arithmetic average return"
+      ],
+      "explanation": "(45,000 ÷ 15,000)^(1/20) − 1 = 3^0.05 − 1 ≈ 5.65%."
+    },
+    {
+      "id": "rr-04",
+      "scenario": "To grow $100,000 to $250,000 over 15 years, what annual return must an investor earn?",
+      "answer": "Required return",
+      "distractors": [
+        "Future value",
+        "Geometric average return",
+        "Inflated spending",
+        "Portfolio expected return"
+      ],
+      "explanation": "2.5^(1/15) − 1 ≈ 6.30%."
+    },
+    {
+      "id": "aa-03",
+      "scenario": "A fund returned 3%, −1%, 4% and 2% in four quarters. What is the plain average of those four returns?",
+      "answer": "Arithmetic average return",
+      "distractors": [
+        "Geometric average return",
+        "Portfolio expected return",
+        "Standard deviation",
+        "Realized stock return"
+      ],
+      "explanation": "(3 − 1 + 4 + 2) ÷ 4 = 2%."
+    },
+    {
+      "id": "aa-04",
+      "scenario": "Over five years an investment returned 7%, 9%, −4%, 12% and 6%. Ignoring compounding, what is the average yearly return?",
+      "answer": "Arithmetic average return",
+      "distractors": [
+        "Geometric average return",
+        "Required return",
+        "Real return",
+        "Portfolio expected return"
+      ],
+      "explanation": "(7 + 9 − 4 + 12 + 6) ÷ 5 = 6%."
+    },
+    {
+      "id": "ga-03",
+      "scenario": "A fund loses 50% in one year and gains 50% the next. What constant annual rate matches the compounded two-year result?",
+      "answer": "Geometric average return",
+      "distractors": [
+        "Arithmetic average return",
+        "Required return",
+        "Real return",
+        "Future value"
+      ],
+      "explanation": "(0.50 × 1.50)^(1/2) − 1 = 0.75^0.5 − 1 ≈ −13.4% a year, even though the simple average is 0%."
+    },
+    {
+      "id": "ga-04",
+      "scenario": "An investment returned +30% and then −10%. What compound annual rate did the investor actually earn over the two years?",
+      "answer": "Geometric average return",
+      "distractors": [
+        "Arithmetic average return",
+        "Required return",
+        "Portfolio expected return",
+        "Real return"
+      ],
+      "explanation": "(1.30 × 0.90)^(1/2) − 1 = 1.17^0.5 − 1 ≈ 8.2%, below the 10% simple average."
+    },
+    {
+      "id": "rl-03",
+      "scenario": "A savings account pays 4.5% in a year when inflation is 3.5%. By what percent did the saver's purchasing power grow?",
+      "answer": "Real return",
+      "distractors": [
+        "After-tax yield",
+        "Annual interest on savings",
+        "Arithmetic average return",
+        "Earnings yield spread"
+      ],
+      "explanation": "1.045 ÷ 1.035 − 1 ≈ 0.97%."
+    },
+    {
+      "id": "rl-04",
+      "scenario": "Stocks earned 12% in a year when inflation was 4%. What was the gain in purchasing power?",
+      "answer": "Real return",
+      "distractors": [
+        "Arithmetic average return",
+        "Alpha",
+        "Realized stock return",
+        "After-tax yield"
+      ],
+      "explanation": "1.12 ÷ 1.04 − 1 ≈ 7.69%."
+    },
+    {
+      "id": "pe-03",
+      "scenario": "An investor puts $70,000 into funds expected to earn 8% and $30,000 into funds expected to earn 3%. What return should the combined $100,000 be expected to earn?",
+      "answer": "Portfolio expected return",
+      "distractors": [
+        "Arithmetic average return",
+        "Portfolio beta",
+        "CAPM expected return",
+        "Alpha"
+      ],
+      "explanation": "0.70 × 8% + 0.30 × 3% = 5.6% + 0.9% = 6.5%."
+    },
+    {
+      "id": "pe-04",
+      "scenario": "A portfolio is 25% in asset X (expected 10%), 25% in Y (expected 6%) and 50% in Z (expected 4%). What is the expected return of the whole?",
+      "answer": "Portfolio expected return",
+      "distractors": [
+        "Arithmetic average return",
+        "Portfolio beta",
+        "Geometric average return",
+        "Gordon equation"
+      ],
+      "explanation": "0.25 × 10% + 0.25 × 6% + 0.50 × 4% = 2.5% + 1.5% + 2.0% = 6.0%."
+    },
+    {
+      "id": "rs-03",
+      "scenario": "Looking back over the year, a stock's return is broken down as a 1.5% dividend yield, 8% growth in the dividend and a 4% expansion in the valuation multiple.",
+      "answer": "Realized stock return",
+      "distractors": [
+        "Gordon equation",
+        "Capital gain or loss",
+        "Dividend yield",
+        "Earnings yield"
+      ],
+      "explanation": "1.5% + 8% + 4% = 13.5%."
+    },
+    {
+      "id": "rs-04",
+      "scenario": "A stock's return over the past year is explained by a 4% dividend yield, 2% dividend growth and a 7% fall in its multiple. What was the return?",
+      "answer": "Realized stock return",
+      "distractors": [
+        "Gordon equation",
+        "Capital gain or loss",
+        "Arithmetic average return",
+        "Alpha"
+      ],
+      "explanation": "4% + 2% − 7% = −1%."
+    },
+    {
+      "id": "sd-03",
+      "scenario": "A fund returned 6%, 8%, 10% and 12% over four years. Using the sample formula, how volatile are those returns in total?",
+      "answer": "Standard deviation",
+      "distractors": [
+        "Coefficient of variation",
+        "Tracking error",
+        "Beta",
+        "Arithmetic average return"
+      ],
+      "explanation": "Mean 9%; squared deviations 9 + 1 + 1 + 9 = 20; ÷ 3 = 6.67; square root ≈ 2.58%."
+    },
+    {
+      "id": "sd-04",
+      "scenario": "An investor wants to measure how widely returns of −2%, 4% and 10% are spread around their mean of 4%. She squares the deviations, divides by n − 1 and takes the square root.",
+      "answer": "Standard deviation",
+      "distractors": [
+        "Coefficient of variation",
+        "Correlation",
+        "Beta",
+        "Tracking error"
+      ],
+      "explanation": "Squared deviations 36 + 0 + 36 = 72; ÷ 2 = 36; √36 = 6%."
+    },
+    {
+      "id": "cv-03",
+      "scenario": "Fund P has a mean return of 6% and a volatility of 9%. Fund Q has a mean of 12% and a volatility of 20%. Dividing each volatility by its mean, which fund has more risk per unit of return?",
+      "answer": "Coefficient of variation",
+      "distractors": [
+        "Standard deviation",
+        "Sharpe ratio",
+        "Treynor ratio",
+        "Correlation"
+      ],
+      "explanation": "σ ÷ mean: P = 1.5, Q ≈ 1.67, so Q is riskier per unit of return."
+    },
+    {
+      "id": "cv-04",
+      "scenario": "A bond fund averages 4% with a volatility of 3%, while a stock fund averages 10% with a volatility of 16%. Which carries more risk per unit of return, and by what measure?",
+      "answer": "Coefficient of variation",
+      "distractors": [
+        "Standard deviation",
+        "Sharpe ratio",
+        "Beta",
+        "Tracking error"
+      ],
+      "explanation": "σ ÷ mean: bonds 0.75, stocks 1.6. The stock fund has more risk per unit of return."
+    },
+    {
+      "id": "co-03",
+      "scenario": "Two assets have a covariance of −0.0018, and their volatilities are 6% and 5%. What do these figures say about how the assets move together?",
+      "answer": "Correlation",
+      "distractors": [
+        "Beta",
+        "Standard deviation",
+        "Tracking error",
+        "Coefficient of variation"
+      ],
+      "explanation": "−0.0018 ÷ (0.06 × 0.05) = −0.6, a fairly strong negative relationship, useful for diversification."
+    },
+    {
+      "id": "co-04",
+      "scenario": "Two stocks have a covariance of 0.0042, and their volatilities are 10% and 7%. Dividing the covariance by the product of the volatilities gives what measure?",
+      "answer": "Correlation",
+      "distractors": [
+        "Beta",
+        "Information ratio",
+        "Standard deviation",
+        "Alpha"
+      ],
+      "explanation": "0.0042 ÷ (0.10 × 0.07) = 0.6."
+    },
+    {
+      "id": "be-03",
+      "scenario": "The market's variance is 0.0025 and a stock's covariance with the market is 0.0020. How sensitive is the stock to market moves?",
+      "answer": "Beta",
+      "distractors": [
+        "Correlation",
+        "Portfolio beta",
+        "Standard deviation",
+        "CAPM expected return"
+      ],
+      "explanation": "Cov(R, Rₘ) ÷ σₘ² = 0.0020 ÷ 0.0025 = 0.8, so it moves about 0.8 times the market."
+    },
+    {
+      "id": "be-04",
+      "scenario": "A defensive stock tends to gain about 4% when the market gains 8% and lose about 4% when the market falls 8%. Which statistic describes this sensitivity?",
+      "answer": "Beta",
+      "distractors": [
+        "Correlation",
+        "Standard deviation",
+        "Alpha",
+        "Portfolio beta"
+      ],
+      "explanation": "It moves half as much as the market, a beta of about 0.5."
+    },
+    {
+      "id": "pb-03",
+      "scenario": "A portfolio is 40% in stock A (beta 0.9), 40% in B (beta 1.1) and 20% in C (beta 1.4). What is the market sensitivity of the whole?",
+      "answer": "Portfolio beta",
+      "distractors": [
+        "Beta",
+        "Portfolio expected return",
+        "Correlation",
+        "CAPM expected return"
+      ],
+      "explanation": "0.40 × 0.9 + 0.40 × 1.1 + 0.20 × 1.4 = 0.36 + 0.44 + 0.28 = 1.08."
+    },
+    {
+      "id": "pb-04",
+      "scenario": "A fund holds 80% in stocks with a beta of 1.25 and 20% in bonds with a beta of 0.25. How sensitive is the fund as a whole to the market?",
+      "answer": "Portfolio beta",
+      "distractors": [
+        "Beta",
+        "Portfolio expected return",
+        "Treynor ratio",
+        "Standard deviation"
+      ],
+      "explanation": "0.80 × 1.25 + 0.20 × 0.25 = 1.00 + 0.05 = 1.05."
+    },
+    {
+      "id": "tke-03",
+      "scenario": "A fund that is supposed to mirror its index finds that the gaps between its yearly returns and the index's returns have a standard deviation of 0.25%. What is this measure called?",
+      "answer": "Tracking error",
+      "distractors": [
+        "Standard deviation",
+        "Alpha",
+        "Information ratio",
+        "Beta"
+      ],
+      "explanation": "The standard deviation of (portfolio return − benchmark return) is the tracking error."
+    },
+    {
+      "id": "tke-04",
+      "scenario": "A manager's returns minus her benchmark's were +2%, +4%, −2%, 0% and +1% over five years. How far do her returns stray from the benchmark?",
+      "answer": "Tracking error",
+      "distractors": [
+        "Standard deviation",
+        "Alpha",
+        "Information ratio",
+        "Correlation"
+      ],
+      "explanation": "Mean 1%; squared deviations 1 + 9 + 9 + 1 + 0 = 20; ÷ 4 = 5; square root ≈ 2.24%."
+    },
+    {
+      "id": "cp-03",
+      "scenario": "The risk-free rate is 4%, the market is expected to return 10%, and a stock has a beta of 0.9. What return is required for the market risk it carries?",
+      "answer": "CAPM expected return",
+      "distractors": [
+        "Alpha",
+        "Portfolio expected return",
+        "Beta",
+        "Gordon equation"
+      ],
+      "explanation": "4% + 0.9 × (10% − 4%) = 9.4%."
+    },
+    {
+      "id": "cp-04",
+      "scenario": "With a risk-free rate of 1.5%, an expected market return of 7.5% and a stock beta of 1.4, what return compensates for the market risk taken?",
+      "answer": "CAPM expected return",
+      "distractors": [
+        "Alpha",
+        "Treynor ratio",
+        "Portfolio beta",
+        "Realized stock return"
+      ],
+      "explanation": "1.5% + 1.4 × 6% = 9.9%."
+    },
+    {
+      "id": "al-03",
+      "scenario": "A fund earned 8%. The risk-free rate was 2%, the market earned 7% and the fund's beta is 1.0, so its beta predicts 7%. By how much did it beat or miss that figure?",
+      "answer": "Alpha",
+      "distractors": [
+        "CAPM expected return",
+        "Tracking error",
+        "Information ratio",
+        "Selection effect"
+      ],
+      "explanation": "Actual − expected = 8% − 7% = +1%."
+    },
+    {
+      "id": "al-04",
+      "scenario": "A manager returned 12% with a beta of 1.5. The risk-free rate was 4% and the market returned 10%, so beta predicts 13%. How did she do relative to that?",
+      "answer": "Alpha",
+      "distractors": [
+        "CAPM expected return",
+        "Treynor ratio",
+        "Sharpe ratio",
+        "Allocation effect"
+      ],
+      "explanation": "12% − 13% = −1%, return below what her beta would predict."
+    },
+    {
+      "id": "sh-03",
+      "scenario": "A fund returned 18% while the risk-free rate was 3%. Its returns had a volatility of 10%. What is its excess return per unit of total risk?",
+      "answer": "Sharpe ratio",
+      "distractors": [
+        "Treynor ratio",
+        "Information ratio",
+        "Alpha",
+        "Beta"
+      ],
+      "explanation": "(18% − 3%) ÷ 10% = 1.5, which is good (above 1)."
+    },
+    {
+      "id": "sh-04",
+      "scenario": "A portfolio earned 13% when the risk-free rate was 3% and had volatility of 5%. How much extra return did it earn per unit of total risk?",
+      "answer": "Sharpe ratio",
+      "distractors": [
+        "Treynor ratio",
+        "Information ratio",
+        "Coefficient of variation",
+        "Alpha"
+      ],
+      "explanation": "(13% − 3%) ÷ 5% = 2.0, which is very good."
+    },
+    {
+      "id": "tr-03",
+      "scenario": "A portfolio returned 14% against a 4% risk-free rate and has a beta of 1.25. What is its excess return per unit of market risk?",
+      "answer": "Treynor ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Information ratio",
+        "Alpha",
+        "Portfolio beta"
+      ],
+      "explanation": "(14% − 4%) ÷ 1.25 = 8%."
+    },
+    {
+      "id": "tr-04",
+      "scenario": "A defensive fund earned 7% when the risk-free rate was 2%. Its beta is 0.5. How much excess return did it earn for each unit of market risk?",
+      "answer": "Treynor ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Information ratio",
+        "CAPM expected return",
+        "Beta"
+      ],
+      "explanation": "5% ÷ 0.5 = 10%."
+    },
+    {
+      "id": "ir-03",
+      "scenario": "A portfolio returned 12% against a benchmark's 10%, with a tracking error of 2.5%. What is the active return per unit of tracking error?",
+      "answer": "Information ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Treynor ratio",
+        "Alpha",
+        "Selection effect"
+      ],
+      "explanation": "(12% − 10%) ÷ 2.5% = 0.8."
+    },
+    {
+      "id": "ir-04",
+      "scenario": "A manager trailed her benchmark by 1% for the year, and the differences from the benchmark had a volatility of 2%. How does her active return compare with the risk taken relative to the benchmark?",
+      "answer": "Information ratio",
+      "distractors": [
+        "Sharpe ratio",
+        "Treynor ratio",
+        "Alpha",
+        "Tracking error"
+      ],
+      "explanation": "(−1%) ÷ 2% = −0.5."
+    },
+    {
+      "id": "ae-03",
+      "scenario": "A portfolio holds 28% in health care against the benchmark's 20%. The benchmark's health care stocks returned 10% and the whole benchmark returned 7%. How much did the sector weighting add?",
+      "answer": "Allocation effect",
+      "distractors": [
+        "Selection effect",
+        "Interaction effect",
+        "Alpha",
+        "Information ratio"
+      ],
+      "explanation": "(0.28 − 0.20) × (10% − 7%) = 0.24%."
+    },
+    {
+      "id": "ae-04",
+      "scenario": "A portfolio holds 15% in financials while the benchmark holds 20%. The benchmark's financials returned 3% and the whole benchmark returned 6%. What did the underweighting contribute?",
+      "answer": "Allocation effect",
+      "distractors": [
+        "Selection effect",
+        "Interaction effect",
+        "Tracking error",
+        "Alpha"
+      ],
+      "explanation": "(0.15 − 0.20) × (3% − 6%) = +0.15%."
+    },
+    {
+      "id": "se-03",
+      "scenario": "The benchmark's weight in industrials is 25%. The manager's industrial stocks returned 9% while the benchmark's industrials returned 7%. How much did stock picking add?",
+      "answer": "Selection effect",
+      "distractors": [
+        "Allocation effect",
+        "Interaction effect",
+        "Alpha",
+        "Tracking error"
+      ],
+      "explanation": "w_b × (Rₚ − R_b) = 0.25 × 2% = 0.5%."
+    },
+    {
+      "id": "se-04",
+      "scenario": "The benchmark holds 40% in consumer stocks. The manager's consumer picks returned 5% while the benchmark's consumer sector returned 6.5%. What did picking securities contribute?",
+      "answer": "Selection effect",
+      "distractors": [
+        "Allocation effect",
+        "Interaction effect",
+        "Information ratio",
+        "Alpha"
+      ],
+      "explanation": "0.40 × (5% − 6.5%) = −0.6%."
+    },
+    {
+      "id": "ie-03",
+      "scenario": "A portfolio holds 15% in a sector where the benchmark holds 10%, and its securities there returned 12% against the sector benchmark's 9%. What is the combined contribution of the two decisions?",
+      "answer": "Interaction effect",
+      "distractors": [
+        "Allocation effect",
+        "Selection effect",
+        "Alpha",
+        "Tracking error"
+      ],
+      "explanation": "(0.15 − 0.10) × (12% − 9%) = 0.15%."
+    },
+    {
+      "id": "ie-04",
+      "scenario": "A manager underweights a sector (10% against 20%) and her picks there lag the sector benchmark (6% against 10%). What effect comes from the combination of the two?",
+      "answer": "Interaction effect",
+      "distractors": [
+        "Allocation effect",
+        "Selection effect",
+        "Information ratio",
+        "Alpha"
+      ],
+      "explanation": "(0.10 − 0.20) × (6% − 10%) = +0.4%. Two negatives multiply to a positive."
+    },
+    {
+      "id": "pr-03",
+      "scenario": "A stock trades at $84 and earned $4.20 per share over the past year. How many dollars are investors paying per dollar of earnings?",
+      "answer": "Price-to-earnings (P/E)",
+      "distractors": [
+        "Earnings yield",
+        "CAPE",
+        "Dividend yield",
+        "Earnings yield spread"
+      ],
+      "explanation": "$84 ÷ $4.20 = 20."
+    },
+    {
+      "id": "pr-04",
+      "scenario": "A share costs $36 and trailing earnings were $3 per share. What multiple of earnings is the market paying?",
+      "answer": "Price-to-earnings (P/E)",
+      "distractors": [
+        "Earnings yield",
+        "Dividend yield",
+        "CAPE",
+        "Gordon equation"
+      ],
+      "explanation": "$36 ÷ $3 = 12."
+    },
+    {
+      "id": "ca-03",
+      "scenario": "A market index stands at 4,200. The average of its last ten years of inflation-adjusted earnings is 175. What valuation multiple smooths over the business cycle?",
+      "answer": "CAPE",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Earnings yield",
+        "Dividend yield",
+        "Earnings yield spread"
+      ],
+      "explanation": "4,200 ÷ 175 = 24."
+    },
+    {
+      "id": "ca-04",
+      "scenario": "An analyst divides a market price of 2,800 by 140, the average of ten years of earnings adjusted for inflation. What measure is this?",
+      "answer": "CAPE",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Earnings yield spread",
+        "Gordon equation",
+        "Dividend yield"
+      ],
+      "explanation": "2,800 ÷ 140 = 20."
+    },
+    {
+      "id": "dy-03",
+      "scenario": "A stock priced at $150 is expected to pay $4.50 per share in dividends over the next year. What cash return from dividends does it offer?",
+      "answer": "Dividend yield",
+      "distractors": [
+        "Earnings yield",
+        "Price-to-earnings (P/E)",
+        "Realized stock return",
+        "After-tax yield"
+      ],
+      "explanation": "$4.50 ÷ $150 = 3%."
+    },
+    {
+      "id": "dy-04",
+      "scenario": "A REIT trades at $40 and expects to distribute $2.80 per share over the next 12 months. What is the cash return from distributions at today's price?",
+      "answer": "Dividend yield",
+      "distractors": [
+        "Earnings yield",
+        "Gordon equation",
+        "Tax-equivalent yield",
+        "Earnings yield spread"
+      ],
+      "explanation": "$2.80 ÷ $40 = 7%."
+    },
+    {
+      "id": "ey-03",
+      "scenario": "A stock earns $3.60 per share and trades at $60. Expressed as a return on price, what are its earnings?",
+      "answer": "Earnings yield",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Dividend yield",
+        "Earnings yield spread",
+        "Gordon equation"
+      ],
+      "explanation": "$3.60 ÷ $60 = 6%, the inverse of a multiple of 16.7."
+    },
+    {
+      "id": "ey-04",
+      "scenario": "A stock sells for 12 times its earnings. In yield terms, what return on price do its earnings represent?",
+      "answer": "Earnings yield",
+      "distractors": [
+        "Price-to-earnings (P/E)",
+        "Dividend yield",
+        "CAPE",
+        "Earnings yield spread"
+      ],
+      "explanation": "1 ÷ 12 ≈ 8.3%."
+    },
+    {
+      "id": "es-03",
+      "scenario": "The stock market's earnings yield is 6.0% while Baa corporate bonds yield 6.8%. What does the difference say about stocks relative to bonds?",
+      "answer": "Earnings yield spread",
+      "distractors": [
+        "Earnings yield",
+        "Dividend yield",
+        "After-tax yield",
+        "Gordon equation"
+      ],
+      "explanation": "6.0% − 6.8% = −0.8%, a negative spread."
+    },
+    {
+      "id": "es-04",
+      "scenario": "Stocks offer a 4.2% earnings yield while Baa bonds yield 7.0%. Do equities look cheap or expensive relative to corporate bonds?",
+      "answer": "Earnings yield spread",
+      "distractors": [
+        "Earnings yield",
+        "Dividend yield",
+        "Tax-equivalent yield",
+        "Real return"
+      ],
+      "explanation": "4.2% − 7.0% = −2.8%. A negative spread suggests expensive equities."
+    },
+    {
+      "id": "go-03",
+      "scenario": "A stock's dividend yield is 3.2% and its dividends are expected to grow 3.5% a year over the long run. What rough return can an investor expect?",
+      "answer": "Gordon equation",
+      "distractors": [
+        "CAPM expected return",
+        "Dividend yield",
+        "Realized stock return",
+        "Earnings yield"
+      ],
+      "explanation": "D ÷ P + g = 3.2% + 3.5% = 6.7%."
+    },
+    {
+      "id": "go-04",
+      "scenario": "A stock trades at $80, its next dividend is $2.40, and dividends are expected to grow 5% a year. Estimate the return an investor can expect.",
+      "answer": "Gordon equation",
+      "distractors": [
+        "CAPM expected return",
+        "Required return",
+        "Portfolio expected return",
+        "Dividend yield"
+      ],
+      "explanation": "$2.40 ÷ $80 + 5% = 3% + 5% = 8%."
+    }
+  ],
+  "validation": {
+    "per_category": 4,
+    "giveaway": {
+      "Net worth": "net worth",
+      "Net cash flow": "net cash flow",
+      "Savings ratio": "savings ratio",
+      "Debt servicing ratio": "debt servic",
+      "Debt ratio": "debt ratio",
+      "Current ratio": "current ratio",
+      "Housing ratio": "housing ratio",
+      "Emergency fund": "emergency fund",
+      "50-30-20 budget": "50-30-20",
+      "Effective tax rate": "effective tax rate",
+      "Marginal tax rate": "marginal tax rate",
+      "Total tax rate": "total tax rate",
+      "After-tax yield": "after-tax yield",
+      "Tax-equivalent yield": "tax-equivalent",
+      "4% rule portfolio": "4% rule",
+      "Inflated spending": "inflated spending",
+      "Future value": "future value",
+      "Required return": "required return",
+      "Arithmetic average return": "arithmetic",
+      "Geometric average return": "geometric",
+      "Real return": "real return",
+      "Correlation": "correlation",
+      "Coefficient of variation": "coefficient of variation",
+      "Portfolio beta": "portfolio beta",
+      "CAPM expected return": "capm",
+      "Alpha": "\\balpha\\b",
+      "Sharpe ratio": "sharpe",
+      "Treynor ratio": "treynor",
+      "Information ratio": "information ratio",
+      "Allocation effect": "allocation effect",
+      "Selection effect": "selection effect",
+      "Interaction effect": "interaction effect",
+      "CAPE": "\\bcape\\b|cyclically adjusted",
+      "Gordon equation": "gordon"
+    }
+  }
+}

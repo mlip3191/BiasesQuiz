@@ -1,84 +1,109 @@
 #!/usr/bin/env python3
-"""Sanity-check questions.json. Exits non-zero and lists every problem found."""
+"""Sanity-check quiz files. Exits non-zero and lists every problem found.
+
+Usage:  python3 validate_questions.py                 (checks every quizzes/*.json)
+        python3 validate_questions.py quizzes/x.json  (checks just that file)
+"""
 import json
 import re
 import sys
 from collections import Counter
 from pathlib import Path
 
-EXPECTED_BIASES = 20
-PER_BIAS = 10
 
-data = json.loads((Path(__file__).parent / "questions.json").read_text(encoding="utf-8"))
-bias_names = [b["name"] for b in data["biases"]]
-questions = data["questions"]
-problems = []
+def check(path):
+    """Return (problems, summary) for one quiz file."""
+    problems = []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as err:
+        return [f"cannot read file: {err}"], ""
 
-if len(bias_names) != EXPECTED_BIASES or len(set(bias_names)) != EXPECTED_BIASES:
-    problems.append(f"expected {EXPECTED_BIASES} unique biases, found {len(bias_names)}")
-for b in data["biases"]:
-    for key in ("name", "family", "definition"):
-        if not b.get(key, "").strip():
-            problems.append(f"bias {b.get('name')!r}: missing {key}")
+    for key in ("title", "questions"):
+        if not data.get(key):
+            problems.append(f"missing {key!r}")
+    questions = data.get("questions", [])
+    cfg = data.get("validation", {})
 
-if len(questions) != EXPECTED_BIASES * PER_BIAS:
-    problems.append(f"expected {EXPECTED_BIASES * PER_BIAS} questions, found {len(questions)}")
+    length = data.get("quiz_length", 10)
+    if not isinstance(length, int) or length < 1:
+        problems.append("quiz_length must be a positive integer")
+    elif length > len(questions):
+        problems.append(f"quiz_length {length} is more than the {len(questions)} questions")
 
-for bias, n in Counter(q["bias"] for q in questions).items():
-    if bias not in bias_names:
-        problems.append(f"unknown bias {bias!r}")
-    elif n != PER_BIAS:
-        problems.append(f"{bias}: {n} questions (expected {PER_BIAS})")
-for bias in bias_names:
-    if not any(q["bias"] == bias for q in questions):
-        problems.append(f"{bias}: no questions")
+    # Optional categories (e.g. the 20 biases): answers/distractors must come from them.
+    categories = data.get("categories", [])
+    cat_names = [c.get("name") for c in categories]
+    if len(set(cat_names)) != len(cat_names):
+        problems.append("duplicate category names")
+    for c in categories:
+        for key in ("name", "definition"):
+            if not c.get(key, "").strip():
+                problems.append(f"category {c.get('name')!r}: missing {key}")
 
-ids = Counter(q["id"] for q in questions)
-scenarios = Counter(q["scenario"].strip() for q in questions)
-problems += [f"duplicate id {i}" for i, n in ids.items() if n > 1]
-problems += [f"duplicate scenario: {s[:60]}..." for s, n in scenarios.items() if n > 1]
+    per_category = cfg.get("per_category")
+    if categories:
+        counts = Counter(q.get("answer") for q in questions)
+        for name in cat_names:
+            if counts[name] == 0:
+                problems.append(f"{name}: no questions")
+            elif per_category and counts[name] != per_category:
+                problems.append(f"{name}: {counts[name]} questions (expected {per_category})")
+        for name in counts:
+            if name not in cat_names:
+                problems.append(f"unknown category {name!r} used as an answer")
 
-# Names that must not appear in a scenario (they would give the answer away).
-GIVEAWAY = {
-    "Cognitive Dissonance": r"cognitive dissonance",
-    "Conservatism": r"conservatism",
-    "Confirmation": r"confirmation bias",
-    "Representativeness": r"representativeness",
-    "Illusion of Control": r"illusion of control",
-    "Hindsight": r"hindsight",
-    "Mental Accounting": r"mental account",
-    "Anchoring and Adjustment": r"anchor",
-    "Framing": r"framing|framed",
-    "Availability": r"availability",
-    "Self-Attribution": r"self-attribution",
-    "Outcome": r"outcome bias",
-    "Recency": r"recency",
-    "Loss Aversion": r"loss aversion",
-    "Overconfidence": r"overconfiden",
-    "Self-Control": r"self-control",
-    "Status Quo": r"status quo",
-    "Endowment": r"endowment",
-    "Regret Aversion": r"regret aversion",
-    "Affinity": r"affinity",
-}
+    ids = Counter(q.get("id") for q in questions)
+    scenarios = Counter(q.get("scenario", "").strip() for q in questions)
+    problems += [f"duplicate id {i}" for i, n in ids.items() if n > 1]
+    problems += [f"duplicate scenario: {s[:60]}..." for s, n in scenarios.items() if n > 1]
 
-for q in questions:
-    qid = q["id"]
-    d = q.get("distractors", [])
-    if len(d) != 4 or len(set(d)) != 4:
-        problems.append(f"{qid}: needs exactly 4 distinct distractors")
-    if q["bias"] in d:
-        problems.append(f"{qid}: distractors include the correct answer")
-    for name in d:
-        if name not in bias_names:
-            problems.append(f"{qid}: unknown distractor {name!r}")
-    if not q.get("scenario", "").strip() or not q.get("explanation", "").strip():
-        problems.append(f"{qid}: empty scenario or explanation")
-    for name, pattern in GIVEAWAY.items():
-        if re.search(pattern, q.get("scenario", ""), re.I):
-            problems.append(f"{qid}: scenario mentions '{name}' bias terminology")
+    giveaway = cfg.get("giveaway", {})
+    for q in questions:
+        qid = q.get("id", "<no id>")
+        answer = q.get("answer", "")
+        d = q.get("distractors", [])
+        if not qid or qid == "<no id>":
+            problems.append("question without an id")
+        if not answer.strip():
+            problems.append(f"{qid}: missing answer")
+        if len(d) < 2 or len(set(d)) != len(d):
+            problems.append(f"{qid}: needs at least 2 distinct distractors")
+        if categories and len(d) != 4:
+            problems.append(f"{qid}: category quizzes need exactly 4 distractors")
+        if answer in d:
+            problems.append(f"{qid}: distractors include the correct answer")
+        if categories:
+            for name in d:
+                if name not in cat_names:
+                    problems.append(f"{qid}: unknown distractor {name!r}")
+        if not q.get("scenario", "").strip() or not q.get("explanation", "").strip():
+            problems.append(f"{qid}: empty scenario or explanation")
+        # Names that must not appear in a scenario (they would give the answer away).
+        for name, pattern in giveaway.items():
+            if re.search(pattern, q.get("scenario", ""), re.I):
+                problems.append(f"{qid}: scenario mentions '{name}' terminology")
 
-if problems:
-    print("\n".join(f"- {p}" for p in problems))
-    sys.exit(1)
-print(f"OK: {len(bias_names)} biases, {len(questions)} questions")
+    summary = f"{len(categories)} categories, " if categories else ""
+    return problems, f"{summary}{len(questions)} questions"
+
+
+def main():
+    base = Path(__file__).parent
+    paths = [Path(a) for a in sys.argv[1:]] or sorted((base / "quizzes").glob("*.json"))
+    if not paths:
+        sys.exit("No quiz files found in quizzes/")
+    failed = False
+    for path in paths:
+        problems, summary = check(path)
+        if problems:
+            failed = True
+            print(f"{path.name}:")
+            print("\n".join(f"- {p}" for p in problems))
+        else:
+            print(f"OK: {path.stem}: {summary}")
+    sys.exit(1 if failed else 0)
+
+
+if __name__ == "__main__":
+    main()
