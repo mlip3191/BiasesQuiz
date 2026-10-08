@@ -58,9 +58,19 @@ def esc(text):
 # --------------------------------------------------------------------------
 # Quiz logic
 # --------------------------------------------------------------------------
-def new_quiz(slug):
+def parse_count(form, quiz_def):
+    """Questions wanted: a preset button wins over the number box; bad input falls back to the default."""
+    raw = (form.get("preset") or form.get("count") or [None])[0]
+    try:
+        count = int(raw)
+    except (TypeError, ValueError):
+        count = quiz_def["length"]
+    return max(1, min(count, len(quiz_def["questions"])))
+
+
+def new_quiz(slug, count):
     quiz_def = QUIZZES[slug]
-    picked = random.sample(list(quiz_def["questions"].values()), quiz_def["length"])
+    picked = random.sample(list(quiz_def["questions"].values()), count)
     quiz = []
     for q in picked:
         options = [q["answer"]] + q["distractors"]
@@ -115,11 +125,28 @@ def post_button(action, label, css="btn"):
     return f'<form method="post" action="{action}"><button class="{css}" type="submit">{esc(label)}</button></form>'
 
 
-def start_button(slug, label):
+def start_button(slug, label, count):
     return (
         f'<form method="post" action="/start"><input type="hidden" name="quiz" value="{esc(slug)}">'
+        f'<input type="hidden" name="count" value="{count}">'
         f'<button class="btn" type="submit">{esc(label)}</button></form>'
     )
+
+
+def start_form(slug, quiz_def):
+    bank = len(quiz_def["questions"])
+    presets = [n for n in (10, 25, 50, 100) if n < bank] + [bank]
+    buttons = "".join(
+        f'<button class="btn-small" type="submit" name="preset" value="{n}">{"All (" + str(n) + ")" if n == bank else n}</button>'
+        for n in presets
+    )
+    return f"""<form method="post" action="/start">
+<input type="hidden" name="quiz" value="{esc(slug)}">
+<label class="count-row">Number of questions (1 to {bank})
+<input type="number" name="count" min="1" max="{bank}" value="{quiz_def["length"]}" required></label>
+<button class="btn" type="submit">Start quiz</button>
+<p class="muted presets">Or start right away with: {buttons}</p>
+</form>"""
 
 
 def render_home(session, slug):
@@ -135,14 +162,14 @@ def render_home(session, slug):
                 f'<p class="muted">You have a {esc(other)} quiz in progress. '
                 f'<a href="/question">Resume it</a>, or starting here will discard it.</p>'
             )
-    counts = f"{quiz_def['length']} questions drawn at random from a bank of {len(quiz_def['questions'])}"
+    counts = f"Choose how many questions you want. They are drawn at random from a bank of {len(quiz_def['questions'])}"
     if quiz_def["categories"]:
         counts += f" covering {len(quiz_def['categories'])} topics"
     body = f"""
 <h1>{esc(quiz_def["title"])}</h1>
 <p>{esc(quiz_def["intro"])}</p>
-<p>Every quiz is {counts}.</p>
-{start_button(slug, "Start quiz")}
+<p>{counts}.</p>
+{start_form(slug, quiz_def)}
 {resume}"""
     return page(quiz_def["tab"], body, slug)
 
@@ -247,7 +274,8 @@ def render_summary(session):
 <p class="final">{total} / {n_total}</p>
 <p class="muted">{total / n_total:.0%} correct. Expand a question to review it.</p>
 {"".join(rows)}
-{start_button(session["slug"], "Start new quiz")}"""
+{start_button(session["slug"], "Start new quiz", n_total)}
+<p class="muted"><a href="/?quiz={esc(session["slug"])}">Change number of questions</a></p>"""
     return page("Results", body, session["slug"])
 
 
@@ -325,11 +353,12 @@ class Handler(BaseHTTPRequestHandler):
         session = self.current_session()
 
         if path == "/start":
-            slug = (self.read_form().get("quiz") or [None])[0]
+            form = self.read_form()
+            slug = (form.get("quiz") or [None])[0]
             if slug not in QUIZZES:
                 return self.send_page(page("Not found", "<h1>Unknown quiz</h1><p><a href='/'>Home</a></p>"), status=400)
             sid = secrets.token_urlsafe(16)
-            SESSIONS[sid] = new_quiz(slug)
+            SESSIONS[sid] = new_quiz(slug, parse_count(form, QUIZZES[slug]))
             return self.redirect("/question", [("Set-Cookie", f"sid={sid}; Path=/; HttpOnly; SameSite=Strict")])
 
         if not session:

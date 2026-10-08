@@ -2,7 +2,7 @@
 
 A local quiz app. Each quiz is its own file in the `quizzes/` folder and shows up as a tab at the top of the page, so you can switch between quizzes.
 
-The first quiz (**Biases**) covers the 20 investor biases from `behavioral_finance_biases_summary.pdf`: 10 random scenario questions drawn from a bank of 200 (10 per bias). Pick which of 5 biases is at work, submit, and see whether you were right plus an explanation.
+The first quiz (**Biases**) covers the 20 investor biases from `behavioral_finance_biases_summary.pdf`: random scenario questions drawn from a bank of 200 (10 per bias). You choose how many questions to take (1 to 200) on the start page. Pick which of 5 biases is at work, submit, and see whether you were right plus an explanation.
 
 The second quiz (**Ratios**) covers the 53 metrics and ratios from `metrics_and_ratios_summary.pdf` (personal finance, tax, retirement, returns, risk, risk-adjusted performance and valuation): 2 scenario questions per metric, 106 in all. After each answer the result page shows the metric's purpose and formula.
 
@@ -215,8 +215,9 @@ run validate_questions.py and restart the app.
 **Change the quiz length**
 
 ```
-In quizzes/biases.json, the quiz is 10 questions long ("quiz_length": 10). Change it
-to [20] questions and tell me exactly what to save and how to restart the quiz.
+In quizzes/biases.json, the number box on the start page begins at 10
+("quiz_length": 10). Change that starting number to [20] and tell me exactly what to
+save and how to restart the quiz.
 ```
 
 **Understand the project**
@@ -255,7 +256,7 @@ Then run `python3 validate_questions.py`. The Biases quiz expects exactly 10 que
 ## Adding a new quiz
 
 1. Copy `quizzes/biases.json` to a new file such as `quizzes/ratios.json`. The file name becomes the quiz's internal name.
-2. Edit the top-level fields: `title` (page heading), `tab` (short tab label), `order` (tab position, lowest first), `intro`, `prompt` (the question heading) and `quiz_length` (questions per attempt).
+2. Edit the top-level fields: `title` (page heading), `tab` (short tab label), `order` (tab position, lowest first), `intro`, `prompt` (the question heading) and `quiz_length` (the number of questions filled in by default on the start page; players can change it).
 3. Replace the `questions`. Each has `id` (unique within the quiz), `scenario`, `answer`, `distractors` (2 to 4 wrong answers, any text) and `explanation`.
 4. Optional: add a `categories` list (`name`, `definition`, optional `family`) if every answer is one of a fixed set of topics. The result page then shows the definition of the correct answer. If you use categories, every answer and distractor must be a category name and each question needs exactly 4 distractors. Delete `categories` and `validation` for a plain multiple-choice quiz.
 5. Run `python3 validate_questions.py`, then restart the app. The new tab appears at the top.
